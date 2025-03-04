@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Inter_Tight, Leckerli_One } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+const interSans = Inter({
+  variable: "--font-inter-sans",
   subsets: ["latin"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const leckerliOne = Leckerli_One({
+  weight: "400", // Leckerli One only comes in 400 weight
+  subsets: ["latin"],
+  variable: "--font-leckerli-one",
+});
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight", // Changed to lowercase "inter" for consistency
   subsets: ["latin"],
 });
 
@@ -24,10 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <body suppressHydrationWarning
+        className={`${interSans.variable} ${interTight.variable} ${leckerliOne.variable} antialiased`}
+      ><Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
