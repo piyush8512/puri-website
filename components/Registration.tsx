@@ -12,7 +12,7 @@ const Registration = () => {
           <div className="relative w-150 h-150 flex-shrink-0">
             <Image 
             className='pt-40'
-              src="/walk.png" 
+              src="/mobile.svg" 
               alt="People walking on smartphone" 
               width={650}
               height={650}
@@ -25,16 +25,16 @@ const Registration = () => {
           <div className="">
             {/* Registration heading with decorative elements */}
             <div className="flex items-center justify-center gap-2 mb-4">
-              <Image src="/leftshank.svg" alt="Decorative element" width={200} height={200} />
+              <Image src="/shank.svg" alt="Decorative element" width={200} height={200} />
               <h1 className="text-6xl font-bold text-red-600 font-script">Registration</h1>
-              <Image src="/rightshank.svg" alt="Decorative element" width={200} height={200} />
+              <Image src="/shank.svg" alt="Decorative element" width={200} height={200} className='scale-x-[-1]'/>
             </div>
             
             {/* Registration text */}
             <p className="text-center   text-2xl ">
               The 2025 edition of the Puri Literary Festival will bring together literary 
               icons, cultural historians, and thought leaders for an inspiring 
-              celebration of India's heritage and future. Register now to be part of this 
+              celebration of India&apos;s heritage and future. Register now to be part of this 
               immersive experience from April 18-20 in Puri, Odisha, featuring 
               dynamic sessions, cultural performances, heritage walks, and 
               interactive workshops that bridge tradition with contemporary 

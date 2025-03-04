@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
       
       {/* Center logo */}
-      <div className="absolute top-12 object-cover left-1/2 transform -translate-x-1/2 -translate-y-0 md:-translate-y-1/4 w-[15vw">
+      <div className="absolute top-12 object-cover left-1/2 transform -translate-x-1/2 -translate-y-0 md:-translate-y-1/4 h-[33.8vh] w-[10.8vw]">
         <div className="">
           <Image
             src="/logo.svg"

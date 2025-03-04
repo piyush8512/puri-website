@@ -34,10 +34,10 @@ const About = () => {
         </h1>
         <p className='text-white text-justify md:text-2xl'>
           The Puri Literary Festival 2025 celebrates the harmony of tradition and modernity, 
-          inspired by the sacred symbolism of the Konark Sun Temple and Lord Jagannath's Ratha. 
-          Rooted in Puri's rich spiritual and cultural legacy, the festival fosters global dialogue 
+          inspired by the sacred symbolism of the Konark Sun Temple and Lord Jagannath&apos;s Ratha. 
+          Rooted in Puri&apos;s rich spiritual and cultural legacy, the festival fosters global dialogue 
           through literature, art, and heritage. With grassroots outreach across Odisha, it aims to 
-          inspire the youth, preserve traditions, and shape a visionary future for India's cultural 
+          inspire the youth, preserve traditions, and shape a visionary future for India&apos;s cultural 
           and intellectual growth.
         </p>
       </div>
