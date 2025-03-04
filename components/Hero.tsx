@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="relative">
-  <div className="absolute bottom-0 left-0 right-0 bg-red-600 h-16 md:h-24 lg:h-32"></div>
+  <div className="absolute bottom-0 left-0 right-0 bg-[#D72327] h-16 md:h-24 lg:h-32"></div>
   <Image
     className="w-full relative z-10"
     src="/hero-temple.svg"
