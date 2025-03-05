@@ -1,68 +1,110 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 function Footer() {
-  return (
-    <div className="relative h-[100vh] footer-wave bg-cover bg-no-repeat bg-center">
-      <div className="flex justify-between items-end h-[58vh]">
-        <div className="flex flex-col ml-60">
-          <div className="mb-2">
-          <h1 className="text-center text-4xl font-leckerli text-[#FFFCF5] mt-2">
-            Connect With Us
-          </h1>
-          <Image
-            src={"/logo.svg"}
-            alt="logo"
-            width={130}
-            height={100}
-            className="absolute left-1/5 top-1/5"
-          ></Image>
-          </div>
-          <div className="flex justify-center gap-4 px-5">
-            <Linkedin color="#FFC81E" size={34} />
-            <Facebook color="#FFC81E" size={34} />
-            <Twitter color="#FFC81E" size={34} />
-            <Instagram color="#FFC81E" size={34} />
-          </div>
-        </div>
+  const socialIcons = [
+    { Icon: Linkedin, link: "https://linkedin.com" },
+    { Icon: Facebook, link: "https://facebook.com" },
+    { Icon: Twitter, link: "https://twitter.com" },
+    { Icon: Instagram, link: "https://instagram.com" }
+  ];
 
-        <div className="flex justify-evenly gap-20 mr-20">
-          <div>
-            <h1 className="text-3xl font-leckerli text-[#FFFCF5] text-left">
-            About us
+  const footerLinks = {
+    "About us": [
+      "About The Festival",
+      "Teamwork Arts",
+      "Contact Us",
+      "Terms & Condition",
+      "Privacy & Policies",
+      "FAQs"
+    ],
+    "Events": [
+      "Itinerary",
+      "Programmes"
+    ],
+    "Important Links": [
+      "Volunteer",
+      "Partner With Us"
+    ]
+  };
+
+  return (
+    <footer className="relative bg-cover bg-no-repeat bg-center h-[100vh] footer-wave py-10 sm:py-12 md:py-16 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Responsive Grid Container */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-16">
+          {/* Left Section - Logo and Social Icons */}
+          <div className="col-span-1 flex flex-col items-center md:items-start space-y-4 sm:space-y-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-leckerli text-[#FFFCF5] text-center md:text-left">
+              Connect With Us
             </h1>
-            <li className="flex flex-col pb-2 text-lg text-[#FFFCF5]">
-              <ul>About The Festival</ul>
-              <ul>Teamwork Arts</ul>
-              <ul>Contact Us</ul>
-              <ul>Terms & Condition</ul>
-              <ul>Privacy & Policies</ul>
-              <ul>FAQs</ul>
-            </li>
+            
+            {/* Logo */}
+            <div className="flex justify-center md:justify-start w-full">
+              <Image
+                src="/logo.svg"
+                alt="logo"
+                width={200}
+                height={150}
+                className="w-32 sm:w-40 md:w-48 lg:w-56"
+              />
+            </div>
+            
+            {/* Social Icons */}
+            <div className="flex justify-center md:justify-start space-x-4 sm:space-x-5 lg:space-x-6">
+              {socialIcons.map(({ Icon, link }, index) => (
+                <Link 
+                  key={index} 
+                  href={link} 
+                  target="_blank" 
+                  className="hover:scale-110 transition-transform"
+                >
+                  <Icon 
+                    color="#FFC81E" 
+                    size={24} 
+                    className="sm:size-8 md:size-10" 
+                  />
+                </Link>
+              ))}
+            </div>
           </div>
-          <div className="">
-            <h1 className="text-left text-3xl font-leckerli text-[#FFFCF5]">
-              Events
-            </h1>
-            <li className="flex flex-col pb-2 text-lg justify-center text-[#FFFCF5]">
-              <ul>Itinerary</ul>
-              <ul>Programmes</ul>
-            </li>
-          </div>
-          <div>
-            <h1 className="text-left text-3xl font-leckerli text-[#FFFCF5]">
-              Important Links
-            </h1>
-            <li  className="flex flex-col pb-2 text-lg text-[#FFFCF5]">
-              <ul>Volunteer</ul>
-              <ul>Partner With Us</ul>
-            </li>
+
+          {/* Right Section - Footer Links */}
+          <div className="col-span-1 md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+            {Object.entries(footerLinks).map(([title, links], index) => (
+              <div 
+                key={index} 
+                className="text-center md:text-left space-y-3 sm:space-y-4"
+              >
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-leckerli text-[#FFFCF5]">
+                  {title}
+                </h2>
+                <ul className="space-y-1 sm:space-y-2">
+                  {links.map((link, linkIndex) => (
+                    <li 
+                      key={linkIndex} 
+                      className="text-sm sm:text-base md:text-lg text-[#FFFCF5] 
+                      hover:text-yellow-300 transition-colors cursor-pointer"
+                    >
+                      {link}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      <div className="w-full footer-pattern absolute bottom-0 bg-no-repeat bg-cover bg-center h-64"></div>
-    </div>
+
+      {/* Footer Pattern */}
+      <div 
+        className="absolute bottom-0 left-0 right-0 
+        footer-pattern bg-no-repeat bg-cover bg-center 
+        h-[32vh]"
+      ></div>
+    </footer>
   );
 }
 

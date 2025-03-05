@@ -27,7 +27,7 @@ function Header() {
         {/* Navigation Links */}
         <nav>
           {/* Desktop Navigation */}
-          <ul className='hidden md:flex justify-between items-center mx-4 lg:mx-40 py-4 space-x-4'>
+          <ul className='hidden md:flex justify-around items-center mx-4 lg:mx-60 py-4 space-x-4'>
             <li>Home</li>
             <li>Partners</li>
             <li>Programs</li>
