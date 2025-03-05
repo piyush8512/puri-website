@@ -7,7 +7,7 @@ function Partners() {
     "/logo2.svg",
     "/Ministry_of_Culture_India.svg",
     "/logo1.svg",
-    "/IGNCA.jpg",
+    "/IGNCA.svg",
   ];
 
   return (
