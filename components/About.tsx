@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -14,19 +14,14 @@ const About = () => {
           observer.disconnect();
         }
       },
-      {
-        threshold: 0.1,
-      }
+      { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    const currentRef = sectionRef.current;
+    if (currentRef) observer.observe(currentRef);
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, []);
 
@@ -37,8 +32,8 @@ const About = () => {
     >
       {/* Male image - left side */}
       <div 
-        className={`absolute hidden md:block left-0 top-2/4  transform -translate-y-1/2 transition-all duration-1000 ease-out ${
-          isVisible ? 'translate-x-30 opacity-100' : '-translate-x-full opacity-0'
+        className={`absolute hidden md:block left-20 top-2/4 transform -translate-y-1/2 transition-all duration-1000 ease-out ${
+          isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
         }`}
       >
         <Image 
@@ -53,9 +48,7 @@ const About = () => {
       {/* Center text content */}
       <div 
         className={`text-center w-full max-w-4xl mx-auto z-10 transition-all duration-1000 ease-out px-4 sm:px-6 lg:px-8 ${
-          isVisible 
-            ? 'translate-y-0 opacity-100' 
-            : 'translate-y-20 opacity-0'
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
         }`}
       >
         <h1 className='text-2xl sm:text-3xl font-leckerli md:text-3xl font-bold mb-6 md:mb-12 text-white'>
@@ -73,8 +66,8 @@ const About = () => {
       
       {/* Female image - right side */}
       <div 
-        className={`absolute hidden md:block right-0 top-2/4 transform -translate-y-1/2 transition-all duration-1000 ease-out ${
-          isVisible ? '-translate-x-30 opacity-100' : 'translate-x-full opacity-0'
+        className={`absolute hidden md:block right-20 top-2/4 transform -translate-y-1/2 transition-all duration-1000 ease-out ${
+          isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
         }`}
       >
         <Image 
@@ -87,7 +80,7 @@ const About = () => {
       </div>
 
       {/* Mobile Illustrations */}
-      <div className='md:hidden flex justify-between w-full absolute bottom-0'>
+      <div className='md:hidden flex justify-between w-full absolute bottom-0 left-0'>
         <Image 
           src='/male.svg' 
           width={60} 

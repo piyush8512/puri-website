@@ -20,7 +20,7 @@ export default function Hero() {
           alt="Upmandir"
           width={400}
           height={150}
-          className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-10 z-10"
+          className="absolute top-70  left-1/2 transform -translate-x-50 translate-y-52 z-20"
         />
       </div>
       

@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+
 
 const Programes = () => {
   return (
@@ -32,7 +32,7 @@ const Programes = () => {
             
             {/* Registration text */}
             <p className="text-center pt-10   text-xl ">
-            The Puri Literary Festival 2025 celebrates India's rich heritage through literature, art, and tradition. Set in the spiritual heart of Puri, it blends ancient wisdom with modern dialogue, reviving Odisha&apos;s cultural legacy through storytelling, folk arts, and indigenous crafts.
+            The Puri Literary Festival 2025 celebrates India&apos;s rich heritage through literature, art, and tradition. Set in the spiritual heart of Puri, it blends ancient wisdom with modern dialogue, reviving Odisha&apos;s cultural legacy through storytelling, folk arts, and indigenous crafts.
             </p>
             <div className="pt-2 flex items-center justify-center">
   <button className="text-white font-leckerli bg-red-600 hover:bg-red-700 text-xl py-2 px-4 rounded-2xl mt-4">
