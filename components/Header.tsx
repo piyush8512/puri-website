@@ -37,7 +37,7 @@ function Header() {
             <li>About Us</li>
             <li>Contact Us</li>
             <Button variant={"destructive"} className='m-0 font-leckerli'>
-              Register Now
+              Register Now&nbsp;hello
             </Button>
           </ul>
 
