@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div 
       ref={sectionRef}
-      className='bg-[#D72327] min-h-screen md:min-h-[80vh] relative flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8'
+      className='bg-[#D72327] min-h-[85vh] md:min-h-[80vh] relative flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8'
     >
       {/* Male image - left side */}
       <div 
@@ -80,7 +80,7 @@ const About = () => {
       </div>
 
       {/* Mobile Illustrations */}
-      <div className='md:hidden flex justify-between w-full absolute bottom-0 left-0'>
+      <div className='md:hidden flex justify-between w-full absolute bottom-0 left-0 px-6 '>
         <Image 
           src='/male.svg' 
           width={60} 
@@ -92,8 +92,8 @@ const About = () => {
         />
         <Image 
           src='/female.svg' 
-          width={80} 
-          height={80} 
+          width={60} 
+          height={60} 
           alt='female illustration'
           className={`transition-all duration-1000 ease-out ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
