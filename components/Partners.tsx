@@ -3,50 +3,32 @@ import Image from "next/image";
 
 function Partners() {
   const partnerLogos = [
-    "/partner1.svg",
-    "/partner2.svg", 
-    "/partner3.svg", 
-    "/partner4.svg", 
-    "/partner5.svg"
+    "/Government_of_India_logo.svg",
+    "/logo2.svg",
+    "/Ministry_of_Culture_India.svg",
+    "/logo1.svg",
+    "/IGNCA.jpg",
   ];
 
   return (
-    <div className="flex flex-col min-h-screen md:min-h-[80vh] justify-center gap-10 md:gap-20 px-4 sm:px-6 lg:px-8 py-12">
+    <div className="flex flex-col items-center min-h-screen md:min-h-[70vh] justify-center gap-10 md:gap-20 px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-leckerli text-[#FF0707]">
         Partners
       </h1>
-      
-      {/* Desktop/Tablet Layout */}
-      <div className="hidden md:flex justify-evenly flex-wrap gap-8">
-        {partnerLogos.map((logo, index) => (
-          <div 
-            key={index} 
-            className="dashed-border p-2 md:p-4 lg:p-[10px] bg-center bg-no-repeat bg-cover transition-transform duration-300 hover:scale-110"
-          >
-            <Image
-              src={logo}
-              alt={`Partner logo ${index + 1}`}
-              width={201}
-              height={201}
-              className="w-28 md:w-40 lg:w-[201px] h-auto"
-            />
-          </div>
-        ))}
-      </div>
 
-      {/* Mobile Layout */}
-      <div className="md:hidden grid grid-cols-2 gap-8 place-items-center">
+      {/* Desktop/Tablet & Mobile Layout */}
+      <div className="flex justify-center items-center flex-wrap gap-8 md:gap-16 w-full">
         {partnerLogos.map((logo, index) => (
-          <div 
-            key={index} 
-            className="dashed-border p-2 bg-center bg-no-repeat bg-cover transition-transform duration-300 hover:scale-110"
+          <div
+            key={index}
+            className="flex justify-center items-center p-4"
           >
             <Image
               src={logo}
               alt={`Partner logo ${index + 1}`}
               width={150}
               height={150}
-              className="w-28 h-auto"
+              className="w-28 md:w-40 lg:w-[150px] h-auto object-contain"
             />
           </div>
         ))}

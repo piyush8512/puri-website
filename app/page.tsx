@@ -5,6 +5,7 @@ import Partners from "@/components/Partners"
 import Speakers from '@/components/Speakers'
 import Events from '@/components/Events'
 import Registration from '@/components/Registration'
+import Programes from '@/components/Programes'
 
 export default function Home() {
   return(
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Partners/>
       <Speakers />
+      <Programes/>
       <Events/>
       <Registration/>
     </div>

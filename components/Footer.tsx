@@ -31,29 +31,32 @@ function Footer() {
   };
 
   return (
-    <footer className="relative bg-cover bg-no-repeat bg-center h-[100vh] footer-wave py-10 sm:py-12 md:py-16 lg:py-20">
+    <footer className="relative bg-cover bg-no-repeat bg-center h-[80vh] footer-wave py-10 sm:py-12 md:py-16 lg:py-20 px-30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Responsive Grid Container */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3  pt-24 mt-12">
           {/* Left Section - Logo and Social Icons */}
-          <div className="col-span-1 flex flex-col items-center md:items-start space-y-4 sm:space-y-6">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-leckerli text-[#FFFCF5] text-center md:text-left">
+          <div className="col-span-1 flex flex-col items-center md:items-start  sm:space-y-6">
+
+          <div className="flex justify-center md:justify-start w-full">
+              <Image
+                src="/logo.svg"
+                alt="logo"
+                width={100}
+                height={150}
+                className="w-32 sm:w-40 md:w-48 lg:w-26"
+              />
+            </div>
+            
+            <h1 className="text-2xl sm:text-3xl md:text-2xl font-leckerli text-[#FFFCF5] text-center md:text-center">
               Connect With Us
             </h1>
             
             {/* Logo */}
-            <div className="flex justify-center md:justify-start w-full">
-              <Image
-                src="/logo.svg"
-                alt="logo"
-                width={200}
-                height={150}
-                className="w-32 sm:w-40 md:w-48 lg:w-56"
-              />
-            </div>
+            
             
             {/* Social Icons */}
-            <div className="flex justify-center md:justify-start space-x-4 sm:space-x-5 lg:space-x-6">
+            <div className="flex justify-center md:justify-start space-x-4  ">
               {socialIcons.map(({ Icon, link }, index) => (
                 <Link 
                   key={index} 
@@ -78,14 +81,14 @@ function Footer() {
                 key={index} 
                 className="text-center md:text-left space-y-3 sm:space-y-4"
               >
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-leckerli text-[#FFFCF5]">
+                <h2 className="text-xl sm:text-2xl md:text-2xl font-leckerli text-[#FFFCF5]">
                   {title}
                 </h2>
                 <ul className="space-y-1 sm:space-y-2">
                   {links.map((link, linkIndex) => (
                     <li 
                       key={linkIndex} 
-                      className="text-sm sm:text-base md:text-lg text-[#FFFCF5] 
+                      className="text-sm sm:text-base md:text-sm text-[#FFFCF5] 
                       hover:text-yellow-300 transition-colors cursor-pointer"
                     >
                       {link}
@@ -99,11 +102,21 @@ function Footer() {
       </div>
 
       {/* Footer Pattern */}
-      <div 
+      {/* <div 
         className="absolute bottom-0 left-0 right-0 
         footer-pattern bg-no-repeat bg-cover bg-center 
-        h-[32vh]"
-      ></div>
+        h-[30vh]"
+      ></div> */}
+      <div className="absolute bottom-0 left-0 w-full flex justify-center">
+  {/* <Image 
+    src="/footer_pattern.svg" 
+    alt="footer pattern" 
+    width={400} 
+    height={200} 
+    className="w-40 sm:w-60 md:w-80 lg:w-96 xl:w-[1200px] "
+  /> */}
+</div>
+
     </footer>
   );
 }
