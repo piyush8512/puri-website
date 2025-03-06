@@ -2,9 +2,9 @@ import React from "react";
 
 function Events() {
   return (
-    <div className="h-[100vh] md:h-[140vh] flex flex-col md:flex-row md:justify-between items-center bg-cover bg-right md:bg-center bg-no-repeat event-bg w-full py-25 px-4 md:p-5 gap-5">
+    <div className="h-[100vh] md:h-[140vh] flex flex-col md:flex-row md:justify-evenly items-center bg-cover bg-right md:bg-center bg-no-repeat event-bg w-full py-25 px-4 md:p-5 gap-5 md:gap-40">
       {/* Heading */}
-      <div className="text-center md:w-1/3 z-10 md:pb-60 md:pl-10">
+      <div className="text-center md:w-1/3 z-10 md:pb-60 md:pr-32">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-[#E90909] font-leckerli">
           Dialogue
           <br />
