@@ -1,28 +1,32 @@
-import React from 'react';
+import React from "react";
 
 function Events() {
   return (
-    <div className="h-[140vh] md:h-[140vh] relative flex flex-col md:flex-row justify-center md:justify-end items-center bg-cover bg-center bg-no-repeat event-bg w-full p-5 gap-5">
+    <div className="h-[100vh] md:h-[140vh] flex flex-col md:flex-row md:justify-between items-center bg-cover bg-right md:bg-center bg-no-repeat event-bg w-full py-25 px-4 md:p-5 gap-5">
       {/* Heading */}
-      <div className="text-center md:w-1/3 z-10">
+      <div className="text-center md:w-1/3 z-10 md:pb-60 md:pl-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-[#E90909] font-leckerli">
-          Dialogue&apos; <br className="hidden md:block" />
-          <span className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl">Session</span>
+          Dialogue
+          <br />
+          Session
         </h1>
       </div>
 
       {/* Event Cards */}
-      <div className="flex w-full md:w-auto justify-between md:flex-row gap-5">
-        <div className="bg-cover bg-center bg-no-repeat event-red w-[45%] md:w-[16vw] h-[30vh] md:h-[42vh] flex flex-col justify-center items-center">
-          <h1 className="text-xl font-bold text-[#FFFCF5] text-center">Agents of Change:</h1>
-          <p className="px-6 py-5  text-sm font-medium text-[#FFFCF5] text-center">
+      <div className="flex w-full md:w-auto justify-between mb-50 md:flex-row gap-2">
+        <div className="bg-cover bg-center bg-no-repeat event-red w-[168.3px] md:w-[18.6vw] h-[201px] md:h-[42vh] flex flex-col justify-center items-center px-5">
+          <h1 className="text-lg md:text-xl font-bold text-[#FFFCF5] text-center">
+            Agents of Change:
+          </h1>
+          <p className="py-2 text-sm md:text-base font-medium text-[#FFFCF5] text-center">
             Role of Writers as Social Commentators and Activists
           </p>
         </div>
-
-        <div className="bg-cover bg-center bg-no-repeat event-blue w-[45%] md:w-[16vw] h-[30vh] md:h-[42vh] flex flex-col justify-center items-center text-[#FFFCF5]">
-          <h1 className="text-xl font-bold text-center">Unveiling the Past:</h1>
-          <p className="px-6 py-5 text-sm font-medium text-[#FFFCF5] text-center">
+        <div className="bg-cover bg-center bg-no-repeat event-blue w-[168.3px] md:w-[18.6vw] h-[201px] md:h-[42vh] flex flex-col justify-center items-center px-5">
+          <h1 className="text-lg md:text-xl font-bold text-[#FFFCF5] text-center">
+            Unveiling the Past:
+          </h1>
+          <p className="py-2 text-sm md:text-base font-medium text-[#FFFCF5] text-center">
             The Craft and Challenges of Indian History Writing
           </p>
         </div>

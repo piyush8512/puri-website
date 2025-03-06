@@ -43,13 +43,13 @@ function Speakers() {
         alt="woman illustration"
         width={200}
         height={200}
-        className="absolute top-12 md:-top-6 left-1/6 z-50 w-38 lg:w-80 block md:block"
+        className="absolute top-12 md:-top-4 left-1/6 z-50 w-38 lg:w-80 block md:block"
       />
       
       {/* Title Section */}
       <div className="text-center md:w-1/3 z-10 md:mt-0 mt-34 mb-12 md:mb-0">
         <h1 className="text-xl sm:text-4xl md:text-4xl lg:text-4xl text-[#E90909] font-leckerli">
-          Puri Lit Fest's <br className="md:hidden" />
+          Puri Lit Fest&apos;s <br className="md:hidden" />
           <span className="text-lg sm:text-5xl md:text-5xl lg:text-5xl"><br className="hidden md:block"/>Speakers</span>
         </h1>
       </div>

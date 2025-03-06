@@ -15,7 +15,7 @@ export default function Hero() {
         />
 
         {/* Upmandir Image Positioned Above */}
-        <Image
+        {/* <Image
           src="/mandirup.svg"
           alt="Upmandir"
           width={400}
@@ -25,7 +25,7 @@ export default function Hero() {
                      w-[150px] h-auto 
                      md:w-[400px] 
                      z-20"
-        />
+        /> */}
       </div>
 
       {/* Center logo */}

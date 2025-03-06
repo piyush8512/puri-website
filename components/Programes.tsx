@@ -1,48 +1,20 @@
-import React from 'react';
-import Image from 'next/image';
+import { Button } from "./ui/button";
 
 const Programes = () => {
   return (
-    <div className="h-auto md:h-[70vh] relative w-full max-w-7xl mx-auto overflow-hidden px-4 sm:px-6 lg:px-8">
-      {/* Main container */}
-      <div className="bg-white pb-8 relative">
-        {/* Content container with phone illustration and text */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-          {/* Left side - Phone with people walking illustration */}
-          <div className="relative w-full md:w-150 h-auto md:h-150 flex-shrink-0">
-            <Image
-              className="pt-40 "
-              src="/mandirdancers.png"
-              alt="People walking on smartphone"
-              width={450}
-              height={450}
-              style={{ objectFit: "contain" }}
-              priority
-            />
-           
-          </div>
-          
-          {/* Right side - Registration heading and text */}
-          <div className="w-full md:w-auto text-center md:text-left">
-            {/* Registration heading with decorative elements */}
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-red-600 font-leckerli">
-                Programmes
-              </h1>
-            </div>
-            
-            {/* Registration text */}
-            <p className="text-center sm:text-lg md:text-xl pt-6 md:pt-10 px-4 md:px-0">
-              The Puri Literary Festival 2025 celebrates India's rich heritage through literature, art, and tradition. Set in the spiritual heart of Puri, it blends ancient wisdom with modern dialogue, reviving Odisha's cultural legacy through storytelling, folk arts, and indigenous crafts.
-            </p>
-            
-            <div className="pt-2 flex items-center justify-center md:justify-center mt-6 md:mt-4">
-              <button className="text-white font-leckerli bg-red-600 hover:bg-red-700 text-base sm:text-lg md:text-xl py-2 px-4 rounded-2xl">
-                View all programmes
-              </button>
-            </div>
-          </div>
-        </div>
+    <div className="min-h-[70vh] relative w-full flex flex-col md:flex-row md:justify-end items-end md:items-center py-16 md:py-0">
+      <div className="programs-bg bg-right bg-no-repeat bg-cover absolute left-0 -bottom-76 h-[850px] w-full md:w-2xl -z-50"></div>
+      
+      <div className="w-1/2 md:w-1/2 flex flex-col items-end md:items-center gap-5 px-4 md:px-5 mt-10 mb-36 md:mt-0">
+        <h1 className="text-[#D72327] text-4xl md:text-5xl font-leckerli text-center">Programmes</h1>
+        <p className="text-right md:text-center text-sm md:text-base">
+          The Puri Literary Festival 2025 celebrates India&apos;s rich heritage
+          through literature, art, and tradition. Set in the spiritual heart of
+          Puri, it blends ancient wisdom with modern dialogue, reviving
+          Odisha&apos;s cultural legacy through storytelling, folk arts, and
+          indigenous crafts.
+        </p>
+        <Button variant={"destructive"} className="font-leckerli text-sm md:text-base">View All Programmes</Button>
       </div>
     </div>
   );
