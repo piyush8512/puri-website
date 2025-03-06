@@ -13,7 +13,7 @@ const About = () => {
           setIsVisible(true);
           observer.disconnect();
         }
-      },
+      },  
       { threshold: 0.1 }
     );
 

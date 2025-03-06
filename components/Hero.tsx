@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full mt-16 ">
       {/* Blue decorative background */}
+      
       <div className="w-full relative">
         <Image
           className="w-full object-cover h-[15vh] md:h-[40vh]"
@@ -29,6 +30,10 @@ export default function Hero() {
       </div>
 
       {/* Center logo */}
+      <h1 className="absolute text-2xl top-67 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+  20th APRIL - 22nd APRIL 2025
+</h1>
+
       <div
         className="absolute top-0 left-1/2 transform -translate-x-1/2 
                       md:top-15 md:-translate-y-1/4 
