@@ -31,14 +31,13 @@ function Footer() {
   };
 
   return (
-    <footer className="relative bg-cover bg-no-repeat bg-center h-[80vh] footer-wave py-10 sm:py-12 md:py-16 lg:py-20 px-30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="relative bg-cover bg-no-repeat bg-top md:h-[70vh]  footer-wave py-10 sm:py-12 md:py-16 lg:py-20 px-5 md:px-30">
+      <div className="container mx-auto px-0 sm:px-6 lg:px-8">
         {/* Responsive Grid Container */}
-        <div className="grid grid-cols-1 md:grid-cols-3  pt-24 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 pt-24 mt-12">
           {/* Left Section - Logo and Social Icons */}
           <div className="col-span-1 flex flex-col items-center md:items-start  sm:space-y-6">
-
-          <div className="flex justify-center md:justify-start w-full">
+          <div className="flex justify-center md:justify-start px-10 w-full">
               <Image
                 src="/logo.svg"
                 alt="logo"
@@ -56,7 +55,7 @@ function Footer() {
             
             
             {/* Social Icons */}
-            <div className="flex justify-center md:justify-start space-x-4  ">
+            <div className="flex justify-center md:justify-start space-x-4  mb-12">
               {socialIcons.map(({ Icon, link }, index) => (
                 <Link 
                   key={index} 

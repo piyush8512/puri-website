@@ -143,6 +143,9 @@
   .speakers-bg{
     background-image: url('/speakers-bg.svg');
   }
+  .programs-bg{
+    background-image: url('/mandirdancers.svg');
+  }
   .event-bg{
     background-image: url('/event-bg.svg');
   }

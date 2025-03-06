@@ -33,7 +33,7 @@ export default function RootLayout({
         className={`${interSans.variable} ${interTight.variable} ${leckerliOne.variable} antialiased`}
       ><Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
