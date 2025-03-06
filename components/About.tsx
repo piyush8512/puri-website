@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div 
       ref={sectionRef}
-      className='bg-[#D72327] min-h-[85vh] md:min-h-[80vh] relative flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8'
+      className='bg-[#D72327] min-h-[80vh] md:min-h-[80vh] md:pb-0 pb-24 relative flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8'
     >
       {/* Male image - left side */}
       <div 
