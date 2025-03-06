@@ -32,10 +32,10 @@ function Speakers() {
   ];
 
   return (
-    <div className="speakers-bg bg-no-repeat bg-cover bg-center min-h-[110vh] md:h-[140vh] flex flex-col md:flex-row justify-center items-center relative overflow-hidden px-4 sm:px-6 lg:px-8 py-12">
+    <div className="speakers-bg bg-no-repeat bg-cover bg-center min-h-[120vh] md:h-[140vh] flex flex-col md:flex-row justify-center items-center relative overflow-hidden px-4 sm:px-6 lg:px-8 py-12">
       {/* Yellow Background Circle - Mobile Hidden */}
       <div className="hidden md:block h-48 w-48 lg:h-80 lg:w-80 bg-[#FFEC8C] rounded-full absolute top-4 left-1/6 -z-10"></div>
-      <div className="md:hidden block h-38 w-30 lg:h-80 lg:w-80 bg-[#FFEC8C] rounded-full absolute top-14 left-1/6 -z-10"></div>
+      <div className="md:hidden block h-30 w-30 lg:h-80 lg:w-80 bg-[#FFEC8C] rounded-full absolute top-22 left-1/6 -z-10"></div>
       
       {/* Woman Illustration - Now Visible on Mobile */}
       <Image
@@ -43,24 +43,23 @@ function Speakers() {
         alt="woman illustration"
         width={200}
         height={200}
-        className="absolute top-12 md:-top-4 left-1/6 z-50 w-38 lg:w-80 block md:block"
+        className="absolute top-16 md:-top-4 left-1/6 z-50 w-38 lg:w-80 block md:block"
       />
       
       {/* Title Section */}
-      <div className="text-center md:w-1/3 z-10 md:mt-0 mt-34 mb-12 md:mb-0">
-        <h1 className="text-xl sm:text-4xl md:text-4xl lg:text-4xl text-[#E90909] font-leckerli">
-          Puri Lit Fest&apos;s <br className="md:hidden" />
-          <span className="text-lg sm:text-5xl md:text-5xl lg:text-5xl"><br className="hidden md:block"/>Speakers</span>
+      <div className="text-center md:w-1/3 z-10 md:mt-0 mt-34 mb-10 md:mb-0">
+        <h1 className="text-xl sm:text-4xl md:p-0 pt-10 md:text-5xl lg:text-6xl text-[#E90909] font-leckerli">
+          Puri Lit Fest&apos;s<br/>Speakers
         </h1>
       </div>
       
       {/* Mobile Specific Layout */}
-      <div className="block md:hidden w-full max-w-xs mx-auto relative h-[80vh] mt-8">
+      <div className="block md:hidden w-full max-w-xs mx-auto relative h-[80vh] md:mt-8 mt-0 mb-5">
         {/* Speakers Layout for Mobile */}
-        <div className="grid grid-cols-2 gap-4 absolute inset-0">
+        <div className="grid grid-cols-2 gap-4 absolute inset-0 -space-y-28 ">
           {speakers.map((speaker, index) => (
             <div key={`mobile-speaker-${index}`} className="flex flex-col items-center">
-              <div className="bg-gradient-to-b from-sky-100 to-green-100 rounded-lg overflow-hidden ">
+              <div className="  overflow-hidden ">
                 <Image 
                   src={speaker.image} 
                   alt={speaker.name.toLowerCase()} 
@@ -80,13 +79,13 @@ function Speakers() {
 
       {/* Existing Desktop Layout */}
       {/* Desktop Layout */}
-      <div className="hidden md:block relative w-2xl h-[60vh] lg:h-[80vh]">
+      <div className="hidden md:block relative w-2xl h-[60vh] lg:h-[80vh] mx-20">
           {speakers.map((speaker, index) => (
             <div
               key={`desktop-speaker-${index}`}
-              className={`${speakerPositions[index].position} ${speakerPositions[index]} w-56 transition-transform duration-300 hover:scale-105`}
+              className={`${speakerPositions[index].position} ${speakerPositions[index]} w-2/5 transition-transform duration-300 hover:scale-105`}
             >
-              <div className="bg-white overflow-hidden rounded-xl p-2">
+              <div className=" overflow-hidden">
                 <Image
                   src={speaker.image}
                   alt={speaker.name.toLowerCase()}
@@ -95,8 +94,8 @@ function Speakers() {
                   className="w-full h-auto rounded-xl "
                 />
                 <div className="text-center">
-                  <h3 className="text-blue-900 font-semibold text-sm">{speaker.name}</h3>
-                  <p className="text-blue-700 text-xs">{speaker.position}</p>
+                  <h3 className="text-[#FFFCF5] font-semibold text-sm">{speaker.name}</h3>
+                  <p className="text-[#FFFCF5] text-xs">{speaker.position}</p>
                 </div>
               </div>
             </div>

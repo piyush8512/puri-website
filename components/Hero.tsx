@@ -4,7 +4,6 @@ export default function Hero() {
   return (
     <div className="relative w-full mt-16 ">
       {/* Blue decorative background */}
-      
       <div className="w-full relative">
         <Image
           className="w-full object-cover h-[15vh] md:h-[40vh]"
@@ -15,18 +14,6 @@ export default function Hero() {
           sizes="(max-width: 768px) 100vw, 40vh"
         />
 
-        {/* Upmandir Image Positioned Above */}
-        {/* <Image
-          src="/mandirup.svg"
-          alt="Upmandir"
-          width={400}
-          height={150}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-40 
-                     md:top-70 md:translate-y-52 
-                     w-[150px] h-auto 
-                     md:w-[400px] 
-                     z-20"
-        /> */}
       </div>
 
       {/* Center logo */}
