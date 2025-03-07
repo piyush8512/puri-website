@@ -40,7 +40,7 @@ function Speakers() {
       {/* Yellow Background Circle - Mobile Hidden */}
       <div className="hidden md:block h-48 w-48 lg:h-80 lg:w-80 bg-[#FFEC8C] rounded-full absolute top-4 left-1/6 -z-10"></div>
       <div className="md:hidden block h-30 w-30 lg:h-80 lg:w-80 bg-[#FFEC8C] rounded-full absolute top-22 left-1/6 -z-10"></div>
-      
+
       {/* Woman Illustration - Now Visible on Mobile */}
       <Image
         src="/woman.svg"
@@ -84,7 +84,7 @@ function Speakers() {
 
       {/* Existing Desktop Layout */}
       {/* Desktop Layout */}
-      <div className="hidden md:block relative w-xl h-[60vh] lg:h-[75vh] mx-20">
+      <div className="hidden md:block relative w-lg h-[60vh] lg:h-[80vh] mx-20">
           {speakers.map((speaker, index) => (
             <div
               key={`desktop-speaker-${index}`}

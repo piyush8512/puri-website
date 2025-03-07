@@ -132,6 +132,12 @@
   .font-leckerli {
     font-family: var(--font-leckerli-one);
   }
+  .font-family{
+    font-family: var(--font-libre-caslon-text);
+  }
+  .font-libreBodoni {
+    font-family: var(--font-libre-bodoni);
+  }
   .hero-bg{
     background-image: url('/hero-bg.svg');
   }
