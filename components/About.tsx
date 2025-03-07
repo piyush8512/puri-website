@@ -47,14 +47,14 @@ const About = () => {
       
       {/* Center text content */}
       <div 
-        className={`text-center w-full max-w-4xl mx-auto z-10 transition-all duration-1000 ease-out px-4 sm:px-6 lg:px-8 ${
+        className={`text-center w-full max-w-4xl mx-auto z-10 transition-all duration-1000 ease-out px-2 sm:px-6 lg:px-8 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
         }`}
       >
-        <h1 className='text-2xl sm:text-3xl font-leckerli md:text-3xl font-bold mb-6 md:mb-12 text-white'>
+        <h1 className='text-2xl sm:text-3xl font-leckerli md:text-4xl font-bold mb-6 md:mb-18 text-white'>
           About The Festival
         </h1>
-        <p className='text-white text-base sm:text-lg md:text-xl lg:text-xl text-justify'>
+        <p className='text-white text-base sm:text-lg md:text-xl lg:text-xl text-center'>
           The Puri Literary Festival 2025 celebrates the harmony of tradition and modernity, 
           inspired by the sacred symbolism of the Konark Sun Temple and Lord Jagannath&apos;s Ratha. 
           Rooted in Puri&apos;s rich spiritual and cultural legacy, the festival fosters global dialogue 
@@ -80,29 +80,30 @@ const About = () => {
       </div>
 
       {/* Mobile Illustrations */}
-      <div className='md:hidden flex justify-between w-full absolute bottom-0 left-0 px-6 '>
-        <Image 
-          src='/male.svg' 
-          width={60} 
-          height={60} 
-          alt='male illustration'
-          className={`transition-all duration-1000 ease-out ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-          }`}
-        />
-        <Image 
-          src='/female.svg' 
-          width={60} 
-          height={60} 
-          alt='female illustration'
-          className={`transition-all duration-1000 ease-out ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-          }`}
-        />
-      </div>
+      <div className='md:hidden flex w-full absolute bottom-0 right-12  justify-end '>
+  <Image 
+    src='/male.svg' 
+    width={50} 
+    height={50} 
+    alt='male illustration'
+    className={`transition-all duration-1000 ease-out ${
+      isVisible ? '-translate-y-0 opacity-100' : '-translate-y-20 opacity-0'
+    }`}
+  />
+  <Image 
+    src='/female.svg' 
+    width={50} 
+    height={50} 
+    alt='female illustration'
+    className={`transition-all duration-1000 ease-out ${
+      isVisible ? '-translate-y-0 opacity-100' : '-translate-y-10 opacity-0'
+    }`}
+  />
+</div>
+
 
       {/* Bottom border image */}
-      <div className='w-full absolute bottom-0 left-0'>
+      <div className=' md:block hidden w-full absolute bottom-0 left-0'>
         <Image 
           src='/about-border.svg' 
           width={400} 

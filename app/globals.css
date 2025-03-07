@@ -4,6 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -158,6 +159,10 @@
   .footer-wave {
     background-image: url('/footer-wave.svg');
   }
+  .footer-waveb {
+    background-image: url('/footer-waveb.svg');
+  }
+
   .footer-pattern {
     background-image: url('/footer-pattern.svg');
   }

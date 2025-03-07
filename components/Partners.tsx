@@ -11,8 +11,8 @@ function Partners() {
   ];
 
   return (
-    <div className="flex flex-col items-center min-h-[30vh] md:min-h-[70vh] justify-center gap-10 md:gap-20 px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-leckerli text-[#FF0707]">
+    <div className="md:flex hidden  flex-col items-center min-h-[30vh] md:min-h-[70vh] justify-center gap-10 md:gap-15 px-4 sm:px-6 lg:px-8 py-12">
+      <h1 className=" md:block hiddentext-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-leckerli text-[#FF0707]">
         Partners
       </h1>
 

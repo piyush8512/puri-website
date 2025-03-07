@@ -3,6 +3,14 @@ import { Inter, Inter_Tight, Leckerli_One } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+
+import { Pacifico, Lobster } from "next/font/google";
+
+const pacifico = Pacifico({ weight: "400", subsets: ["latin"] });
+const lobster = Lobster({ weight: "400", subsets: ["latin"] });
+
+export { pacifico, lobster };
+
 const interSans = Inter({
   variable: "--font-inter-sans",
   subsets: ["latin"],

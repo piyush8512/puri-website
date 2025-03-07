@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Registration = () => {
   return (
-    <div className="min-h-[90vh] relative w-full max-w-7xl mx-auto overflow-hidden px-4 py-8 md:py-12">
+    <div className=" md:block hidden min-h-[90vh] relative w-full max-w-7xl mx-auto overflow-hidden px-4  ">
       {/* Main container */}
       <div className="bg-white pb-8 relative">
         {/* Content container with phone illustration and text */}
