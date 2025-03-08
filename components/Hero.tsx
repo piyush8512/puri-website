@@ -65,7 +65,7 @@ export default function Hero() {
             priority
           />
           <Image
-            src="/logomobile.svg"
+            src="/centermobilelogo.png"
             alt="Festival logo"
             width={127}
             height={52}
@@ -74,7 +74,6 @@ export default function Hero() {
           />
         </div>
       </div>
-
       <div className="relative hidden md:block md:mt-0 mt-50  h-[40vh] md:h-[100vh] z-10 hero-temple bg-center bg-cover bg-no-repeat"></div>
       <div className="mt-50 md:hidden">
         <Image
