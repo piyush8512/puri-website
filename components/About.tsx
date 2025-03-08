@@ -33,7 +33,7 @@ const About = () => {
     >
       {/* Male image - left side */}
       <div
-        className={`absolute hidden md:block left-20 top-2/4 transform -translate-y-1/2 transition-all duration-1000 ease-out ${
+        className={`absolute hidden md:block left-20 top-3/5 transform -translate-y-1/2 transition-all duration-1000 ease-out ${
           isVisible
             ? "translate-x-0 opacity-100"
             : "-translate-x-full opacity-0"
@@ -45,6 +45,15 @@ const About = () => {
           height={100}
           alt="male illustration"
           className="max-w-full h-auto w-20 md:w-32 lg:w-35"
+        />
+        <Image
+        src="shadow.png"
+        width={100}
+        height={100}
+        alt="male illustration"
+        className=" 
+        max-w-full h-auto w-20 md:w-32 mb-7 "
+      
         />
       </div>
 
@@ -70,7 +79,7 @@ const About = () => {
 
       {/* Female image - right side */}
       <div
-        className={`absolute hidden md:block right-20 top-2/4 transform -translate-y-1/2 transition-all duration-1000 ease-out ${
+        className={`absolute hidden md:block right-20 top-3/4 bottom- transform -translate-y-2/3 transition-all duration-1000 ease-out ${
           isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
@@ -81,35 +90,18 @@ const About = () => {
           alt="female illustration"
           className="max-w-full h-auto w-20 md:w-32 lg:w-30"
         />
-      </div>
-
-      {/* Mobile Illustrations */}
-      <div className="md:hidden flex w-full gap-6 absolute bottom-0 right-14  justify-end ">
         <Image
-          src="/male.svg"
-          width={50}
-          height={50}
-          alt="male illustration"
-          className={`transition-all  duration-1000 ease-out ${
-            isVisible
-              ? "-translate-y-0 opacity-100"
-              : "-translate-y-20 opacity-0"
-          }`}
-        />
-        <Image
-          src="/female.svg"
-          width={45}
-          height={45}
-          alt="female illustration"
-          className={`transition-all duration-1000 ease-out ${
-            isVisible
-              ? "-translate-y-0 opacity-100"
-              : "-translate-y-10 opacity-0"
-          }`}
+        src="shadow.png"
+        width={100}
+        height={100}
+        alt="male illustration"
+        className=" 
+        max-w-full h-auto w-20 md:w-32 mb-7  "
+      
         />
       </div>
 
-      {/* Bottom border image */}
+     
       <div className=" md:block hidden w-full absolute bottom-0 left-0">
         <Image
           src="/about-border.svg"

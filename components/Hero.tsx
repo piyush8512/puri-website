@@ -19,7 +19,7 @@ export default function Hero() {
         src="/Vector1.svg"
         alt="Decorative background"
         width={600}
-        height={150}
+        height={250}
         sizes=""
       />
 
@@ -51,7 +51,7 @@ export default function Hero() {
 
       <div
         className="absolute top-16 left-1/2 transform -translate-x-1/2 
-                      md:top-15 md:-translate-y-1/4 
+                      md:top-19 md:-translate-y-1/4 
                       h-[30vh] md:h-[30.8vh] 
                       w-[18.5vw] md:w-[8.8vw]"
       >
@@ -68,7 +68,7 @@ export default function Hero() {
             src="/centermobilelogo.png"
             alt="Festival logo"
             width={127}
-            height={52}
+            height={122}
             className="object-cover w-full md:hidden"
             priority
           />

@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter ,Youtube } from "lucide-react";
 
 function Footer() {
   const socialIcons = [
     { Icon: Linkedin, link: "https://linkedin.com" },
-    { Icon: Facebook, link: "https://facebook.com" },
-    { Icon: Twitter, link: "https://twitter.com" },
-    { Icon: Instagram, link: "https://instagram.com" },
+    { Icon: Facebook, link: "https://www.facebook.com/purilitfest" },
+    { Icon: Twitter, link: "https://x.com/PuriLitFest" },
+    { Icon: Instagram, link: "https://www.instagram.com/purilitfest" },
+    { Icon: Youtube, link: "https://youtube.com/@purilitfest" },
   ];
 
   const footerLinks = {
@@ -26,7 +27,7 @@ function Footer() {
 
   return (
     <>
-    <footer className=" md:block hidden relative bg-cover bg-no-repeat bg-top md:h-[80vh] footer-wave py-10 sm:py-15 md:py-16 lg:py-20 px-5 md:px-30">
+    <footer className=" md:block hidden relative bg-cover bg-no-repeat bg-top md:h-[90vh] footer-wave py-10 sm:py-15 md:py-16 lg:py-20 px-5 md:px-30">
       <div className="container mx-auto px-0 sm:px-6 lg:px-8">
         {/* Responsive Grid Container */} 
         <div className="grid grid-cols-1 md:grid-cols-3 pt-24 mt-12">
@@ -95,11 +96,21 @@ function Footer() {
       </div>
 
       {/* Footer Pattern */}
-      <div
+      {/* <div
         className="absolute bottom-0 left-0 md:-left-1 w-full
         footer-pattern bg-no-repeat bg-cover bg-center h-[5vh]
         md:h-[21vh]"
-      ></div>
+      ></div> */}
+      <div className="w-full mt-12  absolute left-0 bottom-0">
+        <Image
+          src="/footer-pattern.svg"
+          alt="Footer pattern"
+          width={500}
+          height={300}
+          className="w-full "
+          priority
+        />
+      </div>
     </footer>
     <footer className="md:hidden block relative w-full">
   {/* Top Wave Background */}
@@ -166,6 +177,7 @@ function Footer() {
       ))}
     </div>
   </div>
+  
 </footer>
 
 
