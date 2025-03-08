@@ -14,7 +14,7 @@ function Header() {
   return (
     <header className='fixed z-[100] top-0 w-full'>
       {/* Desktop and Tablet Navigation */}
-      <div className='h-16 w-full bg-[#FFC40C]'>
+      <div className='h-[8vh] w-full bg-[#FFC40C]'>
         {/* Mobile Menu Toggle */}
         <div className='md:hidden absolute top-4 right-4 z-50'>
           <button 
