@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export default function Hero() {
   return (
-    <div className="relative w-full mt-5 sm:mt-0 md:mt-8 lg:mt-8 xl:mt-8 2xl:mt-8">
+    <div className="relative w-full mt-5 lg:mt-7">
 
 
       {/* Blue decorative background */}  
@@ -29,11 +29,11 @@ export default function Hero() {
       
 
       {/* Center logo */}
-      <h1 className=" md:block hidden absolute text-xl text-center  top-65 mt-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className=" md:block hidden absolute text-xl text-center  top-60 mt-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
   18th APRIL - 20th APRIL 2025<br/>
   <span className="text-2xl font-libreCaslon">Taj Hotels, Puri</span>
 </h1>
-<h1 className="md:hidden absolute text-sm -mt-12 left-1/2 transform -translate-x-1/2 translate-y-3/6 text-center">
+<h1 className="md:hidden absolute text-sm -mt-12 left-1/2 transform -translate-x-1/2 translate-y-4/6 text-center">
   18th APRIL - 20th APRIL 2025<br/>
   <span className="text-xl">Taj Hotels, Puri</span>
 </h1>
@@ -53,7 +53,7 @@ export default function Hero() {
 
       <div
         className="absolute top-16 left-1/2 transform -translate-x-1/2 
-                      md:top-15 md:-translate-y-1/4 
+                      md:top-15 md:-translate-y-1/9 
                       h-[30vh] md:h-[30.8vh] 
                       w-[18.5vw] md:w-[8.8vw]"
       >

@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div
       ref={sectionRef}
-      className="bg-[#D72327] min-h-[60vh] md:min-h-[80vh] md:pb-0 pb-24 relative flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8"
+      className="phoneAbout-bg bg-cover bg-center bg-no-repeat md:bg-[#D72327] min-h-[60vh] md:min-h-[80vh] md:pb-0 pb-24 relative flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8"
     >
       {/* Male image - left side */}
       <div
@@ -49,7 +49,7 @@ const About = () => {
 
       {/* Center text content */}
       <div
-        className={`text-center w-full max-w-4xl mx-auto z-10 transition-all duration-1000 ease-out px-2 sm:px-6 lg:px-8 ${
+        className={`text-center w-full h-[60vh] max-w-4xl mx-auto z-10 transition-all duration-1000 ease-out px-5 sm:px-6  lg:px-8 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         }`}
       >
@@ -83,7 +83,7 @@ const About = () => {
       </div>
 
       {/* Mobile Illustrations */}
-      <div className="md:hidden flex w-full gap-6 absolute bottom-0 right-14  justify-end ">
+      {/* <div className="md:hidden flex w-full gap-6 absolute bottom-0 right-14  justify-end ">
         <Image
           src="/male.svg"
           width={50}
@@ -106,7 +106,7 @@ const About = () => {
               : "-translate-y-10 opacity-0"
           }`}
         />
-      </div>
+      </div> */}
 
       {/* Bottom border image */}
       <div className=" md:block hidden w-full absolute bottom-0 left-0">

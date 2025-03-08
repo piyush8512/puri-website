@@ -1,6 +1,7 @@
 import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
 
+
 function Events() {
   return (
     <div className=" md:flex hidden relative h-[100vh] md:h-[140vh]  flex-col md:flex-row md:justify-evenly items-center bg-cover bg-right md:bg-center bg-no-repeat event-bg w-full  px-4  gap-5 md:gap-0">

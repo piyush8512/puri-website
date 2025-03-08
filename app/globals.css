@@ -144,6 +144,9 @@
   .hero-temple{
     background-image: url('/hero-temple.svg');
   }
+  .phoneAbout-bg{
+    background-image: url('/phoneAbout-bg.png');
+  }
   .dashed-border {
     background-image: url('/dashed-border.svg');
   }
