@@ -3,9 +3,11 @@ import { Button } from "./ui/button";
 
 export default function Hero() {
   return (
-    <div className="relative w-full mt-0 md:mt-8.5">
-      {/* Blue decorative background */}
-      <div className="w-full relative">
+    <div className="relative w-full mt-5 sm:mt-0 md:mt-8 lg:mt-8 xl:mt-8 2xl:mt-8">
+
+
+      {/* Blue decorative background */}  
+      
         <Image
           className="w-full h-[15vh] md:h-[40vh] hidden md:block"
           src="/hero-bg1.svg"
@@ -23,12 +25,12 @@ export default function Hero() {
           sizes=""
         />
 
-      </div>
+     
       
 
       {/* Center logo */}
       <h1 className=" md:block hidden absolute text-xl text-center  top-65 mt-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-  18th APRIL - 20nd APRIL 2025<br/>
+  18th APRIL - 20th APRIL 2025<br/>
   <span className="text-2xl font-libreCaslon">Taj Hotels, Puri</span>
 </h1>
 <h1 className="md:hidden absolute text-sm -mt-12 left-1/2 transform -translate-x-1/2 translate-y-3/6 text-center">
@@ -75,10 +77,21 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative md:mt-0 mt-50  h-[40vh] md:h-[82vh] z-10 hero-temple bg-center bg-cover bg-no-repeat"></div>
+      <div className="relative hidden md:block md:mt-0 mt-50  h-[40vh] md:h-[82vh] z-10 hero-temple bg-center bg-cover bg-no-repeat"></div>
+      <div className="mt-50 md:hidden">
+      <Image
+            src="/mobileherobg.png"
+            alt="Festival logo"
+            width={127}
+            height={52}
+            className="object-cover w-full md:hidden"
+            priority  
+          />
+      </div>
+      
 
       <div
-        className="absolute bottom-0 left-0 right-0 bg-[#D72327] 
+        className="absolute md:block hidden bottom-0 left-0 right-0 bg-[#D72327] 
                       h-12 md:h-16 lg:h-24 xl:h-32"
       ></div>
     </div>
