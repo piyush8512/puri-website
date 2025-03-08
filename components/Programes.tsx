@@ -14,7 +14,7 @@ const Programes = () => {
           Odisha&apos;s cultural legacy through storytelling, folk arts, and
           indigenous crafts.
         </p>
-        <Button variant={"destructive"} className="font-leckerli text-sm md:text-base">View All Programmes</Button>
+        <Button variant={"destructive"} className="font-leckerli py-6 px-6 text-sm md:text-base">View All Programmes</Button>
       </div>
     </div>
   );
