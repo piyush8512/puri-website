@@ -34,9 +34,15 @@ function Header() {
       alt="Festival logo"
       width={60}
       height={60}
-      className="w-14 md:w-20 h-auto"
+      className=" md:block hidden w-14 md:w-20 h-auto"
       priority
     />
+    <Image 
+      src="/mobilelogo.png"
+      alt="Decorative element"
+      width={60}
+      height={150}
+      className="w-14 md:hidden "/>
   </div>
 
   {/* Desktop Navigation */}

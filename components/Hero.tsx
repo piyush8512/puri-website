@@ -67,7 +67,7 @@ export default function Hero() {
             priority
           />
           <Image
-            src="/logomobile.svg"
+            src="/centermobilelogo.png"
             alt="Festival logo"
             width={127}
             height={52}

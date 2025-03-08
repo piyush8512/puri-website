@@ -112,7 +112,14 @@ function Footer() {
       alt="logo"
       width={100}
       height={100}
-      className="w-24 sm:w-28 md:w-32"
+      className=" hidden md:block w-24 sm:w-28 md:w-32"
+    />
+    <Image
+      src="/mobilelogo.png"
+      alt="logo"
+      width={100}
+      height={100}
+      className=" md:hidden w-24 sm:w-28 md:w-32"
     />
   </div>
 
