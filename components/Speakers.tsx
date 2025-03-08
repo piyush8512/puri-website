@@ -4,10 +4,10 @@ import { IoIosArrowDropright } from "react-icons/io";
 
 function Speakers() {
   const speakerPositions = [
-    { position: "absolute bottom-90 left-0", size: "w-25 md:w-20 lg:w-20" },
-    { position: "absolute top-8 right-0", size: "w-25 md:w-20 lg:w-20" },
-    { position: "absolute bottom-8 left-0", size: "w-25 md:w-20 lg:w-20" },
-    { position: "absolute top-90 right-0", size: "w-25 md:w-20 lg:w-20" },
+    { position: "absolute bottom-70 left-0", size: "w-25 md:w-20 " },
+    { position: "absolute top-2 right-0", size: "w-25 md:w-20" },
+    { position: "absolute bottom-2 left-0", size: "w-25 md:w-20 " },
+    { position: "absolute top-70 right-0", size: "w-25 md:w-20 " },
   ];
   const speakers = [
     {

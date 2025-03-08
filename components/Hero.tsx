@@ -29,7 +29,7 @@ export default function Hero() {
       
 
       {/* Center logo */}
-      <h1 className=" md:block hidden absolute text-xl text-center  top-65 mt-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className=" md:block hidden absolute text-xl text-center  top-65 mt-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
   18th APRIL - 20th APRIL 2025<br/>
   <span className="text-2xl font-libreCaslon">Taj Hotels, Puri</span>
 </h1>
@@ -77,7 +77,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative hidden md:block md:mt-0 mt-50  h-[40vh] md:h-[82vh] z-10 hero-temple bg-center bg-cover bg-no-repeat"></div>
+      <div className="relative hidden md:block md:mt-0 mt-50  h-[40vh] md:h-[90vh] z-20 hero-temple bg-center bg-cover bg-no-repeat"></div>
       <div className="mt-50 md:hidden">
       <Image
             src="/mobileherobg.png"
