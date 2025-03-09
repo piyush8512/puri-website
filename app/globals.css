@@ -139,10 +139,16 @@
     font-family: var(--font-libre-bodoni);
   }
   .hero-bg{
-    background-image: url('/hero-bg.svg');
+    background-image: url('/hero-bg1.svg');
+  }
+  .hero-bg-mobile{
+    background-image: url('/Vector1.svg');
   }
   .hero-temple{
     background-image: url('/hero-temple.svg');
+  }
+  .hero-temple-mobile{
+    background-image: url('/mobileherobg.png');
   }
   .phoneAbout-bg{
     background-image: url('/phoneAbout-bg.png');
