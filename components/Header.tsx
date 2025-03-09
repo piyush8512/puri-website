@@ -14,7 +14,7 @@ function Header() {
   return (
     <header className="fixed z-[100] top-0 w-full">
       {/* Main Navigation Bar */}
-      <div className="h-16 sm:h-[8vh] w-full bg-[#FFC40C] flex items-center justify-between px-4 sm:px-6 lg:px-10 ">
+      <div className="h-16 sm:h-16 w-full bg-[#FFC40C] flex items-center justify-between px-4 sm:px-6 lg:px-10 ">
         {/* Logo */}
         <div className="flex items-center  mt-0 sm:mt-12 lg:mt-18 ">
           <Image
@@ -36,7 +36,7 @@ function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:block flex-1">
-          <ul className="flex justify-center items-center space-x-2 lg:space-x-4 xl:space-x-8 text-sm lg:text-base">
+          <ul className="flex justify-center items-center space-x-5 lg:space-x-5 xl:space-x-14 text-sm lg:text-base">
             <li className="hover:text-gray-700 cursor-pointer">Home</li>
             <li className="hover:text-gray-700 cursor-pointer">Partners</li>
             <li className="hover:text-gray-700 cursor-pointer">Programs</li>
