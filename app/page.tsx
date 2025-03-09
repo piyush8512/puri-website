@@ -12,7 +12,7 @@ export default function Home() {
   return(
     <div>
       <Hero/>
-       <About />
+       {/* <About />
        <Partners/>
        <Speakers />
      <Programes/>
@@ -20,7 +20,7 @@ export default function Home() {
     <Registration/>
     <div className="md:hidden">
       <Stay/>
-    </div>
+    </div> */}
     </div>
     );
 }
