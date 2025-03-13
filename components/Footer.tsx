@@ -26,79 +26,88 @@ function Footer() {
 
   return (
     <>
-      <footer className=" md:block hidden md:h-[67vh]  lg:h-[85vh] footer-wave bg-no-repeat bg-cover relative   ">
-        <div className=" sm:px-6 md:px-8 sm:pt-10  md:pt-14 lg:pt-24  ">
-          <div className=" grid  sm:grid-cols-3 md:grid-cols-3  ">
-            {/* leftpartlogoandicon */}
-
-            
-            <div className=" flex flex-col  sm:items-center md:items-center  ">
-              <div className=" sm:mt-12 md:mt-10">
-                <Image
-                  src="/logo.svg"
-                  alt="logo"
-                  width={100}
-                  height={150}
-                  className=" sm:w-18 md:w-21 lg:w-24"
-                />
-              </div>
-              <h1 className=" sm:text-sm md:text-lg lg:text-xl font-leckerli text-[#FFFCF5] sm:mt-3 md:mt-3 lg:mt-6">
-                hello
-              </h1>
-
-              {/* socialIcons */}
-              <div className="flex  sm:space-x-2  md:space-x-1  sm:mt-3 lg:mt-4">
-                {socialIcons.map(({ Icon, link }, index) => (
-                  <Link
-                    key={index}
-                    href={link}
-                    target="_blank"
-                    className="hover:scale-110 transition-transform"
-                  >
-                    <Icon
-                      color="#FFC81E"
-                      size={24}
-                      className="sm:size-5 md:size-5 lg:size-7"
-                    />
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* Rightsection */}
-            <div className="  grid  sm:grid-cols-3 sm:col-span-2 sm:gap-2 sm:pt-24   md:pt-24  lg:pt-29    ">
-              {Object.entries(footerLinks).map(([title, links], index) => (
-                <div key={index} className=" sm:text-left  sm:space-y-2">
-                  <h2 className="sm:text-lg lg:text-xl font-leckerli text-[#FFFCF5]">
-                    {title}
-                  </h2>
-                  <ul className=" sm:space-y-1">
-                    {links.map((link, linkIndex) => (
-                      <li
-                        key={linkIndex}
-                        className=" sm:text-xs md:text-sm lg:text-sm text-[#FFFCF5] 
-                hover:text-yellow-300 transition-colors cursor-pointer"
-                      >
-                        {link}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="w-full mt-12  absolute left-0 bottom-0">
+     <footer className="md:block hidden md:h-[50vh] lg:h-[85vh] relative">
+  {/* Background wave image with lower z-index */}
+  <div className="absolute inset-0 -z-10 w-full h-full mx-auto">
+    <Image
+      src="/footer-wave.svg"
+      alt="Footer background wave"
+      layout="fill"
+      objectFit="cover" 
+      priority
+    />
+  </div>
+  
+  <div className="relative z-10 sm:px-6 md:px-8 sm:pt-18 md:pt-30 lg:pt-34">
+    <div className="grid sm:grid-cols-3 md:grid-cols-3">
+      {/* Left part logo and icon */}
+      <div className="flex flex-col sm:items-center md:items-center">
+        <div className="sm:mt-12 md:mt-6 lg:mt-2">
           <Image
-            src="/footer-pattern.svg"
-            alt="Footer pattern"
-            width={500}
-            height={300}
-            className="w-full "
-            priority
+            src="/logo.svg"
+            alt="logo"
+            width={100}
+            height={150}
+            className="sm:w-18 md:w-21 lg:w-30"
           />
         </div>
-      </footer>
+        <h1 className="sm:text-sm md:text-lg lg:text-xl font-leckerli text-[#FFFCF5] sm:mt-3 md:mt-3 lg:mt-6">
+          Connect With US
+        </h1>
+        {/* socialIcons */}
+        <div className="flex sm:space-x-2 md:space-x-1 sm:mt-3 lg:mt-4">
+          {socialIcons.map(({ Icon, link }, index) => (
+            <Link
+              key={index}
+              href={link}
+              target="_blank"
+              className="hover:scale-110 transition-transform"
+            >
+              <Icon
+                color="#FFC81E"
+                size={24}
+                className="sm:size-5 md:size-5 lg:size-7"
+              />
+            </Link>
+          ))}
+        </div>
+      </div>
+      
+      {/* Right section */}
+      <div className="grid sm:grid-cols-3 sm:col-span-2 sm:gap-2 sm:pt-24 md:pt-24 lg:pt-29">
+        {Object.entries(footerLinks).map(([title, links], index) => (
+          <div key={index} className="sm:text-left sm:space-y-2">
+            <h2 className="sm:text-lg lg:text-2xl font-leckerli text-[#FFFCF5]">
+              {title}
+            </h2>
+            <ul className="sm:space-y-1">
+              {links.map((link, linkIndex) => (
+                <li
+                  key={linkIndex}
+                  className="sm:text-xs md:text-sm lg:text-lg text-[#FFFCF5] hover:text-yellow-300 transition-colors cursor-pointer"
+                >
+                  {link}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+  
+  {/* Bottom pattern with proper z-index */}
+  <div className="w-full absolute left-0 bottom-0 z-10">
+    <Image
+      src="/footer-pattern.svg"
+      alt="Footer pattern"
+      width={500}
+      height={300}
+      className="w-full"
+      priority
+    />
+  </div>
+</footer>
 
       <footer className="md:hidden block relative w-full">
         {/* Top Wave Background */}
