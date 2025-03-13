@@ -118,8 +118,8 @@ function Hero() {
   return (
     <div className='relative pt-15 inset-0'>
       {/* Desktop View */}
-      <div className='hidden hero-bg bg-center bg-cover bg-no-repeat h-[34vh] md:flex md:flex-col items-center justify-start'>
-        <div><Image src="/logo.svg" alt="Festival logo" width={127} height={52} /></div>
+      <div className='hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start'>
+        <div><Image className='size-30 xl:size-52' src="/logo.svg" alt="Festival logo" width={127} height={52} /></div>
         <h1 className='text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl'>18th APRIL - 20th APRIL 2025<br/>
         Taj Hotels, Puri</h1>
       </div>
