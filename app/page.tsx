@@ -15,7 +15,7 @@ export default function Home() {
       <About />
       <Partners />
       <Speakers />
-      {/* <Programes /> */}
+      <Programes />
       <Events />
       <Registration />
       <div className="md:hidden">
