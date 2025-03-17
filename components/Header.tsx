@@ -63,7 +63,7 @@ function Header() {
           onClick={toggleMenu}
           className="md:hidden text-black focus:outline-none"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        >
+        > 
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
