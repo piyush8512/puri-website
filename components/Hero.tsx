@@ -113,23 +113,22 @@ import React from 'react'
 import Image from 'next/image'
 import {Button} from '@/components/ui/button'
 
-
 function Hero() {
   return (
     <div className='relative pt-15 inset-0'>
       {/* Desktop View */}
       <div className='hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start'>
         <div><Image className='size-30 xl:size-52' src="/logo.svg" alt="Festival logo" width={127} height={52} /></div>
-        <h1 className='text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl'>18th APRIL - 20th APRIL 2025<br/>
-        Taj Hotels, Puri</h1>
+        <h1 className='text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#D72327] font-bold'>18th APRIL - 20th APRIL 2025</h1>
+        <Image src='/tajLogo.svg' alt="taj logo" width={127} height={52} className='object-contain ml-5 size-25 xl:size-42'/>
       </div>
-      <div className='hero-temple bg-center bg-cover bg-no-repeat h-[95vh] hidden md:block'></div>
+      <div className='hero-temple-img bg-center bg-cover bg-no-repeat h-[95vh] hidden md:block'></div>
       {/* Mobile View */}
       <div className='md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex justify-center items-center'>
         <Image src="/centermobilelogo.png" alt="Festival logo" width={67} height={52} className='object-cover full'/>
       </div>
       <div className='md:hidden block'>
-      <h1 className='text-center font-libreBodoni md:text-sm lg:text-lg'>18th APRIL - 20th APRIL 2025<br/>
+      <h1 className='text-center font-libreBodoni text-[#D72327] md:text-sm lg:text-lg'>18th APRIL - 20th APRIL 2025<br/>
       Taj Hotels, Puri</h1>
       <p className='text-center font-libreBodoni text-2xl py-8 text-[#D72327] w-2/3 mx-auto'>Weaving Stories of Tradition, Transformation, and Triumph!</p>
       </div>
