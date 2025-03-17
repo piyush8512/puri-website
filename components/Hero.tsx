@@ -128,12 +128,12 @@ function Hero() {
         <Image src="/centermobilelogo.png" alt="Festival logo" width={67} height={52} className='object-cover full'/>
       </div>
       <div className='md:hidden block'>
-      <h1 className='text-center font-libreBodoni text-[#D72327] md:text-sm lg:text-lg'>18th APRIL - 20th APRIL 2025<br/>
-      Taj Hotels, Puri</h1>
+      <h1 className='text-center font-libreBodoni text-[#D72327] md:text-sm lg:text-lg'>18th APRIL - 20th APRIL 2025</h1>
+      <Image src='/tajLogo.svg' alt="taj logo" width={127} height={52} className='object-contain mx-auto -my-5 size-25 xl:size-42'/>
       <p className='text-center font-libreBodoni text-2xl py-8 text-[#D72327] w-2/3 mx-auto'>Weaving Stories of Tradition, Transformation, and Triumph!</p>
       </div>
       <Button variant={"destructive"} className='z-[100] fixed -left-10 top-1/2 -rotate-90 md:hidden font-leckerli'>Register Now</Button>
-      <div className='md:hidden hero-temple-mobile bg-center bg-cover bg-no-repeat h-120'></div>
+      <div className='md:hidden hero-temple-img bg-center bg-cover bg-no-repeat h-120'></div>
       <div className='bg-[#D72327] h-30 w-full absolute bottom-0 -z-10'></div>
     </div>
   )
