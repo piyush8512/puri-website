@@ -163,7 +163,8 @@
     background-image: url('/speaker-bg.svg');
   }
   .programs-bg{
-    background-image: url('/mandirdancers.svg');
+    /* background-image: url('/mandirdancers.svg'); */
+    background-image: url('/programs-bg.svg');
   }
   .event-bg{
     background-image: url('/event-bg.svg');
