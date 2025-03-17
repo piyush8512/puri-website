@@ -36,7 +36,7 @@ function Speakers() {
   ];
 
   return (
-    <div className=" md:flex hidden speaker-bg bg-no-repeat bg-cover bg-top min-h-[120vh] md:h-[140vh]  flex-col md:flex-row justify-center items-center relative overflow-hidden px-4 sm:px-6 lg:px-8 py-12">
+    <div className=" md:flex hidden speaker-bg bg-no-repeat bg-cover bg-top min-h-[120vh] md:h-[150vh]  flex-col md:flex-row justify-center items-center relative overflow-hidden px-4 sm:px-6 lg:px-8 py-12">
       {/* Yellow Background Circle - Mobile Hidden */}
       <div className="hidden md:block h-48 w-48 lg:h-80 lg:w-80 bg-[#FFEC8C] rounded-full absolute top-4 left-1/6 -z-10"></div>
       <div className="md:hidden block h-30 w-30 lg:h-80 lg:w-80 bg-[#FFEC8C] rounded-full absolute top-22 left-1/6 -z-10"></div>
