@@ -147,6 +147,9 @@
   .hero-temple{
     background-image: url('/hero-temple.svg');
   }
+  .hero-temple-img{
+    background-image: url('/hero-temple-img.svg');
+  }
   .hero-temple-mobile{
     background-image: url('/mobileherobg.png');
   }
