@@ -6,7 +6,7 @@ import Events from "@/components/Events";
 import Registration from "@/components/Registration";
 import Programes from "@/components/Programes";
 import Stay from "@/components/Stay";
-
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
       <div className="md:hidden">
         <Stay />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -185,5 +185,7 @@
   .footer-pattern {
     background-image: url('/footer-pattern.svg');
   }
-  
+  .partnersDate{
+    background-image: url('/partnersDate.svg');
+  }
 }
