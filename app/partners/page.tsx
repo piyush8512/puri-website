@@ -7,7 +7,13 @@ const page = () => {
     <div className="relative py-15 inset-0 overflow-x-hidden">
       {/* Desktop view: hero section with logo and background image */}
       <div className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start relative">
-        <Image src="/partnersDate.svg" alt="Festival logo" width={127} height={52} className="object-contain min-w-xl w-120 h-100"/>
+        <Image
+          src="/partnersDate.svg"
+          alt="Festival logo"
+          width={127}
+          height={52}
+          className="object-contain min-w-xl w-120 h-100"
+        />
       </div>
 
       {/* Mobile view: hero section with logo and background image */}
@@ -20,11 +26,10 @@ const page = () => {
           height={67}
           className="object-cover w-50 sm:w-75"
         />
-        
       </div>
       <h1 className="font-leckerli font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#D72327] text-center md:10 lg:mt-25">
-          Partners
-        </h1>
+        Partners
+      </h1>
       <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 justify-center items-center mt-5 sm:mt-8 md:mt-10 lg:mt-15 px-3 sm:px-4 md:px-5">
         {/* In Association With Section */}
         <div className="w-full max-w-6xl">
@@ -33,7 +38,15 @@ const page = () => {
           </h1>
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-items-center">
             <li className="text-center text-sm sm:text-base md:text-lg">
-              Government of India
+              <Link href="https://odisha.gov.in" target="_blank">
+                <Image
+                  src="/Government_of_India_logo.svg"
+                  alt="odisha seal"
+                  width={150}
+                  height={150}
+                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40"
+                />
+              </Link>
             </li>
             <li>
               <Link href="https://odisha.gov.in" target="_blank">
@@ -47,13 +60,37 @@ const page = () => {
               </Link>
             </li>
             <li className="text-center text-sm sm:text-base md:text-lg">
-              Ministry of Culture, GoI
+              <Link href="https://odisha.gov.in" target="_blank">
+                <Image
+                  src="/Ministry_of_Culture_India.svg"
+                  alt="odisha seal"
+                  width={150}
+                  height={150}
+                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40"
+                />
+              </Link>
             </li>
             <li className="text-center text-sm sm:text-base md:text-lg">
-              Ministry of Culture, Odisha Govt.
+              <Link href="https://odisha.gov.in" target="_blank">
+                <Image
+                  src="/logo1.svg"
+                  alt="odisha seal"
+                  width={150}
+                  height={150}
+                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40"
+                />
+              </Link>
             </li>
             <li className="text-center text-sm sm:text-base md:text-lg">
-              IGNCA
+              <Link href="https://odisha.gov.in" target="_blank">
+                <Image
+                  src="/IGNCA.svg"
+                  alt="odisha seal"
+                  width={150}
+                  height={150}
+                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40"
+                />
+              </Link>
             </li>
           </ul>
         </div>

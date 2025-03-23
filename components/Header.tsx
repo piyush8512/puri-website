@@ -10,7 +10,7 @@ function Header() {
 
   // Close menu when escape key is pressed
   useEffect(() => {
-    const handleEscKey = (event) => {
+    const handleEscKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape' && isMenuOpen) {
         setIsMenuOpen(false);
       }
