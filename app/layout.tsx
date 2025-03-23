@@ -38,7 +38,7 @@ const interTight = Inter_Tight({
 });
 
 export const metadata: Metadata = {
-  title: "Puri Litraray Festival",
+  title: "Puri Literary Festival",
   description: "puri literary festival",
 };
 
