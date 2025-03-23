@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
-    <div className="relative py-15 inset-0 overflow-x-hidden">
+    <div className="relative pt-15 inset-0 overflow-x-hidden">
       {/* Desktop view: hero section with logo and background image */}
       <div className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start relative">
         <Image
@@ -27,10 +28,10 @@ const page = () => {
           className="object-cover w-50 sm:w-75"
         />
       </div>
-      <h1 className="font-leckerli font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#D72327] text-center md:10 lg:mt-25">
+      <h1 className="font-leckerli font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#D72327] text-center md:mt-10 lg:mt-10">
         Partners
       </h1>
-      <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 justify-center items-center mt-5 sm:mt-8 md:mt-10 lg:mt-15 px-3 sm:px-4 md:px-5">
+      <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 justify-center items-center mt-5 sm:mt-8 md:mt-10 lg:mt-10 px-3 sm:px-4 md:px-5">
         {/* In Association With Section */}
         <div className="w-full max-w-6xl">
           <h1 className="font-libreBodoni font-medium text-xl sm:text-2xl text-center py-3 sm:py-5">
@@ -181,6 +182,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

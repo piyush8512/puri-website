@@ -67,7 +67,7 @@ function Header() {
             <li className="hover:text-gray-700 cursor-pointer">Sessions</li>
             <li className="hover:text-gray-700 cursor-pointer">Speakers</li>
             <li className="hover:text-gray-700 cursor-pointer">Activities</li>
-            <li className="hover:text-gray-700 cursor-pointer">About Us</li>
+            <li className="hover:text-gray-700 cursor-pointer"><Link href={'/aboutus'}>About Us</Link></li>
             <li className="hover:text-gray-700 cursor-pointer">Contact Us</li>
           </ul>
         </nav>
