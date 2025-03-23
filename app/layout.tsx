@@ -21,7 +21,7 @@ const libreBodoni = Libre_Bodoni({
   variable: "--font-libre-bodoni",
 });
 
-// export { libreCaslon, libreBodoni, pacifico, lobster };
+export { libreCaslon, libreBodoni, pacifico, lobster };
 
 const interSans = Inter({
   variable: "--font-inter-sans",
