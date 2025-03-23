@@ -3,7 +3,6 @@ import { Inter, Inter_Tight, Leckerli_One } from "next/font/google";
 import { Libre_Caslon_Text, Libre_Bodoni } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 import { Pacifico, Lobster } from "next/font/google";
 
@@ -57,7 +56,6 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
