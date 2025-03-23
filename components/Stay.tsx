@@ -1,5 +1,5 @@
 import React from "react";
-import { pacifico, lobster } from "@/app/layout"; // Adjust path if needed
+import { pacifico, lobster } from "@/app/font"; // Adjust path if needed
 
 const Stay = () => {
   return (
