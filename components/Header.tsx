@@ -64,7 +64,7 @@ function Header() {
             <li className="hover:text-gray-700 cursor-pointer"><Link href={'/'}>Home</Link></li>
             <li className="hover:text-gray-700 cursor-pointer"><Link href={'/partners'}>Partners</Link></li>
             <li className="hover:text-gray-700 cursor-pointer">Programs</li>
-            <li className="hover:text-gray-700 cursor-pointer">Sessions</li>
+            <li className="hover:text-gray-700 cursor-pointer"><Link href={'/sessions'}>Sessions</Link></li>
             <li className="hover:text-gray-700 cursor-pointer">Speakers</li>
             <li className="hover:text-gray-700 cursor-pointer">Activities</li>
             <li className="hover:text-gray-700 cursor-pointer"><Link href={'/aboutus'}>About Us</Link></li>
@@ -123,9 +123,9 @@ function Header() {
                 </a>
               </li>
               <li className="w-full text-center pb-2">
-                <a href="#" className="block hover:text-gray-700" onClick={closeMenu}>
+                <Link href="/sessions" className="block hover:text-gray-700" onClick={closeMenu}>
                   Sessions
-                </a>
+                </Link>
               </li>
               <li className="w-full text-center pb-2">
                 <a href="#" className="block hover:text-gray-700" onClick={closeMenu}>
@@ -138,9 +138,9 @@ function Header() {
                 </a>
               </li>
               <li className="w-full text-center pb-2">
-                <a href="#" className="block hover:text-gray-700" onClick={closeMenu}>
+                <Link href="/aboutus" className="block hover:text-gray-700" onClick={closeMenu}>
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="w-full text-center pb-2">
                 <a href="#" className="block hover:text-gray-700" onClick={closeMenu}>
