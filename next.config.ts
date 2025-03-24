@@ -2,7 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  images: { unoptimized: true } 
+  images: { unoptimized: true } ,
+  trailingSlash: true,  // Add this line
+  distDir: 'out'
   /* config options here */
 };
 
