@@ -42,6 +42,7 @@
 'use client'
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Partners: React.FC = () => {
   const partnerLogos: string[] = [
@@ -50,6 +51,14 @@ const Partners: React.FC = () => {
     "/Ministry_of_Culture_India.svg",
     "/logo1.svg",
     "/IGNCA.svg",
+    "/Seal_of_Odisha.svg",
+    "/brhat.jpg",
+    "/isdm.jpg",
+    "/jindalUni.jpg",
+    "/argus.jpg",
+    "/prameya.jpg",
+    "/celsius.png"
+
   ];
   
   // Create refs for the animation container
@@ -80,7 +89,9 @@ const Partners: React.FC = () => {
   return (
     <div className="flex flex-col items-center min-h-[30vh] md:min-h-[70vh] justify-center gap-10 md:gap-15 px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="md:block text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-leckerli text-[#FF0707]">
+      <Link href="./partners">
         Partners
+        </Link>
       </h1>
       
       {/* Scrollable container for infinite loop animation */}
