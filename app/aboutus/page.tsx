@@ -108,7 +108,7 @@ const page = () => {
           className="object-cover w-50 sm:w-75"
         />
       </div>
-      <h1 className="font-leckerli font-bold text-5xl md:text-6xl lg:text-8xl xl:text-9xl text-[#D72327] text-center md:mt-10 lg:mt-15 lg:mb-80">
+      <h1 className="font-leckerli font-bold text-5xl md:text-6xl lg:text-8xl xl:text-7xl text-[#D72327] text-center md:mt-10 lg:mt-15 lg:mb-80">
         About us
       </h1>
 
