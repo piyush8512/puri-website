@@ -188,4 +188,7 @@
   .partnersDate{
     background-image: url('/partnersDate.svg');
   }
+  .aboutHero{
+    background-image: url('/redbgabout.svg');
+  }
 }

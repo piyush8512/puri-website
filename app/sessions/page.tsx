@@ -99,7 +99,9 @@ const Page = () => {
             <div className="relative">
               <Image 
                 src="/dialoguebox.svg" 
-                alt="Dialogue box" 
+                alt="Dialogue box"
+                width={50}
+                height={50} 
                 className="w-80 h-120 object-contain"
               />
               {dialogue.position === 'center' && (
