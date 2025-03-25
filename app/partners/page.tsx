@@ -28,13 +28,11 @@ const page = () => {
           className="object-cover w-50 sm:w-75"
         />
       </div>
-      
+
       <h1 className="font-leckerli font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#D72327] text-center md:mt-10 lg:mt-10">
-      
         Partners
-        
       </h1>
-    
+
       <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 justify-center items-center mt-5 sm:mt-8 md:mt-10 lg:mt-10 px-3 sm:px-4 md:px-5">
         {/* In Association With Section */}
         <div className="w-full max-w-6xl">
@@ -60,7 +58,7 @@ const page = () => {
                   alt="odisha seal"
                   width={150}
                   height={150}
-                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40"
+                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-30 lg:h-30"
                 />
               </Link>
             </li>
@@ -82,7 +80,7 @@ const page = () => {
                   alt="culture of odisha"
                   width={150}
                   height={150}
-                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40"
+                  className="w-23 h-24 sm:w-30 sm:h-32 md:w-34 md:h-36 lg:w-30 lg:h-40"
                 />
               </Link>
             </li>
@@ -112,7 +110,7 @@ const page = () => {
                   <Image
                     src="/brhat.jpg"
                     alt="Brhat logo"
-                    width={150}
+                    width={170}
                     height={150}
                   />
                 </Link>
@@ -122,13 +120,13 @@ const page = () => {
                   <Image
                     src="/isdm.jpg"
                     alt="ISDM logo"
-                    width={150}
+                    width={130}
                     height={150}
                   />
                 </Link>
               </li>
               <li className="text-center text-sm sm:text-base md:text-lg">
-              <Link href="https://www.celsius.com/" target="_blank">
+                <Link href="https://www.celsius.com/" target="_blank">
                   <Image
                     src="/celsius.png"
                     alt="Celsius logo"
@@ -153,7 +151,7 @@ const page = () => {
                   <Image
                     src="/jindalUni.jpg"
                     alt="Jindal University logo"
-                    width={150}
+                    width={200}
                     height={150}
                   />
                 </Link>
@@ -174,7 +172,7 @@ const page = () => {
                   <Image
                     src="/argus.jpg"
                     alt="Argus Media logo"
-                    width={150}
+                    width={110}
                     height={150}
                   />
                 </Link>
@@ -193,7 +191,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

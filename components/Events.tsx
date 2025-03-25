@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
-
+import Link from "next/link";
 
 function Events() {
   return (
@@ -31,9 +31,10 @@ function Events() {
           <p className="py-2 text-sm md:text-base font-medium text-[#FFFCF5] text-center">
             The Craft and Challenges of Indian History Writing
           </p>
-          <IoIosArrowDropright className="absolute top-1/2 right-13 transform translate-x-2 -translate-y-1/2 text-red-500 text-6xl" />
+          <Link href="/sessions">
+            <IoIosArrowDropright className="absolute top-1/2 right-13 transform translate-x-2 -translate-y-1/2 text-red-500 text-6xl" />
+          </Link>
         </div>
-        
       </div>
     </div>
   );

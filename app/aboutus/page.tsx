@@ -26,65 +26,66 @@ const page = () => {
 
   const team = [
     {
-      name: "Shivam",
-      surname: "Raghuwanshi",
-      image: "/Shivamraghuvanshi.png",
+      name: "Pradhumna ",
+      surname: "Malpani",
+      image: "/pradhumnamalpani.svg",
       rotation: "2deg", // Replace with actual image path
     },
     {
-      name: "Shashank Shekhar",
-      surname: "Singh",
-      image: "/shashankssingh.png",
+      name: "Mahendra Singh Sekhala",
+      surname: "Sekhala",
+      image: "/mahendrasingh.svg",
+      rotation: "-1.5deg", // Replace with actual image path
+    },
+
+    {
+      name: "Hema",
+      surname: "Thakur",
+      image: "/hemathakur.svg",
       rotation: "-1.5deg", // Replace with actual image path
     },
     {
-      name: "Shashank Shekhar",
+      name: "Tejaswi",
       surname: "Singh",
-      image: "/shashankssingh.png",
+      image: "/tejaswisingh.svg",
       rotation: "1.5deg", // Replace with actual image path
     },
     {
-      name: "Shashank Shekhar",
-      surname: "Singh",
-      image: "/shashankssingh.png",
+      name: "Mrunmayee Prasad",
+      surname: "Chitale",
+      image: "/mrunmayeeprasad.svg",
       rotation: "-1.5deg", // Replace with actual image path
     },
     {
-      name: "Shashank Shekhar",
-      surname: "Singh",
-      image: "/shashankssingh.png",
+      name: "Siri",
+      surname: "Siriam",
+      image: "/srisriram.svg",
       rotation: "1.5deg", // Replace with actual image path
     },
     {
-      name: "Shashank Shekhar",
-      surname: "Singh",
-      image: "/shashankssingh.png",
+      name: "Sumanya",
+      surname: "Kashyap",
+      image: "/sumanyakashyap.svg",
       rotation: "-1.5deg", // Replace with actual image path
     },
     {
-      name: "Shashank Shekhar",
-      surname: "Singh",
-      image: "/shashankssingh.png",
-      rotation: "1.5deg", // Replace with actual image path
-    },
-    {
-      name: "Shashank Shekhar",
-      surname: "Singh",
-      image: "/shashankssingh.png",
+      name: "Aswathy",
+      surname: "Hariharan",
+      image: "/awasthyahariharan.svg",
       rotation: "-1.5deg", // Replace with actual image path
     },
     {
-      name: "Shashank Shekhar",
-      surname: "Singh",
-      image: "/shashankssingh.png",
+      name: "Pawan Singh",
+      surname: "Butat",
+      image: "/pawansinghbutat.svg",
       rotation: "-1.5deg", // Replace with actual image path
     },
     {
-      name: "Shashank Shekhar",
-      surname: "Singh",
-      image: "/shashankssingh.png",
-      rotation: "-1.5deg", // Replace with actual image path
-    },
+      name: "Pratyush ",
+      surname: "Debasish",
+      image: "/pratyushdebasish.svg",
+      rotation: "-1.5deg",
+    }, // Replace with actual image path
   ];
 
   return (
@@ -116,11 +117,11 @@ const page = () => {
 
       <div className="relative w-full flex items-center justify-center">
         <Image
-          src="/abouthero.svg"
+          src="/aboutHero.svg"
           alt="about Hero"
           width={127}
           height={152}
-          className=" w-full object-contain z-50 absolute top-[5%] md:-top-[18%] lg:-top-[25%] xl:-top-[35%]"
+          className=" w-full object-contain z-50 absolute top-[2%] md:-top-[18%] lg:-top-[25%] xl:-top-[35%] hidden md:block"
         />
         {/* Background Image */}
         <Image
@@ -128,14 +129,14 @@ const page = () => {
           alt="About Us Background"
           layout="fill"
           objectFit="cover"
-          className="absolute inset-0 -z-10"
+          className="absolute inset-0 -z-10 hidden md:block "
         />
 
         {/* Content Wrapper */}
-        <div className="relative w-full max-w-7xl min-h-screen px-6 md:px-8 lg:px-4 flex flex-col md:flex-row items-center md:items-start md:gap-8 my-2 py-16 md:pt-26">
+        <div className="relative bg-[#D72327] md:bg-transparent  w-full max-w-7xl min-h-screen px-6 md:px-8 lg:px-4 flex flex-col md:flex-row items-center md:items-start md:gap-8 my-2 py-16 md:pt-26 ">
           {/* Left Section */}
-          <div className="w-full md:w-1/3 flex flex-col items-start text-left mt-35 md:mt-70">
-            <div className="flex items-center gap-2 mb-4 ml-6 ">
+          <div className="  w-full md:w-1/3 flex flex-col items-center md:items-start md:text-left mt-0 md:mt-70">
+            <div className=" items-center gap-2 mb-4 ml-6 md:flex hidden ">
               <Image
                 src="/shank.svg"
                 alt="Decorative element"
@@ -143,7 +144,7 @@ const page = () => {
                 height={150}
                 className="w-12 md:w-16 lg:w-10"
               />
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#959491] font-leckerli justify-center">
                 Our
               </h1>
               <Image
@@ -154,17 +155,40 @@ const page = () => {
                 className="w-12 md:w-10 lg:w-10 scale-x-[-1]"
               />
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center">
-              Philosophy
+
+            {/* for mobile */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center md:hidden ">
+              Our
             </h1>
-            <h2 className="text-lg md:text-xl font-semibold text-white mt-8">
+            <div className=" items-center gap-2 mb-4 md:hidden flex ">
+              <Image
+                src="/shank.svg"
+                alt="Decorative element"
+                width={60}
+                height={150}
+                className="w-12 md:w-16 lg:w-10"
+              />
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center">
+                Philosophy
+              </h1>
+
+              <Image
+                src="/shank.svg"
+                alt="Decorative element"
+                width={60}
+                height={150}
+                className="w-12 md:w-10 lg:w-10 scale-x-[-1]"
+              />
+            </div>
+
+            <h2 className="text-[#2F3082] md:bg-transparent text-lg md:text-xl font-semibold md:text-white md:mt-8 text-center md:text-left">
               पुरुषोत्तम क्षेत्रं वैकुण्ठस्य सदृशं।
             </h2>
           </div>
 
           {/* Right Section */}
-          <div className="w-full md:w-2/3 text-white pt-24">
-            <p className="text-base md:text-[17px] leading-relaxed">
+          <div className="w-full md:w-2/3 text-white md:pt-24 pt-8  md:pb-0 pb-8">
+            <p className="text-base md:text-[17px] leading-relaxed text-justify ">
               Set against the serene backdrop of Puri, a city steeped in
               spirituality and heritage, the Puri Literary Festival 2025
               celebrates India’s enduring cultural legacy and its progressive
@@ -203,32 +227,42 @@ const page = () => {
             </p>
           </div>
         </div>
+
+        <div className="absolute bottom-0 ">
+          <Image
+            src="/centercurved.png"
+            alt="Decorative element"
+            width={600}
+            height={600}
+            className="  w-ful h-44l "
+          />
+        </div>
       </div>
 
       {/* text */}
-      <div className="flex items-center justify-center min-h-[80vh] text-center flex-col relative">
+      <div className="flex items-center justify-center min-h-[60vh] md:min-h-[80vh] text-center flex-col relative">
         <Image
-          src="bookRider.svg"
+          src="/bookrider.svg"
           alt="Decorative element"
           width={390}
           height={520}
-          className="absolute top-0 md:-top-60 left-0 z-20 size-80 md:size-130 inset-0"
+          className="absolute top-0 md:-top-60 left-0 z-20 size-40 md:size-130 inset-0"
         />
         <Image
-          src="bookWay.svg"
+          src="/bookway.svg"
           alt="Decorative element"
           width={384}
           height={512}
-          className="absolute bottom-0 md:-bottom-50 right-0 z-20 size-80 md:size-120"
+          className="absolute bottom-0 md:-bottom-50 right-0 z-20 size-40 md:size-120"
         />
-        <h1 className="text-[#2F3082] text-3xl md:text-4xl font-bold">
+        <h1 className="text-[#2F3082] text-xl md:text-4xl font-bold">
           Weaving stories of
         </h1>
-        <h1 className="text-3xl md:text-4xl font-bold">
-          <span className="text-[#D72327]">Tradition,</span>
-          <span className="text-[#F5C721]"> Transformation,</span>
-          <span className="text-[#2F3082]"> &</span>
-          <span className="text-[#3E8D19]"> Triumph!</span>
+        <h1 className="text-xl md:text-4xl font-bold">
+          <span className="text-[#D72327] block md:inline">Tradition,</span>
+          <span className="text-[#F5C721] ">Transformation,</span>
+          <span className="text-[#2F3082] ">&</span>
+          <span className="text-[#3E8D19] block md:inline">Triumph!</span>
         </h1>
       </div>
 
