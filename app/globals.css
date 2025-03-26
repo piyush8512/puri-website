@@ -191,4 +191,25 @@
   .aboutHero{
     background-image: url('/redbgabout.svg');
   }
+  .session-slider-bg{
+    background-image: url('/session-slider-bg.svg');
+  }
+  .yellowdialoguebox{
+    background-image: url('/yellowdialoguebox.svg');
+  }
+  .bluedialoguebox{
+    background-image: url('/bluedialoguebox.svg');
+  }
+  .curvedbluebg{
+    background-image: url('/curvedbluebg.svg');
+  }
+  .redparallel{
+    background-image: url('/redparallel.svg');
+  }
+  .yellowparallel{
+    background-image: url('/yellowparallel.svg');
+  }
+  .paralleltree{
+    background-image: url('/paralleltree.svg');
+  }
 }

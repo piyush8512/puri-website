@@ -1,0 +1,70 @@
+{
+  "dialogues": [
+    {
+      "id": 0,
+      "title": "Agents Of Change:",
+      "subtitle": "Role Of Writers As Social Commentators And Activists",
+      "paragraph":
+        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+    },
+    {
+      "id": 1,
+      "title": "Voices Of Resistance:",
+      "subtitle": "Literature As A Tool For Social Justice",
+      "paragraph":
+        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+    },
+    {
+      "id": 2,
+      "title": "Beyond Words:",
+      "subtitle": "The Impact Of Artistic Expression On Society",
+      "paragraph":
+        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+    },
+    {
+      "id": 3,
+      "title": "Cultural Catalysts:",
+      "subtitle": "How Writers Shape Public Discourse",
+      "paragraph":
+        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+    },
+    {
+      "id": 4,
+      "title": "Pens & Protests:",
+      "subtitle": "Writers On The Frontlines Of Change",
+      "paragraph":
+        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+    }
+  ],
+  "paralellDialogues": [
+    {
+      "id": 0,
+      "title": "Purvodaya:",
+      "subtitle": "Role of Odisha and Odias",
+      "paragraph":
+        "Odisha stands at the crossroads of culture and progress from ancient heritage to modern industry. This session uncovers the state's enduring influence on India's artistic, spiritual, and economic fabric while spotlighting its rising role in tourism, renewable energy, and industrial growth. With the Purvodaya initiative paving the way for Eastern India's transformation, panellists will explore how Odisha's rich resources and resilient people are shaping the nation's future."
+    },
+    {
+      "id": 1,
+      "title": "Ink & Identity:",
+      "subtitle": "A Literary and Social Perspective on Odisha",
+      "paragraph":
+        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+    },
+    {
+      "id": 2,
+      "title": "Odia Literature in the 21st Century",
+      "subtitle": "",
+      "paragraph":
+        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+    },
+    {
+      "id": 3,
+      "title": "Cultural Catalysts:",
+      "subtitle": "How Writers Shape Public Discourse",
+      "paragraph":
+        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+    }
+    
+  ]
+}
