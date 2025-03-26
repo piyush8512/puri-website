@@ -97,7 +97,7 @@ const Page: React.FC = () => {
 
       {/* Sessions Section */}
       <section className="text-center">
-        <h1 className="font-leckerli font-bold text-4xl md:text-6xl lg:text-8xl text-[#D72327] pt-5 md:pt-10">
+        <h1 className="font-leckerli font-bold text-4xl md:text-6xl lg:text-6xl text-[#D72327] pt-5 md:pt-10">
           Sessions
         </h1>
 

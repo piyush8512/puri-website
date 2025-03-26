@@ -154,11 +154,10 @@ const page = () => {
                 height={150}
                 className="w-12 md:w-10 lg:w-10 scale-x-[-1]"
               />
-              
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center">
-                Philosophy
-              </h1>
+              Philosophy
+            </h1>
 
             {/* for mobile */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center md:hidden ">
@@ -246,14 +245,14 @@ const page = () => {
       {/* text */}
       <div className="flex items-center justify-center min-h-[60vh] md:min-h-[80vh] text-center flex-col relative">
         <Image
-          src="/bookrider.svg"
+          src="/rider.svg"
           alt="Decorative element"
           width={390}
           height={520}
           className="absolute top-0 md:-top-60 left-0 z-20 size-40 md:size-130 inset-0"
         />
         <Image
-          src="/bookway.svg"
+          src="/booksway.svg"
           alt="Decorative element"
           width={384}
           height={512}

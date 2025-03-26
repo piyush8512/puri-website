@@ -4,11 +4,11 @@ import Footer from "@/components/Footer";
 
 const speakers = [
   { name: "Jagdeep Dhankar", src: "/speakers/jagdeepdhankar.svg" },
-  { name: "Sh. Dharmendra Pradhan", src: "/speakers/shdharmendrapradhan.svg" },
+  { name: "Sh. Dharmendra Pradhan", src: "/speakers/dharmendra.svg" },
   { name: "Hari Babu", src: "/speakers/haribabu.svg" },
   { name: "Mohan Charan", src: "/speakers/mohancharan.svg" },
   { name: "Sachidanand", src: "/speakers/sachidanand.svg" },
-  { name: "Unknown", src: "/speakers/unknown1.svg" },
+  { name: "U", src: "/speakers/unknown1.svg" },
   { name: "Shashi Tharoor", src: "/speakers/shashitharoor.svg" },
   { name: "Shekhar Gupta", src: "/speakers/shekhargupta.svg" },
   { name: "Uday Makhur", src: "/speakers/udaymakhur.svg" },
@@ -23,10 +23,10 @@ const speakers = [
   { name: "pratisharay", src: "/speakers/pratisharay.svg" },
   { name: "shefalivaidya", src: "/speakers/shefalivaidya.svg" },
   { name: "sandeepbalkrishna", src: "/speakers/sandeepbalkrishna.svg" },
-  { name: "shashankssingh", src: "/speakers/shashankssingh.svg" },
-  { name: "shashankssingh", src: "/speakers/shashankssingh.svg" },
-  { name: "shivamraghuvanshi", src: "/speakers/shivamraghuvanshi.svg" },
-  { name: "ommpriyadarshichhotaray", src: "/speakers/ommpriyadarshichhotaray.svg" },
+  // { name: "shashankssingh", src: "/speakers/shashankssingh.svg" },
+  // { name: "shashankssingh", src: "/speakers/shashankssingh.svg" },
+  // { name: "shivamraghuvanshi", src: "/speakers/shivamraghuvanshi.svg" },
+  // { name: "ommpriyadarshichhotaray", src: "/speakers/ommpriyadarshichhotaray.svg" },
 
 
 ];
@@ -63,11 +63,11 @@ const Page = () => {
       {/* Speakers Section */}
       <div className="flex flex-col items-center mt-20 space-y-10">
         {/* First row with 3 images only on desktop */}
-        <div className="hidden lg:grid grid-cols-3 gap-14">
+        <div className=" lg:grid grid-cols-3 gap-14">
           {speakers.slice(0, 3).map((speaker, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <Image src={speaker.src} alt={speaker.name} width={257} height={72} />
-              <p className="mt-2 text-white text-sm font-medium">{speaker.name}</p>
+              <p className="mt-2 text-black text-lg font-medium">{speaker.name}</p>
             </div>
           ))}
         </div>
@@ -77,7 +77,7 @@ const Page = () => {
           {speakers.slice(3).map((speaker, index) => (
             <div key={index + 3} className="flex flex-col items-center text-center">
               <Image src={speaker.src} alt={speaker.name} width={257} height={100} />
-              <p className="mt-2 text-black text-sm font-medium">{speaker.name}</p>
+              <p className="mt-2 text-black text-lg font-medium">{speaker.name}</p>
             </div>
           ))}
         </div>
