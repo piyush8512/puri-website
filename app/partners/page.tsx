@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className="relative pt-15 inset-0 overflow-x-hidden">
       {/* Desktop view: hero section with logo and background image */}
-      <div className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start relative">
+      <div className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start ">
         <Image
           src="/partnersDate.svg"
           alt="Festival logo"
@@ -18,7 +18,7 @@ const page = () => {
       </div>
 
       {/* Mobile view: hero section with logo and background image */}
-      <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative">
+      <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center">
         {/* Logo image */}
         <Image
           src="/mobilePartnersDate.svg"

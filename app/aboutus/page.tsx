@@ -234,7 +234,7 @@ const page = () => {
             alt="Decorative element"
             width={600}
             height={600}
-            className="  w-ful h-44l "
+            className="block md:hidden w-ful h-44l "
           />
         </div>
       </div>
