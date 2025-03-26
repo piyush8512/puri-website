@@ -144,7 +144,7 @@ const page = () => {
                 height={150}
                 className="w-12 md:w-16 lg:w-10"
               />
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#959491] font-leckerli justify-center">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center">
                 Our
               </h1>
               <Image
@@ -154,7 +154,11 @@ const page = () => {
                 height={150}
                 className="w-12 md:w-10 lg:w-10 scale-x-[-1]"
               />
+              
             </div>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center">
+                Philosophy
+              </h1>
 
             {/* for mobile */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center md:hidden ">
