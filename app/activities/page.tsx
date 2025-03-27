@@ -361,7 +361,7 @@ const page = () => {
           culture, and heritage. We believe that these elements should be shared
           by everyone, regardless of their circumstances. The festival is
           particularly focused on providing financial and cultural support to
-          Odisha's Particularly Vulnerable Tribal Groups (PVTGs) and indigenous
+          Odisha&apos;s Particularly Vulnerable Tribal Groups (PVTGs) and indigenous
           artists.
         </p>
       </div>
@@ -423,7 +423,7 @@ const page = () => {
             <div className="w-full lg:w-2/3 text-[10px] md:text-xl lg:text-xl text-gray-700 md:leading-relaxed text-justify">
               <p>
                 Nestled amidst the pages of literature, a vibrant tapestry of
-                Odisha's ancestral artistry awaits you. The Puri Literary
+                Odisha&apos;s ancestral artistry awaits you. The Puri Literary
                 Festival proudly unveils dedicated spaces where the PVTG
                 artisans and tribal entrepreneurs of our land can unfurl the
                 rich, untold stories woven into their crafts, textiles, and
@@ -432,7 +432,7 @@ const page = () => {
                 lifeline to a community, preserving an ancestral heritage while
                 nurturing economic independence. From intricate beadwork to
                 vibrant tapestries, each creation is a testament to the spirit
-                and resilience of Odisha's indigenous people. Here, visitors
+                and resilience of Odisha&apos;s indigenous people. Here, visitors
                 will not only feast their eyes on beauty but also take home a
                 piece of history, woven with tradition and authenticity. In
                 celebrating these artisans, we cherish both their culture and
@@ -497,7 +497,7 @@ const page = () => {
             </div>
 
             <p className="text-xs md:text-base lg:text-lg text-gray-700 leading-relaxed px-4 md:px-0">
-              As the sun sets on the golden shores of Puri, a new dawn for literature emerges—one of celebration, recognition, and brilliance. The PLF Book of the Year Awards 2024 will shine a spotlight on the finest literary creations of our time. Across a spectrum of genres, including Fantasy, Thriller, Historical Fiction, Romance, Women's Fiction, Children's & YA, Biography, Self-Help, Travel, Religion & Spirituality, and Society & Politics, we will honor the pioneers of the written word. But the night will also hold a special honor: the Emerging Author of the Year Award, a tribute to the new voices making waves in the literary world. These awards will not only applaud those who have shaped the literary landscape but will also ignite the passions of future storytellers who are yet to be discovered.
+              As the sun sets on the golden shores of Puri, a new dawn for literature emerges—one of celebration, recognition, and brilliance. The PLF Book of the Year Awards 2024 will shine a spotlight on the finest literary creations of our time. Across a spectrum of genres, including Fantasy, Thriller, Historical Fiction, Romance, Women&apos;s Fiction, Children&apos;s & YA, Biography, Self-Help, Travel, Religion & Spirituality, and Society & Politics, we will honor the pioneers of the written word. But the night will also hold a special honor: the Emerging Author of the Year Award, a tribute to the new voices making waves in the literary world. These awards will not only applaud those who have shaped the literary landscape but will also ignite the passions of future storytellers who are yet to be discovered.
             </p>
           </div>
         </div>
