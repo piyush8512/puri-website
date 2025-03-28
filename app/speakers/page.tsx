@@ -23,10 +23,22 @@ const speakers = [
   { name: "pratisharay", src: "/speakers/pratisharay.svg" },
   { name: "shefalivaidya", src: "/speakers/shefalivaidya.svg" },
   { name: "sandeepbalkrishna", src: "/speakers/sandeepbalkrishna.svg" },
-  // { name: "shashankssingh", src: "/speakers/shashankssingh.svg" },
-  // { name: "shashankssingh", src: "/speakers/shashankssingh.svg" },
-  // { name: "shivamraghuvanshi", src: "/speakers/shivamraghuvanshi.svg" },
-  // { name: "ommpriyadarshichhotaray", src: "/speakers/ommpriyadarshichhotaray.svg" },
+  { name: "saideepak", src: "/speakers/saideepak.svg" },
+  { name: "adityadhar", src: "/speakers/adityadhar.svg" },
+  { name: "ranvirshorey", src: "/speakers/ranvirshoreyr.svg" },
+  { name: "riteshaggarwal", src: "/speakers/riteshaggarwal.svg" },  
+  { name: "nikhilkamath", src: "/speakers/nikhilkamath.svg" },
+  { name: "bhaveshaggarwal", src: "/speakers/bhaveshaggarwal.svg" },
+  { name: "raveenatandon", src: "/speakers/raveenatandon.svg" },
+  { name: "shallujindal", src: "/speakers/shallujindal.svg" },
+  { name: "maliniawasthi", src: "/speakers/maliniawasthin.svg" },
+  { name: "neerajchopra", src: "/speakers/neerajchopra.svg" },
+  { name: "sridharvembu", src: "/speakers/sridharvembu.svg" },
+  { name: "plakisharmaupadhyay", src: "/speakers/plakisharmaupadhyay.svg" },
+  { name: "watermanrajendrasingh", src: "/speakers/watermanrajendrasingh.svg" },
+
+
+  
 
 
 ];

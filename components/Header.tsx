@@ -67,14 +67,18 @@ function Header() {
             <li className="hover:text-gray-700 cursor-pointer">
               <Link href={"/partners"}>Partners</Link>
             </li>
-            <li className="hover:text-gray-700 cursor-pointer">Programs</li>
+            <li className="hover:text-gray-700 cursor-pointer">
+              <Link href={"/programs"}>Programs</Link>
+            </li>
             <li className="hover:text-gray-700 cursor-pointer">
               <Link href={"/sessions"}>Sessions</Link>
             </li>
             <li className="hover:text-gray-700 cursor-pointer">
               <Link href={"/speakers"}>Speakers</Link>
             </li>
-            <li className="hover:text-gray-700 cursor-pointer">Activities</li>
+            <li className="hover:text-gray-700 cursor-pointer">
+              <Link href={"/activities"}>Activities</Link>
+            </li>
             <li className="hover:text-gray-700 cursor-pointer">
               <Link href={"/aboutus"}>About Us</Link>
             </li>
@@ -141,7 +145,7 @@ function Header() {
                   className="block hover:text-gray-700"
                   onClick={closeMenu}
                 >
-                  Programs
+                  <Link href={"/programs"}>Programs</Link>
                 </a>
               </li>
               <li className="w-full text-center pb-2">
@@ -159,7 +163,7 @@ function Header() {
                   className="block hover:text-gray-700"
                   onClick={closeMenu}
                 >
-                  Speakers
+                  <Link href={"/speakers"}>Speakers</Link>
                 </a>
               </li>
               <li className="w-full text-center pb-2">
@@ -168,7 +172,7 @@ function Header() {
                   className="block hover:text-gray-700"
                   onClick={closeMenu}
                 >
-                  Activities
+                  <Link href={"/activities"}>Activities</Link>
                 </a>
               </li>
               <li className="w-full text-center pb-2">
