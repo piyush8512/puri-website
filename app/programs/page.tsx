@@ -27,11 +27,11 @@ const page = () => {
 
       {/* Title Section */}
       <div className="w-full flex flex-col items-center">
-        <h1 className="font-leckerli text-xl md:text-6xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-3 lg:mt-3 lg:mb-0">
-          Special
+        <h1 className="font-leckerli text-xl md:text-4xl lg:text-4xl xl:text-4xl text-[#D72327] text-center md:mt-3 lg:mt-3 lg:mb-0">
+        A Celebration of 
         </h1>
-        <h1 className="font-leckerli text-3xl md:text-6xl lg:text-8xl xl:text-8xl text-[#ECCA19] text-center">
-          Features
+        <h1 className="font-leckerli text-3xl md:text-5xl lg:text-6xl xl:text-6xl text-[#ECCA19] text-center">
+        Heritage & Culture
         </h1>
       </div>
 

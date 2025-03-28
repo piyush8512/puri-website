@@ -5,8 +5,8 @@
 //   return (
 //     <div className="relative w-full  ">
 //      <Image
-//   className="w-full h-[11vh] md:h-[23vh] lg:h-[38vh] xl:h-[44vh] 2xl:h-[48vh] 
-//             hidden md:block 
+//   className="w-full h-[11vh] md:h-[23vh] lg:h-[38vh] xl:h-[44vh] 2xl:h-[48vh]
+//             hidden md:block
 //             mt-0 md:mt-1z lg:mt-7 xl:mt-1"
 //   src="/hero-bg1.svg"
 //   alt="Decorative background"
@@ -32,9 +32,9 @@
 //                2xl:text-2xl 2xl:top-70 2xl:mt-12">
 //   18th APRIL - 20th APRIL 2025
 //   <br />
-//   <span className="font-libreCaslon 
+//   <span className="font-libreCaslon
 //                    md:text-lg
-//                    lg:text-xl 
+//                    lg:text-xl
 //                    xl:text-2xl
 //                    2xl:text-3xl">
 //     Taj Hotels, Puri
@@ -51,7 +51,7 @@
 //           <br />
 //           BOOKS & IDEAS
 //         </span>
-//       </h1> 
+//       </h1>
 
 //       <Button
 //         variant="destructive"
@@ -63,7 +63,7 @@
 //       <div
 //         className="absolute top-16 left-1/2 transform -translate-x-1/2
 //         md:top-11 lg:top-14 xl:top-19
-//         md:-translate-y-1/4 
+//         md:-translate-y-1/4
 //         h-[30vh] md:h-[25vh] lg:h-[20vh] xl:h-[15vh]
 //         w-[18.5vw] md:w-[8.8vw] lg:w-[7vw] xl:w-[5.5vw]"
 //       >
@@ -108,35 +108,79 @@
 //   );
 // }
 
-
-import React from 'react'
-import Image from 'next/image'
-import {Button} from '@/components/ui/button'
+import React from "react";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 function Hero() {
   return (
-    <div className='relative pt-15 inset-0'>
+    <div className="relative pt-15 inset-0">
       {/* Desktop View */}
-      <div className='hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start'>
-        <div><Image className='size-30 xl:size-52' src="/logo.svg" alt="Festival logo" width={127} height={52} /></div>
-        <h1 className='text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#D72327] font-bold'>18th APRIL - 20th APRIL 2025</h1>
-        <Image src='/tajLogo.svg' alt="taj logo" width={127} height={52} className='object-contain ml-5 size-25 xl:size-42'/>
+      <div className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start">
+        <div className="flex justify-center items-center">
+          <Image
+            className="size-30 xl:size-52"
+            src="/logo.svg"
+            alt="Festival logo"
+            width={127}
+            height={52}
+          />
+        </div>
+        <h1 className="text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#D72327] font-bold">
+          18th APRIL - 20th APRIL <br /> 2025
+        </h1>
+        <Image
+          src="/tajLogo.svg"
+          alt="taj logo"
+          width={127}
+          height={52}
+          className="object-contain ml-5 size-25 xl:size-42"
+        />
       </div>
-      <div className='hero-temple-img bg-center bg-cover bg-no-repeat h-[95vh] hidden md:block'></div>
+      <div className="hero-temple-img bg-center bg-cover bg-no-repeat h-[95vh] hidden md:block"></div>
       {/* Mobile View */}
-      <div className='md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex justify-center items-center'>
-        <Image src="/centermobilelogo.png" alt="Festival logo" width={67} height={52} className='object-cover full'/>
+      <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex justify-center items-center">
+        <Image
+          src="/centermobilelogo.png"
+          alt="Festival logo"
+          width={67}
+          height={52}
+          className="object-cover full"
+        />
       </div>
-      <div className='md:hidden block'>
-      <h1 className='text-center font-libreBodoni text-black md:text-sm lg:text-lg'>18th APRIL - 20th APRIL 2025</h1>
-      <Image src='/tajLogo.svg' alt="taj logo" width={127} height={52} className='object-contain mx-auto -my-5 size-25 xl:size-42'/>
-      <p className='text-center font-libreBodoni text-xl py-8 text-[#D72327] w-2/3 mx-auto'>Weaving Stories of Tradition, Transformation, and Triumph!</p>
+      <div className="md:hidden block">
+        <h1 className="text-center font-libreBodoni text-[#D72327] md:text-sm lg:text-lg">
+          18th APRIL - 20th APRIL 2025
+        </h1>
+        <Image
+          src="/tajLogo.svg"
+          alt="taj logo"
+          width={127}
+          height={52}
+          className="object-contain mx-auto -my-5 size-25 xl:size-42"
+        />
+        <p className="text-center font-libreBodoni text-xl py-8 text-[#D72327] w-3/4 mx-auto">
+          <span className="text-[#2F3082]">Weaving Stories of</span>
+          <span className="text-[#D72327]">
+            <br />
+            Tradition,
+          </span>
+          <br /> <span className="text-[#F5C721]">Transformation,</span>
+          <span className="text-[#2F3082]">&</span>
+          <br />
+          <span className="text-[#3E8D19]">Triumph!</span>
+        </p>
       </div>
-      <Button variant={"destructive"} className='z-[100] fixed -left-10 top-1/2 -rotate-90 md:hidden font-leckerli'>Register Now</Button>
-      <div className='md:hidden hero-temple-mobile bg-center bg-cover bg-no-repeat h-80  z-2 '></div>
-      <div className='bg-[#D72327] h-40 w-full absolute bottom-0 -z-20'></div>
+      <Button
+        variant={"destructive"}
+        className="z-[100] fixed -left-10 top-1/2 -rotate-90 md:hidden font-leckerli"
+      >
+        Register Now
+      </Button>
+      <div className="md:hidden hero-temple-mobile bg-center bg-cover bg-no-repeat h-70  z-2 "></div>
+      <div className="bg-[#D72327] h-40 w-full absolute bottom-0 -z-20"></div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

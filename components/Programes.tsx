@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Programes = () => {
   return (
@@ -15,7 +16,9 @@ const Programes = () => {
           Odisha&apos;s cultural legacy through storytelling, folk arts, and
           indigenous crafts.
         </p>
-        <Button variant={"destructive"} className="font-leckerli py-6 px-6 text-sm md:text-base">View All Programmes</Button>
+        <Link href="/programs" >
+        <Button variant={"destructive"} className="font-leckerli py-6 px-6 text-sm md:text-base hover:cursor-pointer "> View All Programmes</Button>
+        </Link>
       </div>
     </div>
   );

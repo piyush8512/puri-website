@@ -18,9 +18,9 @@ export default function Home() {
       <Programes />
       <Events />
       <Registration />
-      <div className="md:hidden">
+      {/* <div className="md:hidden">
         <Stay />
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

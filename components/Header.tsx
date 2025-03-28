@@ -140,13 +140,13 @@ function Header() {
                 </Link>
               </li>
               <li className="w-full text-center pb-2">
-                <a
-                  href="#"
+                <Link
+                  href="/programs"
                   className="block hover:text-gray-700"
                   onClick={closeMenu}
                 >
-                  <Link href={"/programs"}>Programs</Link>
-                </a>
+                  Programs
+                </Link>
               </li>
               <li className="w-full text-center pb-2">
                 <Link
@@ -158,13 +158,13 @@ function Header() {
                 </Link>
               </li>
               <li className="w-full text-center pb-2">
-                <a
-                  href="#"
+                <Link
+                  href="/speakers"
                   className="block hover:text-gray-700"
                   onClick={closeMenu}
                 >
-                  <Link href={"/speakers"}>Speakers</Link>
-                </a>
+                  Speakers
+                </Link>
               </li>
               <li className="w-full text-center pb-2">
                 <a

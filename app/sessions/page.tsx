@@ -97,8 +97,8 @@ const Page: React.FC = () => {
 
       {/* Sessions Section */}
       <section className="text-center">
-        <h1 className="font-leckerli font-bold text-4xl md:text-6xl lg:text-6xl text-[#D72327] pt-5 md:pt-10">
-          Sessions
+        <h1 className="font-leckerli font-bold text-4xl md:text-4xl lg:text-4xl text-[#D72327] pt-5 md:pt-10">
+          Dialogue Sessions
         </h1>
 
         <div className="w-full flex justify-center relative">
@@ -172,8 +172,8 @@ const Page: React.FC = () => {
       {/* Parallel Sessions Section */}
       <section className="relative">
         <div className="relative h-120 mb-45">
-          <div className="w-full absolute top-0 left-0 paralleltree bg-contain md:bg-cover bg-center bg-no-repeat h-175  py-10">
-            <h1 className="font-leckerli font-bold text-4xl md:text-5xl lg:text-6xl text-[#D72327] text-center">
+          <div className="w-full absolute top-0 left-0 paralleltree bg-contain md:bg-cover bg-center bg-no-repeat h-175 ">
+            <h1 className="font-leckerli font-bold text-4xl md:text-4xl lg:text-4xl text-[#D72327] text-center">
               Parallel Sessions
             </h1>
           </div>
@@ -198,7 +198,7 @@ const Page: React.FC = () => {
                     <Card
                       className={
                         index !== parallelDialogueActiveIndex
-                          ? "transition-all blur-sm"
+                          ? "transition-all "
                           : "transition-all"
                       }
                     >
@@ -235,16 +235,16 @@ const Page: React.FC = () => {
         </div>
 
         <div className="h-80 w-full flex justify-center items-center">
-          <div className="relative h-50">
+          <div className="relative h-40">
             <Image
               src="/girlbook.svg"
               alt="Girl Reading Book"
               width={200}
               height={120}
-              className="object-contain absolute top-8 md:top-4 -left-15 md:-left-24 size-42"
+              className="object-contain absolute top-10 md:top-16 -left-15 md:-left-18 size-30"
               priority
             />
-            <Button className="bg-[#ECCA19] text-[#2F3082] font-bold text-4xl font-leckerli px-18 py-12 rounded-full hover:bg-[#C1A513] -z-10 mt-35 [text-shadow:_0_2px_2px_rgb(99_102_241_/_0.8)] md:w-fit w-60">
+            <Button className="bg-[#ECCA19] text-[#2F3082] font-bold text-xl font-leckerli px-8 py-6 rounded-full hover:bg-[#C1A513] -z-10 mt-35 [text-shadow:_0_2px_2px_rgb(99_102_241_/_0.8)] md:w-fit w-40">
               Download <br className="block md:hidden" />
               Brochure
             </Button>

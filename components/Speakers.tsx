@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { IoIosArrowDropright } from "react-icons/io";
+import Link from "next/link";
 
 function Speakers() {
   const speakerPositions = [
@@ -33,11 +34,30 @@ function Speakers() {
     },
   ];
 
+  const mobilespeakers = [
+    {
+      name: "Sh. Gajendra Singh Shekhawat",
+      position: "Ministry of Culture",
+      image: "/Sh. Gajendra Singh Shekhawat.svg",
+    },
+    {
+      name: "Sh. Sarvanand Sonowal",
+      position: "Minister of Ports, Shipping and Waterways",
+      image: "/Sarvanand Sonowal Ji’s.svg",
+    },
+    {
+      name: "Sh. Dharmendra Pradhan",
+      position: "Union Minister for Education",
+      image: "/Sh. Dharmendra Pradhan.svg",
+    }
+  ];
+
   return (
+    <>
     <div className=" md:flex hidden speaker-bg bg-no-repeat bg-cover bg-top min-h-[120vh] md:h-[150vh]  flex-col md:flex-row justify-center items-center relative overflow-hidden px-4 sm:px-6 lg:px-8 py-12">
       {/* Yellow Background Circle - Mobile Hidden */}
       <div className="hidden md:block h-48 w-48 lg:h-80 lg:w-80 bg-[#FFEC8C] rounded-full absolute top-4 left-1/6 -z-10"></div>
-      <div className="md:hidden block h-30 w-30 lg:h-80 lg:w-80 bg-[#FFEC8C] rounded-full absolute top-22 left-1/6 -z-10"></div>
+     
 
       {/* Woman Illustration - Now Visible on Mobile */}
       <Image
@@ -103,7 +123,7 @@ function Speakers() {
                 className="w-full h-auto rounded-xl "
               />
               <div className="text-center">
-                <h3 className="text-[#FFFCF5] font-semibold text-sm">
+                <h3 className="text-[#FFFCF5] font-semibold text-sm pt-2" >
                   {speaker.name}
                 </h3>
                 <p className="text-[#FFFCF5] text-xs">{speaker.position}</p>
@@ -112,8 +132,78 @@ function Speakers() {
           </div>
         ))}
       </div>
-      <IoIosArrowDropright className="absolute top-1/2  right-19 transform translate-x-2 -translate-y-1/2 text-red-500 text-6xl" />
+      <Link href="/speakers">
+      <IoIosArrowDropright className="absolute top-1/2  right-19 transform translate-x-2 -translate-y-1/2 text-red-500 text-6xl" /></Link>
     </div>
+
+
+
+    <div className="md:hidden relative min-h-[60vh] md:h-[150vh] flex flex-col md:flex-row justify-center items-center overflow-hidden px-4 sm:px-6 lg:px-8 py-12">
+  {/* Background Image for Mobile Only */}
+  <div className="absolute top-0 left-0 w-full h-full md:hidden">
+    <Image 
+      src="/darkbluebgabout.png" 
+      alt="darkbluebgabout" 
+      width={768} 
+      height={1024} 
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+
+  {/* Your Content Here */}
+  <div className="z-10 absolute w-full flex justify-center">
+  <div className="block md:hidden w-full max-w-lg mx-auto relative">
+    {/* Title */}
+    <h2 className="text-yellow-400 text-center text-xl font-bold mb-4 font-leckerli">
+      Puri Lit Fest&apos;s <br/> Speakers
+    </h2>
+
+    {/* Speakers Layout */}
+    <div className="grid grid-cols-3  justify-items-center mx-10">
+      {mobilespeakers.map((mobilespeaker, index) => (
+        <div
+          key={`mobile-speaker-${index}`}
+          className="flex flex-col items-center  space-y-2 gap-2 "
+        >
+          {/* Speaker Image with Decorative Frame */}
+          <div className="relative shadow-lg" >
+            <Image
+              src={mobilespeaker.image}
+              alt={mobilespeaker.name.toLowerCase()}
+              width={120}
+              height={120}
+              className="w-22 h-22 object-cover rounded-lg"
+            />
+          </div>
+
+          {/* Speaker Details */}
+          <div className="text-center">
+            <h1 className="text-white text-[9px] font-semibold">{mobilespeaker.name}</h1>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div className="absolute top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2">
+    <Link href="/speakers">
+      
+      <Image src="/mobileyellowarrow2.svg" width={50} height={50} className="w-full h-auto" alt="border decoration" />
+      </Link>
+    </div>
+    <div className="absolute top-0 right-0 transform -translate-x-0 -translate-y-28">
+      <Image src="/mobilebookstack.svg" width={50} height={50} className="w-full h-auto" alt="border decoration" />
+    </div>
+    <div className="absolute top-0 left-0 transform -translate-x-0 -translate-y-28">
+      <Image src="/girlandbookillus.png" width={50} height={50} className="w-full h-auto" alt="border decoration" />
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+    </>
   );
 }
 

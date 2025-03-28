@@ -29,7 +29,7 @@ const page = () => {
         />
       </div>
 
-      <h1 className="font-leckerli font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#D72327] text-center md:mt-10 lg:mt-10">
+      <h1 className="font-leckerli font-bold text-4xl md:text-5xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-10">
         Partners
       </h1>
 

@@ -3,7 +3,7 @@ import { pacifico, lobster } from "@/app/font"; // Adjust path if needed
 
 const Stay = () => {
   return (
-    <div className="flex flex-col items-center justify-center  min-h-[60vh] text-center">
+    <div className=" flex flex-col items-center justify-center  min-h-[60vh] text-center">
       <h1 className={`${pacifico.className} text-3xl sm:text-4xl text-[#F7D100]`}>
         Stay Tuned
       </h1>

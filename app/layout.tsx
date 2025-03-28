@@ -61,16 +61,58 @@
 //   );
 // }
 
+// import type { Metadata } from "next";
+// import "./globals.css";
+// import Header from "@/components/Header";
+
+// import {
+//   interSans,
+//   interTight,
+//   leckerliOne,
+//   libreCaslon,
+//   libreBodoni,
+// } from "./font";
+
+// export const metadata: Metadata = {
+//   title: "Puri Literary Festival",
+//   description: "puri literary festival",
+// };
+
+// export default function RootLayout({
+//   children,
+// }: Readonly<{
+//   children: React.ReactNode;
+// }>) {
+//   return (
+//     <html lang="en">
+//       <meta
+//         name="viewport"
+//         content="width=device-width, initial-scale=1"
+//       ></meta>
+//       <body
+//         suppressHydrationWarning
+//         className={`${interSans.variable} ${interTight.variable} ${leckerliOne.variable} ${libreCaslon.variable} ${libreBodoni.variable} antialiased`}
+//       >
+//         <Header />
+//         {children}
+//       </body>
+//     </html>
+//   );
+// }
+
+
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
-
 import {
+  pacifico,
+  lobster,
+  libreCaslon,
+  libreBodoni,
   interSans,
   interTight,
   leckerliOne,
-  libreCaslon,
-  libreBodoni,
+  ebGaramond, // Import EB Garamond
 } from "./font";
 
 export const metadata: Metadata = {
@@ -80,18 +122,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-      ></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <body
         suppressHydrationWarning
-        className={`${interSans.variable} ${interTight.variable} ${leckerliOne.variable} ${libreCaslon.variable} ${libreBodoni.variable} antialiased`}
+        className={`${interSans.variable} ${interTight.variable} ${leckerliOne.variable} ${libreCaslon.variable} ${libreBodoni.variable} ${pacifico.variable} ${lobster.variable} ${ebGaramond.variable} antialiased`}
       >
         <Header />
         {children}

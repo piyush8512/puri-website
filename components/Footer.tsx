@@ -26,7 +26,7 @@ function Footer() {
 
   return (
     <>
-      <footer className="md:block hidden md:h-[50vh] lg:h-[85vh] relative">
+      <footer className="md:block hidden md:h-[60vh] lg:h-[85vh] relative">
         {/* Background wave image with lower z-index */}
         <div className="absolute inset-0 -z-10 w-full h-full mx-auto">
           <Image
@@ -74,7 +74,7 @@ function Footer() {
             </div>
 
             {/* Right section */}
-            <div className="grid sm:grid-cols-3 sm:col-span-2 sm:gap-2 sm:pt-24 md:pt-24 lg:pt-26">
+            <div className="grid sm:grid-cols-3 sm:col-span-2 sm:gap-2 sm:pt-23 md:pt-22 lg:pt-26">
               {Object.entries(footerLinks).map(([title, links], index) => (
                 <div key={index} className="sm:text-left sm:space-y-2">
                   <h2 className="sm:text-lg lg:text-2xl font-leckerli text-[#FFFCF5]">
