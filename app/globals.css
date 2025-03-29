@@ -194,6 +194,9 @@
   .session-slider-bg{
     background-image: url('/session-slider-bg.svg');
   }
+  .mobilesession-slider-bg{
+    background-image: url('/mobilesession-slider-bg.svg');
+  }
   .yellowdialoguebox{
     background-image: url('/yellowdialoguebox.svg');
   }
@@ -202,6 +205,9 @@
   }
   .curvedbluebg{
     background-image: url('/curvedbluebg.svg');
+  }
+  .mobilecurvedbluebg{
+    background-image: url('/mobilecurvedbluebg.svg');
   }
   .redparallel{
     background-image: url('/redparallel.svg');

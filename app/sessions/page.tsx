@@ -113,7 +113,7 @@ const Page: React.FC = () => {
         </div>
 
         {/* Sessions Carousel */}
-        <div className="session-slider-bg bg-center bg-cover bg-no-repeat h-270 w-full flex items-center justify-center relative -top-40 overflow-hidden">
+        <div className="session-slider-bg bg-center bg-cover bg-no-repeat h-160 md:h-270 w-full flex items-center justify-center relative -top-40 overflow-hidden mt-25 md:m-0">
           <Carousel
             opts={{
               align: "center",
@@ -171,15 +171,15 @@ const Page: React.FC = () => {
 
       {/* Parallel Sessions Section */}
       <section className="relative">
-        <div className="relative h-120 mb-45">
-          <div className="w-full absolute top-0 left-0 paralleltree bg-contain md:bg-cover bg-center bg-no-repeat h-175 ">
-            <h1 className="font-leckerli font-bold text-4xl md:text-4xl lg:text-4xl text-[#D72327] text-center">
+        <div className="relative h-111 md:mb-45">
+          <div className="w-full absolute top-0 left-0 paralleltree bg-contain md:bg-cover bg-center bg-no-repeat h-175">
+            <h1 className="font-leckerli font-bold text-4xl mt-20 md:m-0 md:text-4xl lg:text-4xl text-[#D72327] text-center">
               Parallel Sessions
             </h1>
           </div>
         </div>
         {/* Parallel Sessions Carousel */}
-        <div className="relative w-full flex justify-center items-center pb-45 curvedbluebg bg-bottom bg-cover bg-no-repeat h-150">
+        <div className="relative w-full flex justify-center items-center pb-45 mobilecurvedbluebg bg-center bg-no-repeat bg-cover md:curvedbluebg md:bg-bottom md:bg-cover md:bg-no-repeat h-150">
           <Carousel
             opts={{
               align: "center",
@@ -198,7 +198,7 @@ const Page: React.FC = () => {
                     <Card
                       className={
                         index !== parallelDialogueActiveIndex
-                          ? "transition-all "
+                          ? "transition-all blur-sm"
                           : "transition-all"
                       }
                     >

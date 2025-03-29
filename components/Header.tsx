@@ -119,7 +119,7 @@ function Header() {
             <X size={24} className="text-black" />
           </button>
 
-          <nav className="w-full px-6 py-8">
+          <nav className="w-full px-6 py-8 z-[1000]">
             <ul className="flex flex-col items-center space-y-6 text-lg">
               <li className="w-full text-center pb-2">
                 <Link
@@ -172,7 +172,7 @@ function Header() {
                   className="block hover:text-gray-700"
                   onClick={closeMenu}
                 >
-                  <Link href={"/activities"}>Activities</Link>
+                  <Link href="/activities">Activities</Link>
                 </Link>
               </li>
               <li className="w-full text-center pb-2">
@@ -186,7 +186,7 @@ function Header() {
               </li>
               <li className="w-full text-center pb-2">
                 <Link
-                  href="#"
+                  href="/contactus"
                   className="block hover:text-gray-700"
                   onClick={closeMenu}
                 >
