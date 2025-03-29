@@ -109,21 +109,23 @@ const page = () => {
           className="object-cover w-50 sm:w-75"
         />
       </div>
-      <h1 className="font-leckerli font-bold text-5xl md:text-4xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-15 lg:mb-80">
+      <h1 className="font-leckerli font-bold text-5xl md:text-4xl lg:text-6xl xl:text-8xl text-[#D72327] text-center md:mt-10 lg:mt-15 mb-25  md:mb-60">
         About us
       </h1>
 
       {/* our philosophy */}
-
-      <div className="relative w-full flex items-center justify-center">
-      <Image
+      
+      <div className="relative w-full flex flex-col items-center justify-center">
+        {/* <div className="relative h-25 w-full">      <Image
   src="/aboutHero.svg"
   alt="about Hero"
   width={127}
   height={152}
-  className="w-full object-fit object-center z-50 absolute top-[2%] md:-top-[18%] lg:-top-[25%] xl:-top-[35%] hidden md:block md:w-[80%] lg:w-[140%]"
+  className="w-full h-35 md:h-31 object-cover z-50 absolute top-[2%] md:-top-[18%] lg:-top-[25%] xl:-top-[35%]"
 />
-
+</div> */}
+<div className="absolute w-full h-30 md:h-40 lg:h-80 xl:h-110 aboutHero bg-center bg-cover bg-no-repeat -top-[5%] md:-top-[18%] xl:-top-[30%] z-[100]">
+</div>
         {/* Background Image */}
         <Image
           src="/redbgabout.png"
@@ -195,39 +197,39 @@ const page = () => {
             <p className="text-base md:text-[17px] leading-relaxed text-justify ">
               Set against the serene backdrop of Puri, a city steeped in
               spirituality and heritage, the Puri Literary Festival 2025
-              celebrates India&apos;s enduring cultural legacy and its progressive
-              aspirations. Rooted in the philosophy of Samavāya—the harmonious
-              coexistence of tradition and modernity—the festival seeks to
-              inspire a holistic dialogue that bridges India&apos;s ancient wisdom
-              with its contemporary ambitions. The Puri Literary Festival 2025
-              is an ode to the eternal cyclicity of time and knowledge, a
-              harmonious dialogue between the past and the future, inspired by
-              the sacred wheels of the Konark Sun Temple and the divine Ratha of
-              Lord Jagannath. These wheels symbolize the perpetual motion of
-              life, the ceaseless journey of humanity through epochs, and the
-              profound interplay of tradition and transformation. Key objectives
-              of the session are to reaffirm Puri&apos;s spiritual and cultural
-              legacy and to foster global dialogue with an indigenous lens. At
-              its core, the festival embraces the belief that India&apos;s timeless
-              wisdom and artistic heritage serve not as relics of the past but
-              as guiding lights for the future. It is through this lens that the
-              festival seeks to explore how the nation can ascend to new
-              pinnacles in art, architecture, literature, and economic
-              development while remaining deeply rooted in its cultural ethos.
-              The festival&apos;s impact will extend far beyond the venue, with an
-              outreach program spanning every district of Odisha. Events
-              including heritage walks, folk art performances, and discussions
-              on Odia literature will ensure grassroots participation,
-              rekindling pride in Odisha&apos;s traditions. In schools and colleges,
-              workshops and storytelling sessions will inspire the youth, while
-              expert-led dialogues on environmental sustainability, digital
-              literacy, and cultural preservation. The culmination of these
-              efforts will be a “Vision for Tomorrow” document, encapsulating
-              insights to guide future policy and cultural initiatives. The Puri
-              Literary Festival 2025 promises to be an enriching experience that
-              echoes throughout the state, inspiring a deeper connection with
-              India&apos;s cultural roots while embracing a modern, forward-thinking
-              world.
+              celebrates India&apos;s enduring cultural legacy and its
+              progressive aspirations. Rooted in the philosophy of Samavāya—the
+              harmonious coexistence of tradition and modernity—the festival
+              seeks to inspire a holistic dialogue that bridges India&apos;s
+              ancient wisdom with its contemporary ambitions. The Puri Literary
+              Festival 2025 is an ode to the eternal cyclicity of time and
+              knowledge, a harmonious dialogue between the past and the future,
+              inspired by the sacred wheels of the Konark Sun Temple and the
+              divine Ratha of Lord Jagannath. These wheels symbolize the
+              perpetual motion of life, the ceaseless journey of humanity
+              through epochs, and the profound interplay of tradition and
+              transformation. Key objectives of the session are to reaffirm
+              Puri&apos;s spiritual and cultural legacy and to foster global
+              dialogue with an indigenous lens. At its core, the festival
+              embraces the belief that India&apos;s timeless wisdom and artistic
+              heritage serve not as relics of the past but as guiding lights for
+              the future. It is through this lens that the festival seeks to
+              explore how the nation can ascend to new pinnacles in art,
+              architecture, literature, and economic development while remaining
+              deeply rooted in its cultural ethos. The festival&apos;s impact
+              will extend far beyond the venue, with an outreach program
+              spanning every district of Odisha. Events including heritage
+              walks, folk art performances, and discussions on Odia literature
+              will ensure grassroots participation, rekindling pride in
+              Odisha&apos;s traditions. In schools and colleges, workshops and
+              storytelling sessions will inspire the youth, while expert-led
+              dialogues on environmental sustainability, digital literacy, and
+              cultural preservation. The culmination of these efforts will be a
+              “Vision for Tomorrow” document, encapsulating insights to guide
+              future policy and cultural initiatives. The Puri Literary Festival
+              2025 promises to be an enriching experience that echoes throughout
+              the state, inspiring a deeper connection with India&apos;s
+              cultural roots while embracing a modern, forward-thinking world.
             </p>
           </div>
         </div>
@@ -263,10 +265,18 @@ const page = () => {
           Weaving stories of
         </h1>
         <h1 className="text-xl md:text-4xl font-semibold font-eb-garamond  ">
-          <span className="text-[#D72327] block md:inline font-semibold font-eb-garamond ">Tradition,</span>
-          <span className="text-[#F5C721] font-semibold font-eb-garamond ">Transformation,</span>
-          <span className="text-[#2F3082] font-semibold font-eb-garamond ">&</span>
-          <span className="text-[#3E8D19] block md:inline font-semibold font-eb-garamond ">Triumph!</span>
+          <span className="text-[#D72327] block md:inline font-semibold font-eb-garamond ">
+            Tradition,
+          </span>
+          <span className="text-[#F5C721] font-semibold font-eb-garamond ">
+            Transformation,
+          </span>
+          <span className="text-[#2F3082] font-semibold font-eb-garamond ">
+            &
+          </span>
+          <span className="text-[#3E8D19] block md:inline font-semibold font-eb-garamond ">
+            Triumph!
+          </span>
         </h1>
       </div>
 
@@ -277,7 +287,15 @@ const page = () => {
           alt="Background"
           layout="fill"
           objectFit="cover"
-          className="absolute inset-0 -z-10"
+          className="md:block hidden absolute inset-0 -z-10"
+          priority
+        />
+        <Image
+          src="/mobilefoundingbg2.svg"
+          alt="Background"
+          layout="fill"
+          objectFit="cover"
+          className="block md:hidden absolute inset-0 -z-10"
           priority
         />
 
@@ -352,7 +370,7 @@ const page = () => {
       </div>
 
       <div className="">
-      {/* bg-[#ECCA19] */}
+        {/* bg-[#ECCA19] */}
         {/* Team Heading */}
         <h1 className="text-[#2F3082] text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-30 font-leckerli">
           Team
@@ -360,37 +378,37 @@ const page = () => {
 
         {/* Directors Grid */}
         <div className="pt-12 px-6 md:mx-42 ">
-      {team.length > 0 && (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-          {team.map((member, index) => (
-            <div
-              key={index}
-              className="flex justify-center"
-              style={{ transform: `rotate(${member.rotation})` }}
-            >
-              <div className="bg-white p-4 shadow-lg w-48 md:w-64">
-                <div className="relative bg-[#2F3087] w-full aspect-square mb-4">
-                  <Image
-                    src={member.image}
-                    alt={`${member.name} ${member.surname}`}
-                    layout="fill"
-                    objectFit="cover"
-                  />
+          {team.length > 0 && (
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+              {team.map((member, index) => (
+                <div
+                  key={index}
+                  className="flex justify-center"
+                  style={{ transform: `rotate(${member.rotation})` }}
+                >
+                  <div className="bg-white p-4 shadow-lg w-48 md:w-64">
+                    <div className="relative bg-[#2F3087] w-full aspect-square mb-4">
+                      <Image
+                        src={member.image}
+                        alt={`${member.name} ${member.surname}`}
+                        layout="fill"
+                        objectFit="cover"
+                      />
+                    </div>
+                    <div className="text-center pb-2">
+                      <p className="text-sm md:text-xl font-serif font-semibold">
+                        {member.name}
+                      </p>
+                      <p className="text-sm md:text-xl font-serif font-semibold">
+                        {member.surname}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-center pb-2">
-                  <p className="text-sm md:text-xl font-serif font-semibold">
-                    {member.name}
-                  </p>
-                  <p className="text-sm md:text-xl font-serif font-semibold">
-                    {member.surname}
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
-          ))}
+          )}
         </div>
-      )}
-    </div>
       </div>
 
       <Footer />
