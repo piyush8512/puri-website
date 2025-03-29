@@ -59,9 +59,9 @@ const Registration = () => {
       {/* Main container */}
       <div className="bg-white pb-8 relative">
         {/* Content container with phone illustration and text */}
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap- ">
           {/* Left side - Phone with people walking illustration */}
-          <div className="relative w-full md:w-1/2 lg:w-2/5 flex-shrink-0">
+          <div className="absolute w-full md:w-1/2 lg:w-2/5 flex-shrink-0">
             <Image 
               className='pt-10 md:pt-20 lg:pt-40 mx-auto'
               src="/mobile.svg" 
