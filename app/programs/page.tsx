@@ -27,17 +27,29 @@ const page = () => {
 
       {/* Title Section */}
       <div className="w-full flex flex-col items-center">
-        <h1 className="font-leckerli text-xl md:text-4xl lg:text-4xl xl:text-4xl text-[#D72327] text-center md:mt-3 lg:mt-3 lg:mb-0">
-        A Celebration of 
+        {/* Heading */}
+        <h1 className="font-leckerli text-xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl text-[#D72327] text-center mt-2 md:mt-3 lg:mt-3">
+          A Celebration of 
         </h1>
-        <h1 className="font-leckerli text-3xl md:text-5xl lg:text-6xl xl:text-6xl text-[#ECCA19] text-center">
-        Heritage & Culture
+        <h1 className="font-leckerli text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl text-[#ECCA19] text-center">
+          Heritage &  Culture
         </h1>
+
+        {/* Responsive Image */}
+        <div className="w-full flex justify-center mt-4 md:hidden">
+          <Image
+            src="/programs/programsmobiletemple.png"
+            alt="Festival logo"
+            width={127}
+            height={52}
+            className="object-contain w-[100%] max-w-lg md:max-w-sm lg:max-w-md"
+          />
+        </div>
       </div>
 
       {/* Mustard Background Section - Fixed */}
-      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden mt-60">
-        <div className="absolute inset-0 z-0 h-full w-full">
+      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex  md:items-center justify-center overflow-hidden md:mt-60">
+        <div className="absolute inset-0 z-0 h-full w-full hidden md:block">
           <Image
             src="/programs/mustardbg.svg"
             alt="Yellow Background"
@@ -49,31 +61,52 @@ const page = () => {
             className="w-full h-full"
           />
         </div>
+        <div className="absolute inset-0 z-0 h-[70vh] w-full md:hidden">
+          <Image
+            src="/programs/mobilemustardbg.png"
+            alt="Yellow Background"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            quality={100}
+            priority
+            className="w-[70%] "
+          />
+        </div>
 
         {/* Your content goes here */}
-        <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start w-[90%] md:w-[80%] lg:w-[70%] mx-auto gap-18">
+        <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start w-[90%] md:w-[80%] lg:w-[70%] mx-auto md:gap-18">
           {/* Left Section - Text */}
 
-          <div className="w-full flex justify-center mt-4 md:w-1/3 md:mt-0">
+          <div className="w-full md:w-1/3 text-center md:text-left md:space-y-4 md:mt-20 md:hidden mt-10  ">
+            <h2 className="text-xl md:text-4xl md:text-[#495B0D] text-white">
+              Heritage Walk{" "}
+            </h2>
+            <h1 className="text-sm md:text-3xl font-semibold italic text-[#83660F] ">
+              Vision of the Past to Shape our Present
+            </h1>
+          </div>
+
+          <div className="w-full flex justify-center mt-4 md:w-1/3 md:mt-0 ">
             <Image
               src="/programs/heritagewalk.svg"
               alt="Decorative Line"
               width={357}
               height={52}
-              className="w-3/4 sm:w-1/2 md:w-[357px] shadow-[10px_10px_20px_rgba(0,0,0,0.5)] rounded-lg"
+              className="w-1/3 sm:w-1/2 md:w-[357px] shadow-[10px_10px_20px_rgba(0,0,0,0.5)]  "
             />
           </div>
 
           {/* Right Section - Image with 3D Shadow */}
-          <div className="w-full md:w-2/3 text-center md:text-left space-y-4 mt-20">
-            <h2 className="text-xl md:text-4xl text-[#495B0D]">
+          <div className="w-full md:w-2/3 text-center md:text-left md:space-y-4 md:mt-20 ">
+            <h2 className="text-xl md:text-4xl text-[#495B0D] hidden md:block">
               Heritage Walk{" "}
             </h2>
-            <h1 className="text-3xl md:text-3xl font-semibold italic text-[#83660F]">
+            <h1 className="text-3xl md:text-3xl font-semibold italic text-[#83660F] hidden md:block">
               Vision of the Past to Shape our Present
             </h1>
 
-            <p className="text-[#000000] text-sm md:text-lg">
+            <p className="text-[#000000] text-xs md:text-lg pt-8 md:pt-0 px-12  md:px-0 text-justify " >
               An immersive Heritage Walk, allowing participants to explore
               Puri’s iconic landmarks such as the Jagannath Temple, Gundicha
               Temple, and the vibrant bylanes echoing with tales of devotion and
@@ -87,7 +120,7 @@ const page = () => {
             alt="Decorative Line"
             width={357}
             height={52}
-            className="w-3/4 sm:w-1/2 md:w-[357px]  rounded-lg"
+            className="w-3/4 sm:w-1/2 md:w-[357px]  rounded-lg hidden md:block"
           />
         </div>
         <div className="absolute -bottom-20 left-10 z-100 ">
@@ -96,13 +129,13 @@ const page = () => {
             alt="Decorative Line"
             width={357}
             height={52}
-            className="w-3/4 sm:w-1/2 md:w-[357px]  rounded-lg"
+            className="w-3/4 sm:w-1/2 md:w-[357px]  rounded-lg hidden md:block"
           />
         </div>
       </div>
 
       <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden ">
-        <div className="absolute inset-0 z-0 h-full w-full">
+        <div className="absolute inset-0 z-0 h-[70vh] md:h-full w-full">
           <Image
             src="/programs/voiletbg.svg"
             alt="Yellow Background"
@@ -124,7 +157,7 @@ const page = () => {
             </h1>
             <h2 className="text-xl md:text-4xl text-[#9F6EEA] italic">
               A tapestry of Traditions
-            </h2>
+            </h2> 
             <p className="text-white text-sm md:text-base pt-8">
               While the days will lead to thought-provoking discussions, the
               evenings will soothe the audience with a Cultural Night

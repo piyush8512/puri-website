@@ -9,18 +9,18 @@ import { motion, useAnimation } from "framer-motion";
 
 export default function Page() {
   const controls = useAnimation();
-  
+
   useEffect(() => {
     controls.start({
       opacity: 1,
-      transition: { duration: 0.6 }
+      transition: { duration: 0.6 },
     });
   }, [controls]);
 
   return (
     <div className="relative pt-15 inset-0 overflow-x-hidden">
       {/* Desktop view: hero section with logo and background image */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={controls}
         className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start "
@@ -35,7 +35,7 @@ export default function Page() {
       </motion.div>
 
       {/* Mobile view: hero section with logo and background image */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={controls}
         className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center"
@@ -50,7 +50,7 @@ export default function Page() {
         />
       </motion.div>
 
-      <motion.h1 
+      <motion.h1
         initial={{ opacity: 0 }}
         animate={controls}
         className="font-leckerli font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-10"
@@ -60,7 +60,7 @@ export default function Page() {
 
       <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 justify-center items-center mt-5 sm:mt-8 md:mt-10 lg:mt-10 px-6 sm:px-4 md:px-5">
         {/* In Association With Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -71,7 +71,7 @@ export default function Page() {
             In Association With
           </h1>
           <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-items-center mt-6 md:mt-0">
-            <motion.li 
+            <motion.li
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -88,7 +88,7 @@ export default function Page() {
                 />
               </Link>
             </motion.li>
-            <motion.li 
+            <motion.li
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -104,7 +104,7 @@ export default function Page() {
                 />
               </Link>
             </motion.li>
-            <motion.li 
+            <motion.li
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -121,7 +121,7 @@ export default function Page() {
                 />
               </Link>
             </motion.li>
-            <motion.li 
+            <motion.li
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -138,7 +138,7 @@ export default function Page() {
                 />
               </Link>
             </motion.li>
-            <motion.li 
+            <motion.li
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
@@ -159,7 +159,7 @@ export default function Page() {
         </motion.div>
 
         {/* Session Partners Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -171,7 +171,7 @@ export default function Page() {
           </h1>
           <div>
             <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center">
-              <motion.li 
+              <motion.li
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
@@ -186,7 +186,7 @@ export default function Page() {
                   />
                 </Link>
               </motion.li>
-              <motion.li 
+              <motion.li
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -201,7 +201,7 @@ export default function Page() {
                   />
                 </Link>
               </motion.li>
-              <motion.li 
+              <motion.li
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -222,7 +222,7 @@ export default function Page() {
         </motion.div>
 
         {/* University Partner Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -234,7 +234,7 @@ export default function Page() {
           </h1>
           <div>
             <ul className="grid grid-cols-1 items-center justify-items-center">
-              <motion.li 
+              <motion.li
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -254,7 +254,7 @@ export default function Page() {
         </motion.div>
 
         {/* Media Partners Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -266,7 +266,7 @@ export default function Page() {
           </h1>
           <div className="mb-10 sm:mb-16 md:mb-20 md:mt-4 mt-6">
             <ul className="grid grid-cols-2 sm:grid-cols-2 items-center justify-items-center">
-              <motion.li 
+              <motion.li
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
@@ -281,7 +281,7 @@ export default function Page() {
                   />
                 </Link>
               </motion.li>
-              <motion.li 
+              <motion.li
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
