@@ -236,7 +236,7 @@ const Page = () => {
       </motion.div>
 
       <motion.h1
-        className="font-leckerli font-bold text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-[#D72327] text-center md:mt-10 lg:mt-10"
+        className="font-leckerli font-bold text-2xl md:text-4xl lg:text-4xl xl:text-4xl text-[#D72327] text-center md:mt-10 lg:mt-10"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
@@ -246,7 +246,7 @@ const Page = () => {
 
       {/* Speakers Section */}
       <motion.div
-        className="flex flex-col items-center mt-20 space-y-10"
+        className="flex flex-col items-center mt-15 space-y-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
@@ -275,7 +275,7 @@ const Page = () => {
         </div>
 
         {/* All images in 2-column layout on mobile */}
-        <div className=" grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 md:gap-8 justify-items-center hidden md:grid">
+        <div className=" grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 md:gap-8 justify-items-center hidden md:grid ">
           {speakers.slice(3).map((speaker, index) => (
             <motion.div
               key={index}
@@ -297,7 +297,7 @@ const Page = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 md:gap-8 justify-items-center md:hidden">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 md:gap-8 justify-items-center md:hidden px-5">
           {speakers.map((speaker, index) => (
             <motion.div
               key={index}
@@ -312,7 +312,7 @@ const Page = () => {
                 width={257}
                 height={100}
               />
-              <p className="mt-2 text-black text-lg font-eb-garamond">
+              <p className="mt-2 text-black text-sm font-eb-garamond">
                 {speaker.name}
               </p>
             </motion.div>
