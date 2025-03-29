@@ -78,13 +78,13 @@ const page = () => {
       name: "Pawan Singh",
       surname: "Butat",
       image: "/pawansinghbutat.svg",
-      rotation: "-1.5deg", // Replace with actual image path
+      rotation: "1.5deg", // Replace with actual image path
     },
     {
       name: "Pratyush ",
       surname: "Debasish",
       image: "/pratyushdebasish.svg",
-      rotation: "-1.5deg",
+      rotation: "1.5deg",
     }, // Replace with actual image path
   ];
 
@@ -109,20 +109,21 @@ const page = () => {
           className="object-cover w-50 sm:w-75"
         />
       </div>
-      <h1 className="font-leckerli font-bold text-5xl md:text-6xl lg:text-8xl xl:text-7xl text-[#D72327] text-center md:mt-10 lg:mt-15 lg:mb-80">
+      <h1 className="font-leckerli font-bold text-5xl md:text-4xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-15 lg:mb-80">
         About us
       </h1>
 
       {/* our philosophy */}
 
       <div className="relative w-full flex items-center justify-center">
-        <Image
-          src="/aboutHero.svg"
-          alt="about Hero"
-          width={127}
-          height={152}
-          className=" w-full object-contain z-50 absolute top-[2%] md:-top-[18%] lg:-top-[25%] xl:-top-[35%] hidden md:block"
-        />
+      <Image
+  src="/aboutHero.svg"
+  alt="about Hero"
+  width={127}
+  height={152}
+  className="w-full object-fit object-center z-50 absolute top-[2%] md:-top-[18%] lg:-top-[25%] xl:-top-[35%] hidden md:block md:w-[80%] lg:w-[140%]"
+/>
+
         {/* Background Image */}
         <Image
           src="/redbgabout.png"
@@ -184,7 +185,7 @@ const page = () => {
               />
             </div>
 
-            <h2 className="text-[#2F3082] md:bg-transparent text-lg md:text-xl font-semibold md:text-white md:mt-8 text-center md:text-left">
+            <h2 className="text-[#2F3082] md:bg-transparent text-lg md:text-2xl font-semibold md:text-white md:mt-8 text-center md:text-left">
               पुरुषोत्तम क्षेत्रं वैकुण्ठस्य सदृशं।
             </h2>
           </div>
@@ -194,10 +195,10 @@ const page = () => {
             <p className="text-base md:text-[17px] leading-relaxed text-justify ">
               Set against the serene backdrop of Puri, a city steeped in
               spirituality and heritage, the Puri Literary Festival 2025
-              celebrates India’s enduring cultural legacy and its progressive
+              celebrates India&apos;s enduring cultural legacy and its progressive
               aspirations. Rooted in the philosophy of Samavāya—the harmonious
               coexistence of tradition and modernity—the festival seeks to
-              inspire a holistic dialogue that bridges India’s ancient wisdom
+              inspire a holistic dialogue that bridges India&apos;s ancient wisdom
               with its contemporary ambitions. The Puri Literary Festival 2025
               is an ode to the eternal cyclicity of time and knowledge, a
               harmonious dialogue between the past and the future, inspired by
@@ -205,19 +206,19 @@ const page = () => {
               Lord Jagannath. These wheels symbolize the perpetual motion of
               life, the ceaseless journey of humanity through epochs, and the
               profound interplay of tradition and transformation. Key objectives
-              of the session are to reaffirm Puri’s spiritual and cultural
+              of the session are to reaffirm Puri&apos;s spiritual and cultural
               legacy and to foster global dialogue with an indigenous lens. At
-              its core, the festival embraces the belief that India’s timeless
+              its core, the festival embraces the belief that India&apos;s timeless
               wisdom and artistic heritage serve not as relics of the past but
               as guiding lights for the future. It is through this lens that the
               festival seeks to explore how the nation can ascend to new
               pinnacles in art, architecture, literature, and economic
               development while remaining deeply rooted in its cultural ethos.
-              The festival’s impact will extend far beyond the venue, with an
+              The festival&apos;s impact will extend far beyond the venue, with an
               outreach program spanning every district of Odisha. Events
               including heritage walks, folk art performances, and discussions
               on Odia literature will ensure grassroots participation,
-              rekindling pride in Odisha’s traditions. In schools and colleges,
+              rekindling pride in Odisha&apos;s traditions. In schools and colleges,
               workshops and storytelling sessions will inspire the youth, while
               expert-led dialogues on environmental sustainability, digital
               literacy, and cultural preservation. The culmination of these
@@ -225,7 +226,7 @@ const page = () => {
               insights to guide future policy and cultural initiatives. The Puri
               Literary Festival 2025 promises to be an enriching experience that
               echoes throughout the state, inspiring a deeper connection with
-              India’s cultural roots while embracing a modern, forward-thinking
+              India&apos;s cultural roots while embracing a modern, forward-thinking
               world.
             </p>
           </div>
@@ -258,14 +259,14 @@ const page = () => {
           height={512}
           className="absolute bottom-0 md:-bottom-50 right-0 z-20 size-40 md:size-120"
         />
-        <h1 className="text-[#2F3082] text-xl md:text-4xl font-bold">
+        <h1 className="text-[#2F3082] text-xl md:text-4xl font-semibold font-eb-garamond  ">
           Weaving stories of
         </h1>
-        <h1 className="text-xl md:text-4xl font-bold">
-          <span className="text-[#D72327] block md:inline">Tradition,</span>
-          <span className="text-[#F5C721] ">Transformation,</span>
-          <span className="text-[#2F3082] ">&</span>
-          <span className="text-[#3E8D19] block md:inline">Triumph!</span>
+        <h1 className="text-xl md:text-4xl font-semibold font-eb-garamond  ">
+          <span className="text-[#D72327] block md:inline font-semibold font-eb-garamond ">Tradition,</span>
+          <span className="text-[#F5C721] font-semibold font-eb-garamond ">Transformation,</span>
+          <span className="text-[#2F3082] font-semibold font-eb-garamond ">&</span>
+          <span className="text-[#3E8D19] block md:inline font-semibold font-eb-garamond ">Triumph!</span>
         </h1>
       </div>
 
@@ -293,7 +294,7 @@ const page = () => {
               className="w-8 sm:w-10 md:w-12 lg:w-16"
             />
             {/* EDIT: Change the title text if needed */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FFC40C] font-leckerli">
+            <h1 className="text-xl sm:text-4xl md:text-5xl font-bold text-[#FFC40C] font-leckerli">
               Founding
             </h1>
             {/* EDIT: Replace with your actual decorative image */}
@@ -307,7 +308,7 @@ const page = () => {
           </div>
 
           {/* Director Title - EDIT: Change the title text if needed */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FFC40C] font-leckerli mb-12">
+          <h1 className="text-xl sm:text-4xl md:text-5xl font-bold text-[#FFC40C] font-leckerli md:mb-12">
             Director
           </h1>
 
@@ -322,9 +323,9 @@ const page = () => {
                 }}
               >
                 {/* EDIT: Adjust polaroid card dimensions here if needed */}
-                <div className="bg-white p-4 shadow-lg w-64 md:w-72">
+                <div className="bg-white p-2 shadow-lg w-44 md:w-72">
                   {/* Red background with photo - EDIT: Change background color if needed */}
-                  <div className="relative bg-red-600 w-full aspect-square mb-4">
+                  <div className="relative bg-red-600 w-full aspect-square mb-1 md:mb-4">
                     <Image
                       src={director.image}
                       alt={`${director.name} ${director.surname}`}
@@ -336,10 +337,10 @@ const page = () => {
 
                   {/* Name text - EDIT: Adjust text styling if needed */}
                   <div className="text-center pb-2">
-                    <p className="text-xl font-serif font-medium">
+                    <p className="text-sm font-serif font-semibold">
                       {director.name}
                     </p>
-                    <p className="text-xl font-serif font-medium">
+                    <p className="text-sm font-serif font-semibold">
                       {director.surname}
                     </p>
                   </div>
@@ -350,91 +351,46 @@ const page = () => {
         </div>
       </div>
 
-      <div>
+      <div className="">
+      {/* bg-[#ECCA19] */}
         {/* Team Heading */}
-        <h1 className="text-[#2F3082] text-3xl sm:text-4xl md:text-5xl font-bold text-center mt-30 font-leckerli">
+        <h1 className="text-[#2F3082] text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-30 font-leckerli">
           Team
         </h1>
 
         {/* Directors Grid */}
-        <div className="pt-12 space-y-10 px-12">
-          {team.length > 0 && (
-            <>
-              {/* Grouping items into rows of 3 and 2 */}
-              {team.map((_, i, arr) => {
-                if (i % 5 === 0) {
-                  return (
-                    <div
-                      key={`row-${i}`}
-                      className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center"
-                    >
-                      {arr.slice(i, i + 3).map((team, index) => (
-                        <div
-                          key={index}
-                          className="flex justify-center"
-                          style={{ transform: `rotate(${team.rotation})` }}
-                        >
-                          <div className="bg-white p-4 shadow-lg w-64 md:w-72">
-                            <div className="relative bg-[#2F3087] w-full aspect-square mb-4">
-                              <Image
-                                src={team.image}
-                                alt={`${team.name} ${team.surname}`}
-                                layout="fill"
-                                objectFit="cover"
-                              />
-                            </div>
-                            <div className="text-center pb-2">
-                              <p className="text-xl font-serif font-medium">
-                                {team.name}
-                              </p>
-                              <p className="text-xl font-serif font-medium">
-                                {team.surname}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  );
-                } else if (i % 5 === 3) {
-                  return (
-                    <div
-                      key={`row-${i}`}
-                      className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center"
-                    >
-                      {arr.slice(i, i + 2).map((team, index) => (
-                        <div
-                          key={index}
-                          className="flex justify-center"
-                          style={{ transform: `rotate(${team.rotation})` }}
-                        >
-                          <div className="bg-white p-4 shadow-lg w-64 md:w-72">
-                            <div className="relative bg-[#2F3087] w-full aspect-square mb-4">
-                              <Image
-                                src={team.image}
-                                alt={`${team.name} ${team.surname}`}
-                                layout="fill"
-                                objectFit="cover"
-                              />
-                            </div>
-                            <div className="text-center pb-2">
-                              <p className="text-xl font-serif font-medium">
-                                {team.name}
-                              </p>
-                              <p className="text-xl font-serif font-medium">
-                                {team.surname}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  );
-                }
-              })}
-            </>
-          )}
+        <div className="pt-12 px-6 md:mx-42 ">
+      {team.length > 0 && (
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+          {team.map((member, index) => (
+            <div
+              key={index}
+              className="flex justify-center"
+              style={{ transform: `rotate(${member.rotation})` }}
+            >
+              <div className="bg-white p-4 shadow-lg w-48 md:w-64">
+                <div className="relative bg-[#2F3087] w-full aspect-square mb-4">
+                  <Image
+                    src={member.image}
+                    alt={`${member.name} ${member.surname}`}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="text-center pb-2">
+                  <p className="text-sm md:text-xl font-serif font-semibold">
+                    {member.name}
+                  </p>
+                  <p className="text-sm md:text-xl font-serif font-semibold">
+                    {member.surname}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
+      )}
+    </div>
       </div>
 
       <Footer />
