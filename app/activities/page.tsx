@@ -111,7 +111,7 @@
 //                 their stories, ensuring that their legacy continues to thrive.
 //               </p>
 //             </div>
-            
+
 //           </div>
 //         </div>
 
@@ -326,8 +326,7 @@
 
 // export default page;
 
-
-'use client';
+"use client";
 import React from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
@@ -336,19 +335,19 @@ import { motion } from "framer-motion";
 const Page = () => {
   const fadeIn = {
     hidden: { opacity: 0 },
-    visible: { 
-      opacity: 1, 
-      transition: { 
+    visible: {
+      opacity: 1,
+      transition: {
         duration: 0.8,
-        ease: "easeOut"
-      } 
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
     <div className="relative pt-16 inset-0 overflow-x-hidden items-center justify-center w-full">
       {/* header */}
-      <motion.div 
+      <motion.div
         className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[30vh] md:flex md:flex-col items-center justify-start relative w-full"
         initial="hidden"
         whileInView="visible"
@@ -363,7 +362,7 @@ const Page = () => {
           className="object-contain min-w-xl w-120 h-100"
         />
       </motion.div>
-      <motion.div 
+      <motion.div
         className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative"
         initial="hidden"
         whileInView="visible"
@@ -380,7 +379,7 @@ const Page = () => {
       </motion.div>
 
       {/* Titles */}
-      <motion.div 
+      <motion.div
         className="w-full flex flex-col items-center"
         initial="hidden"
         whileInView="visible"
@@ -396,7 +395,7 @@ const Page = () => {
       </motion.div>
 
       {/* Intro paragraph */}
-      <motion.div 
+      <motion.div
         className="w-full px-4 md:px-0"
         initial="hidden"
         whileInView="visible"
@@ -427,7 +426,7 @@ const Page = () => {
             fill
             style={{
               objectFit: "cover",
-              objectPosition: "center"
+              objectPosition: "center",
             }}
             quality={100}
             priority
@@ -439,7 +438,7 @@ const Page = () => {
             fill
             style={{
               objectFit: "cover",
-              objectPosition: "center"
+              objectPosition: "center",
             }}
             quality={100}
             priority
@@ -448,7 +447,7 @@ const Page = () => {
         </div>
 
         {/* Content */}
-        <motion.div 
+        <motion.div
           className="relative z-10 px-2 md:px-8 lg:px-16 py-0 md:py-12 w-full"
           initial="hidden"
           whileInView="visible"
@@ -487,12 +486,11 @@ const Page = () => {
                 their stories, ensuring that their legacy continues to thrive.
               </p>
             </div>
-            
           </div>
         </motion.div>
 
         {/* Illustrations */}
-        <motion.div 
+        <motion.div
           className="absolute -top-[11%] left-0 md:-top-80 md:-left-20 sm:-left-10 -z-10 w-22 sm:w-36 md:w-48 lg:w-86 -rotate-15"
           initial="hidden"
           whileInView="visible"
@@ -505,12 +503,12 @@ const Page = () => {
             width={200}
             height={200}
             style={{
-              width: '100%',
-              height: 'auto'
+              width: "100%",
+              height: "auto",
             }}
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           className="absolute -top-[6%] right-0 md:-top-30 md:-right-0 sm:-right-0 -z-10 w-24 sm:w-36 md:w-48 lg:w-86"
           initial="hidden"
           whileInView="visible"
@@ -523,12 +521,12 @@ const Page = () => {
             width={200}
             height={200}
             style={{
-              width: '100%',
-              height: 'auto'
+              width: "100%",
+              height: "auto",
             }}
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           className="absolute bottom-24 left-0 sm:left-8 z-20 w-24 sm:w-36 md:w-48 lg:w-56"
           initial="hidden"
           whileInView="visible"
@@ -541,13 +539,13 @@ const Page = () => {
             width={200}
             height={200}
             style={{
-              width: '100%',
-              height: 'auto'
+              width: "100%",
+              height: "auto",
             }}
             className="hidden md:block"
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           className="absolute bottom-34 right-0 sm:right-8 z-20 w-24 sm:w-36 md:w-48 lg:w-56"
           initial="hidden"
           whileInView="visible"
@@ -560,8 +558,8 @@ const Page = () => {
             width={200}
             height={200}
             style={{
-              width: '100%',
-              height: 'auto'
+              width: "100%",
+              height: "auto",
             }}
             className="hidden md:block"
           />
@@ -569,7 +567,7 @@ const Page = () => {
       </div>
 
       {/* whitesection */}
-      <motion.div 
+      <motion.div
         className="relative w-full md:h-[70vh] flex items-center justify-center py-20 md:pb-25"
         initial="hidden"
         whileInView="visible"
@@ -627,7 +625,7 @@ const Page = () => {
             fill
             style={{
               objectFit: "cover",
-              objectPosition: "center"
+              objectPosition: "center",
             }}
             quality={100}
             className="md:block hidden"
@@ -641,7 +639,7 @@ const Page = () => {
             fill
             style={{
               objectFit: "cover",
-              objectPosition: "center"
+              objectPosition: "center",
             }}
             className="md:hidden"
             quality={100}
@@ -649,7 +647,7 @@ const Page = () => {
           />
         </div>
 
-        <motion.div 
+        <motion.div
           className="relative z-10 px-0 md:px-8 lg:px-24 w-full"
           initial="hidden"
           whileInView="visible"
@@ -681,7 +679,7 @@ const Page = () => {
         </motion.div>
 
         {/* Illustrations */}
-        <motion.div 
+        <motion.div
           className="absolute -top-16 md:-top-25 left-1/2 transform -translate-x-1/2 -z-20 w-18 sm:w-36 md:w-48 lg:w-46"
           initial="hidden"
           whileInView="visible"
@@ -694,12 +692,12 @@ const Page = () => {
             width={250}
             height={200}
             style={{
-              width: '100%',
-              height: 'auto'
+              width: "100%",
+              height: "auto",
             }}
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           className="absolute -top-[14%] md:-top-40 -left-6 sm:right-8 -z-10 w-18 sm:w-36 md:w-48 lg:w-46"
           initial="hidden"
           whileInView="visible"
@@ -712,12 +710,12 @@ const Page = () => {
             width={150}
             height={200}
             style={{
-              width: '100%',
-              height: 'auto'
+              width: "100%",
+              height: "auto",
             }}
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           className="absolute md:top-5 -top-[2%] right-0 sm:right-8 z-20 w-24 sm:w-36 md:w-48 lg:w-86"
           initial="hidden"
           whileInView="visible"
@@ -730,12 +728,12 @@ const Page = () => {
             width={250}
             height={200}
             style={{
-              width: '100%',
-              height: 'auto'
+              width: "100%",
+              height: "auto",
             }}
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           className="absolute -bottom-[2%] md:bottom-24 left-0 sm:left-0 z-20 w-24 sm:w-36 md:w-48 lg:w-56"
           initial="hidden"
           whileInView="visible"
@@ -748,12 +746,12 @@ const Page = () => {
             width={200}
             height={200}
             style={{
-              width: '100%',
-              height: 'auto'
+              width: "100%",
+              height: "auto",
             }}
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           className="absolute md:bottom-6 -bottom-[2%] right-0 sm:right-8 z-20 w-20 sm:w-36 md:w-48 lg:w-56"
           initial="hidden"
           whileInView="visible"
@@ -766,15 +764,15 @@ const Page = () => {
             width={200}
             height={200}
             style={{
-              width: '100%',
-              height: 'auto'
+              width: "100%",
+              height: "auto",
             }}
           />
         </motion.div>
       </div>
 
       {/* Download brochure */}
-      <motion.div 
+      <motion.div
         className="relative w-full md:h-[50vh] h-[40vh] flex items-center justify-center"
         initial="hidden"
         whileInView="visible"
@@ -804,4 +802,3 @@ const Page = () => {
 };
 
 export default Page;
-
