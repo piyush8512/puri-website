@@ -124,7 +124,7 @@ const page = () => {
   className="w-full h-35 md:h-31 object-cover z-50 absolute top-[2%] md:-top-[18%] lg:-top-[25%] xl:-top-[35%]"
 />
 </div> */}
-<div className="absolute w-full h-30 md:h-40 lg:h-80 xl:h-110 aboutHero bg-center bg-cover bg-no-repeat -top-[5%] md:-top-[18%] xl:-top-[30%] z-[100]">
+<div className="absolute w-full h-30 md:h-40 lg:h-80 xl:h-110 aboutHero bg-center bg-cover bg-no-repeat -top-[5%] md:-top-[18%] xl:-top-[30%] z-[50]">
 </div>
         {/* Background Image */}
         <Image
