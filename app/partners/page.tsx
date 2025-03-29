@@ -29,17 +29,17 @@ const page = () => {
         />
       </div>
 
-      <h1 className="font-leckerli font-bold text-4xl md:text-5xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-10">
+      <h1 className="font-leckerli font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-10">
         Partners
       </h1>
 
-      <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 justify-center items-center mt-5 sm:mt-8 md:mt-10 lg:mt-10 px-3 sm:px-4 md:px-5">
+      <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 justify-center items-center mt-5 sm:mt-8 md:mt-10 lg:mt-10 px-6 sm:px-4 md:px-5">
         {/* In Association With Section */}
         <div className="w-full max-w-6xl">
-          <h1 className="font-libreBodoni font-medium text-xl sm:text-2xl text-center py-3 sm:py-5">
+          <h1 className="font-libreBodoni font-medium text-xl sm:text-2xl text-center py-3 sm:py-5 mt-7 md:mt-0">
             In Association With
           </h1>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-items-center">
+          <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-items-center mt-6 md:mt-0">
             <li className="text-center text-sm sm:text-base md:text-lg">
               <Link href="https://www.india.gov.in/" target="_blank">
                 <Image
@@ -58,7 +58,7 @@ const page = () => {
                   alt="odisha seal"
                   width={150}
                   height={150}
-                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-30 lg:h-30"
+                  className="w-22 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-30 lg:h-30"
                 />
               </Link>
             </li>
@@ -80,7 +80,7 @@ const page = () => {
                   alt="culture of odisha"
                   width={150}
                   height={150}
-                  className="w-23 h-24 sm:w-30 sm:h-32 md:w-34 md:h-36 lg:w-30 lg:h-40"
+                  className="w-21 h-24 sm:w-30 sm:h-32 md:w-34 md:h-36 lg:w-30 lg:h-40"
                 />
               </Link>
             </li>
@@ -99,12 +99,12 @@ const page = () => {
         </div>
 
         {/* Session Partners Section */}
-        <div className="w-full max-w-6xl">
-          <h1 className="font-libreBodoni font-medium text-xl sm:text-2xl text-center py-3 sm:py-5">
+        <div className="w-full max-w-3xl">
+          <h1 className="font-libreBodoni font-medium text-lg sm:text-2xl text-center py-3 sm:py-5">
             Session Partners
           </h1>
           <div>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center">
+            <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center">
               <li>
                 <Link href="https://www.brhat.in" target="_blank">
                   <Image
@@ -120,7 +120,7 @@ const page = () => {
                   <Image
                     src="/isdm.jpg"
                     alt="ISDM logo"
-                    width={130}
+                    width={120}
                     height={150}
                   />
                 </Link>
@@ -130,7 +130,7 @@ const page = () => {
                   <Image
                     src="/celsius.png"
                     alt="Celsius logo"
-                    width={150}
+                    width={120}
                     height={150}
                   />
                 </Link>
@@ -141,7 +141,7 @@ const page = () => {
 
         {/* University Partner Section */}
         <div className="w-full max-w-6xl">
-          <h1 className="font-libreBodoni font-medium text-xl sm:text-2xl text-center py-3 sm:py-5">
+          <h1 className="font-libreBodoni font-medium text-lg sm:text-2xl text-center py-0 sm:py-0">
             University Partner
           </h1>
           <div>
@@ -151,7 +151,7 @@ const page = () => {
                   <Image
                     src="/jindalUni.jpg"
                     alt="Jindal University logo"
-                    width={200}
+                    width={170}
                     height={150}
                   />
                 </Link>
@@ -161,18 +161,18 @@ const page = () => {
         </div>
 
         {/* Media Partners Section */}
-        <div className="w-full max-w-6xl">
-          <h1 className="font-libreBodoni font-medium text-xl sm:text-2xl text-center py-3 sm:py-5">
+        <div className="w-full max-w-2xl md:pb-0 pb-6">
+          <h1 className="font-libreBodoni font-medium text-lg sm:text-2xl text-center pb-3 md:pb-10 ">
             Media Partners
           </h1>
-          <div className="mb-10 sm:mb-16 md:mb-20">
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 items-center justify-items-center">
+          <div className="mb-10 sm:mb-16 md:mb-20 md:mt-4 mt-6">
+            <ul className="grid grid-cols-2 sm:grid-cols-2  items-center justify-items-center">
               <li>
                 <Link href="https://www.argusmedia.com/en" target="_blank">
                   <Image
                     src="/argus.jpg"
                     alt="Argus Media logo"
-                    width={110}
+                    width={100}
                     height={150}
                   />
                 </Link>
