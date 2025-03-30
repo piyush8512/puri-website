@@ -563,11 +563,11 @@ const page = () => {
       <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative">
         {/* Logo image */}
         <Image
-          src="/mobilePartnersDate.svg"
+          src="/centermobilelogo.png"
           alt="Festival logo"
           width={67}
           height={67}
-          className="object-cover w-50 sm:w-75"
+          className="object-cover w-20 "
         />
       </div>
       <h1 className="font-leckerli font-bold text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-15 mb-25  md:mb-60">

@@ -17,11 +17,11 @@ const page = () => {
       </div>
       <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative">
         <Image
-          src="/mobilePartnersDate.svg"
+          src="/centermobilelogo.png"
           alt="Festival logo"
           width={67}
           height={67}
-          className="object-cover w-50 sm:w-75"
+          className="object-cover w-20 "
         />
       </div>
 
@@ -29,10 +29,10 @@ const page = () => {
       <div className="w-full flex flex-col items-center relative">
         {/* Heading */}
         <h1 className="font-leckerli text-xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl text-[#D72327] text-center mt-2 md:mt-3 lg:mt-3">
-          A Celebration of 
+          A Celebration of
         </h1>
         <h1 className="font-leckerli text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl text-[#ECCA19] text-center">
-          Heritage &  Culture
+          Heritage & Culture
         </h1>
 
         {/* Responsive Image */}
@@ -120,11 +120,11 @@ const page = () => {
             <h2 className="text-xl md:text-4xl text-[#495B0D] hidden md:block">
               Heritage Walk{" "}
             </h2>
-            <h1 className="text-3xl md:text-3xl font-semibold italic text-[#83660F] hidden md:block">
+            <h1 className="text-3xl md:text-3xl font-semibold italic text-[#83660F] hidden md:block font-ebGaramond">
               Vision of the Past to Shape our Present
             </h1>
 
-            <p className="text-[#000000] text-xs md:text-lg pt-8 md:pt-0 px-12  md:px-0 text-justify " >
+            <p className="text-[#000000] text-xs md:text-lg pt-8 md:pt-0 px-12  md:px-0 text-justify ">
               An immersive Heritage Walk, allowing participants to explore
               Puri’s iconic landmarks such as the Jagannath Temple, Gundicha
               Temple, and the vibrant bylanes echoing with tales of devotion and
@@ -152,8 +152,7 @@ const page = () => {
         </div>
       </div>
 
-
-{/* Voilet */}
+      {/* Voilet */}
       <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden ">
         <div className="absolute inset-0 z-0 h-[70vh] md:h-full w-full">
           <Image
@@ -170,9 +169,7 @@ const page = () => {
 
         {/* Your content goes here */}
         <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start w-[90%] md:w-[80%] lg:w-[70%] mx-auto">
-
-
-        <div className="w-full  justify-center  md:w-1/2  flex md:hidden">
+          <div className="w-full  justify-center  md:w-1/2  flex md:hidden">
             <Image
               src="/programs/culturalnight.png"
               alt="Decorative Line"
@@ -188,7 +185,7 @@ const page = () => {
             </h1>
             <h2 className="text-lg md:text-4xl text-[#9F6EEA] italic">
               A tapestry of Traditions
-            </h2> 
+            </h2>
             <p className="text-white text-xs md:text-base md:pt-8">
               While the days will lead to thought-provoking discussions, the
               evenings will soothe the audience with a Cultural Night
@@ -440,8 +437,6 @@ const page = () => {
           </div>
         </div>
       </div>
-
-    
 
       <Footer />
     </div>

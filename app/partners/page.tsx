@@ -42,11 +42,11 @@ export default function Page() {
       >
         {/* Logo image */}
         <Image
-          src="/mobilePartnersDate.svg"
+          src="/centermobilelogo.png"
           alt="Festival logo"
           width={67}
           height={67}
-          className="object-cover w-50 sm:w-75"
+          className="object-cover w-20 "
         />
       </motion.div>
 
