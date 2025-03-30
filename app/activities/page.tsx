@@ -457,7 +457,7 @@ const Page = () => {
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 px-4 md:px-16 my-25 md:mt-0 w-full relative">
             {/* Heading */}
             <div className="w-full lg:w-1/3 text-center lg:text-center">
-              <h1 className="text-xl md:text-xl lg:text-3xl font-extrabold --font-eb-garamond text-[#D72327] md:mb-0 md:my-0 lg:mb-0">
+              <h1 className="text-xl md:text-xl lg:text-3xl font-extrabold font-ebGaramond text-[#D72327] md:mb-0 md:my-0 lg:mb-0">
                 Tribal Stalls &
                 <br className="hidden lg:block" />
                 Local Indigenous
@@ -584,7 +584,7 @@ const Page = () => {
                 height={200}
                 className="mx-auto mb-4"
               />
-              <h1 className="text-xl md:text-3xl lg:text-4xl font-bold text-[#2F3082] font-eb mb-6 px-2">
+              <h1 className="text-xl md:text-3xl lg:text-4xl font-extrabold text-[#2F3082] font-ebGaramond mb-6 px-2">
                 Inaugural PLF <br />
                 Book of the Year Awards 2024
               </h1>
@@ -657,7 +657,7 @@ const Page = () => {
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-11 md:px-20 px-4 w-full">
             {/* Heading */}
             <div className="w-full lg:w-1/2 text-center lg:text-center px-4 font-eb">
-              <h1 className="text-xl md:text-xl lg:text-4xl font-bold text-[#D72327] md:mb-0 md:my-0 lg:mb-0">
+              <h1 className="text-xl md:text-xl lg:text-4xl font-bold font-ebGaramond text-[#D72327] md:mb-0 md:my-0 lg:mb-0">
                 Showcase by Leading
                 <br className="" />
                 Indian Publishing Houses

@@ -733,21 +733,21 @@ const page = () => {
           height={512}
           className="absolute bottom-0 md:-bottom-50 right-0 z-20 size-40 md:size-120"
         />
-        <h1 className="text-[#2F3082] text-xl md:text-4xl font-semibold font-eb-garamond  ">
+        <h1 className="text-[#2F3082] text-xl md:text-4xl font-semibold font-ebGaramond  ">
           Weaving stories of
         </h1>
-        <h1 className="text-xl md:text-4xl font-semibold font-eb-garamond  ">
-          <span className="text-[#D72327] block md:inline font-semibold font-eb-garamond ">
-            Tradition,
+        <h1 className="text-xl md:text-4xl font-semibold font-ebGaramond ">
+          <span className="text-[#D72327] block md:inline font-semibold font-ebGaramond">
+            Tradition,{" "}
           </span>
-          <span className="text-[#F5C721] font-semibold font-eb-garamond ">
-            Transformation,
+          <span className="text-[#F5C721] font-semibold font-ebGaramond">
+            Transformation,{" "}
           </span>
-          <span className="text-[#2F3082] font-semibold font-eb-garamond ">
-            &
+          <span className="text-[#2F3082] font-semibold font-ebGaramond ">
+            &{" "}
           </span>
           <span className="text-[#3E8D19] block md:inline font-semibold font-eb-garamond ">
-            Triumph!
+            Triumph!{" "}
           </span>
         </h1>
       </motion.div>
@@ -851,7 +851,7 @@ const page = () => {
         {/* Directors Grid */}
         <div className=" md:mx-42 justify-center  mt-12 md:mt-0 ">
           {team.length > 0 && (
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
               {team.map((member, index) => (
                 <motion.div
                   key={index}

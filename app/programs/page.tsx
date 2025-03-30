@@ -97,10 +97,10 @@ const page = () => {
           {/* Left Section - Text */}
 
           <div className="w-full md:w-1/3 text-center md:text-left md:space-y-4 md:mt-20 md:hidden mt-10  ">
-            <h2 className="text-xl md:text-4xl md:text-[#495B0D] text-white">
+            <h2 className="text-xl md:text-4xl md:text-[#495B0D] text-white  font-ebGaramond">
               Heritage Walk{" "}
             </h2>
-            <h1 className="text-sm md:text-3xl font-semibold italic text-[#83660F] ">
+            <h1 className="text-sm md:text-3xl font-semibold italic text-[#83660F]   font-ebGaramond">
               Vision of the Past to Shape our Present
             </h1>
           </div>
@@ -117,10 +117,10 @@ const page = () => {
 
           {/* Right Section - Image with 3D Shadow */}
           <div className="w-full md:w-2/3 text-center md:text-left md:space-y-4 md:mt-40 ">
-            <h2 className="text-xl md:text-4xl text-[#495B0D] hidden md:block">
+            <h2 className="text-xl md:text-4xl text-[#495B0D] hidden md:block  font-ebGaramond">
               Heritage Walk{" "}
             </h2>
-            <h1 className="text-3xl md:text-3xl font-semibold italic text-[#83660F] hidden md:block font-ebGaramond">
+            <h1 className="text-3xl md:text-3xl font-semibold italic text-[#83660F] hidden md:block  font-ebGaramond">
               Vision of the Past to Shape our Present
             </h1>
 
@@ -180,10 +180,10 @@ const page = () => {
           </div>
           {/* Left Section - Text */}
           <div className="w-full md:w-2/3 text-center md:text-left md:space-y-4 mt-12 md:mt-32">
-            <h1 className="text-xl md:text-5xl font-bold text-white">
+            <h1 className="text-xl md:text-5xl font-bold text-white  font-ebGaramond">
               Cultural Night{" "}
             </h1>
-            <h2 className="text-lg md:text-4xl text-[#9F6EEA] italic">
+            <h2 className="text-lg md:text-4xl text-[#9F6EEA] italic  font-ebGaramond">
               A tapestry of Traditions
             </h2>
             <p className="text-white text-xs md:text-base md:pt-8">
@@ -251,10 +251,10 @@ const page = () => {
 
           {/* Right Section - Image with 3D Shadow */}
           <div className="w-full md:w-2/3 text-center md:text-left space-y-4 mt-12 md:mt-32">
-            <h2 className="text-xl md:text-4xl text-white">
+            <h2 className="text-xl md:text-4xl text-white  font-ebGaramond">
               Gallery of Pattachitra Art
             </h2>
-            <h1 className="text-2xl md:text-3xl font-semibold text-[#992586] italic">
+            <h1 className="text-2xl md:text-3xl font-semibold text-[#992586] italic  font-ebGaramond">
               Stories in Strokes
             </h1>
             <p className="text-white   text-sm md:text-base pt-8">
@@ -293,10 +293,10 @@ const page = () => {
         <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start w-[90%] md:w-[80%] lg:w-[70%] mx-auto  gap-15">
           {/* Left Section - Text */}
           <div className="w-full md:w-2/3 text-center md:text-left space-y-4 mt-14 md:mt-33">
-            <h1 className="text-3xl md:text-5xl font-bold text-white">
+            <h1 className="text-3xl md:text-5xl font-bold text-white  font-ebGaramond">
               Tales by the Tide{" "}
             </h1>
-            <h2 className="text-xl md:text-4xl text-[#2F3082] italic">
+            <h2 className="text-xl md:text-4xl text-[#2F3082] italic  font-ebGaramond">
               Seaside Storytelling Sessions
             </h2>
             <p className="text-[#000000] text-sm md:text-base pt-12">
@@ -360,11 +360,11 @@ const page = () => {
           </div>
 
           {/* Right Section - Image with 3D Shadow */}
-          <div className="w-full md:w-2/3 text-center md:text-left space-y-4 md:mt-30 ">
+          <div className="w-full md:w-2/3 text-center md:text-left space-y-4 md:mt-30  font-ebGaramond ">
             <h2 className="text-xl md:text-4xl text-white">
               Timeless Sands of Odisha
             </h2>
-            <h1 className="text-2xl md:text-2xl font-semibold text-[#7F1822] italic">
+            <h1 className="text-2xl md:text-2xl font-semibold text-[#7F1822] italic  font-ebGaramond">
               Baluka Kala
             </h1>
 
@@ -410,10 +410,10 @@ const page = () => {
         <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start w-[90%] md:w-[80%] lg:w-[70%] mx-auto">
           {/* Left Section - Text */}
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4 mt-20">
-            <h1 className="text-3xl md:text-5xl font-bold text-white">
+            <h1 className="text-3xl md:text-5xl font-bold text-white  font-ebGaramond">
               Food Festival
             </h1>
-            <h2 className="text-xl md:text-4xl text-[#495B0D] italic">
+            <h2 className="text-xl md:text-4xl text-[#495B0D] italic  font-ebGaramond">
               Taste of the Odia Cuisine
             </h2>
             <p className="text-[#000000] text-sm md:text-base md:pt-12">
