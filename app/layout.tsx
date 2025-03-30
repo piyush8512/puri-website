@@ -100,7 +100,6 @@
 //   );
 // }
 
-
 // import type { Metadata } from "next";
 // import "./globals.css";
 // import Header from "@/components/Header";
@@ -137,7 +136,6 @@
 //   );
 // }
 
-
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -163,9 +161,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-     <body
+      <body
         suppressHydrationWarning
-        className={`${interSans.variable} ${interTight.variable} ${leckerliOne.variable} ${libreCaslon.variable} ${libreBodoni.variable} ${pacifico.variable} ${lobster.variable} ${ebGaramond.variable} antialiased relative`} 
+      className={`${interSans.variable} ${interTight.variable} ${leckerliOne.variable} ${libreCaslon.variable} ${libreBodoni.variable} ${pacifico.variable} ${lobster.variable} ${ebGaramond.variable} antialiased relative`}
       >
         {/* Header Component */}
         <Header />

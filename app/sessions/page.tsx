@@ -85,12 +85,11 @@ const Page: React.FC = () => {
 
         <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center">
           <Image
-            src="/mobilePartnersDate.svg"
+            src="/centermobilelogo.png"
             alt="Festival logo"
             width={67}
             height={67}
-            className="object-cover w-50 sm:w-75"
-            priority
+            className="object-cover w-20 "
           />
         </div>
       </header>

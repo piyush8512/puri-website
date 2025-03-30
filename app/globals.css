@@ -135,6 +135,9 @@
   .font-family{
     font-family: var(--font-libre-caslon-text);
   }
+  .font-ebGaramond{
+    font-family: var(--font-eb-garamond);
+  }
   .font-libreBodoni {
     font-family: var(--font-libre-bodoni);
   }
