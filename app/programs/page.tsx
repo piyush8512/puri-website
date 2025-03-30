@@ -89,7 +89,7 @@ const page = () => {
 
           <div className="w-full flex justify-center mt-4 md:w-1/3 md:mt-0 ">
             <Image
-              src="/programs/heritagewalk.svg"
+              src="/programs/heritagewalk.png"
               alt="Decorative Line"
               width={357}
               height={52}
@@ -98,7 +98,7 @@ const page = () => {
           </div>
 
           {/* Right Section - Image with 3D Shadow */}
-          <div className="w-full md:w-2/3 text-center md:text-left md:space-y-4 md:mt-20 ">
+          <div className="w-full md:w-2/3 text-center md:text-left md:space-y-4 md:mt-40 ">
             <h2 className="text-xl md:text-4xl text-[#495B0D] hidden md:block">
               Heritage Walk{" "}
             </h2>
@@ -134,6 +134,8 @@ const page = () => {
         </div>
       </div>
 
+
+{/* Voilet */}
       <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden ">
         <div className="absolute inset-0 z-0 h-[70vh] md:h-full w-full">
           <Image
@@ -154,7 +156,7 @@ const page = () => {
 
         <div className="w-full  justify-center  md:w-1/2  flex md:hidden">
             <Image
-              src="/programs/culturalnight.svg"
+              src="/programs/culturalnight.png"
               alt="Decorative Line"
               width={357}
               height={52}
@@ -162,7 +164,7 @@ const page = () => {
             />
           </div>
           {/* Left Section - Text */}
-          <div className="w-full md:w-2/3 text-center md:text-left md:space-y-4 mt-12">
+          <div className="w-full md:w-2/3 text-center md:text-left md:space-y-4 mt-12 md:mt-32">
             <h1 className="text-xl md:text-5xl font-bold text-white">
               Cultural Night{" "}
             </h1>
@@ -183,7 +185,7 @@ const page = () => {
           {/* Right Section - Image with 3D Shadow */}
           <div className="w-full  justify-center mt-0 md:w-1/2 md:mt-0 hidden md:flex">
             <Image
-              src="/programs/culturalnight.svg"
+              src="/programs/culturalnight.png"
               alt="Decorative Line"
               width={357}
               height={52}
@@ -224,7 +226,7 @@ const page = () => {
 
           <div className="w-full flex justify-center mt-4 md:w-1/3 md:mt-0">
             <Image
-              src="/programs/food.svg"
+              src="/programs/patchart.png"
               alt="Decorative Line"
               width={357}
               height={52}
@@ -233,7 +235,7 @@ const page = () => {
           </div>
 
           {/* Right Section - Image with 3D Shadow */}
-          <div className="w-full md:w-2/3 text-center md:text-left space-y-4 mt-12">
+          <div className="w-full md:w-2/3 text-center md:text-left space-y-4 mt-12 md:mt-32">
             <h2 className="text-xl md:text-4xl text-white">
               Gallery of Pattachitra Art
             </h2>
@@ -275,7 +277,7 @@ const page = () => {
         </div>
         <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start w-[90%] md:w-[80%] lg:w-[70%] mx-auto  gap-15">
           {/* Left Section - Text */}
-          <div className="w-full md:w-2/3 text-center md:text-left space-y-4 mt-14">
+          <div className="w-full md:w-2/3 text-center md:text-left space-y-4 mt-14 md:mt-33">
             <h1 className="text-3xl md:text-5xl font-bold text-white">
               Tales by the Tide{" "}
             </h1>
@@ -294,7 +296,7 @@ const page = () => {
           {/* Right Section - Image with 3D Shadow */}
           <div className="w-full flex justify-center mt-4 md:w-1/3 md:mt-0">
             <Image
-              src="/programs/food.svg"
+              src="/programs/storyteelling.png"
               alt="Decorative Line"
               width={357}
               height={52}
@@ -334,7 +336,7 @@ const page = () => {
 
           <div className="w-full flex justify-center mt-4 md:w-1/3 md:mt-0">
             <Image
-              src="/programs/food.svg"
+              src="/programs/sandart.png"
               alt="Decorative Line"
               width={357}
               height={52}
@@ -343,7 +345,7 @@ const page = () => {
           </div>
 
           {/* Right Section - Image with 3D Shadow */}
-          <div className="w-full md:w-2/3 text-center md:text-left space-y-4 md:mt-10 ">
+          <div className="w-full md:w-2/3 text-center md:text-left space-y-4 md:mt-30 ">
             <h2 className="text-xl md:text-4xl text-white">
               Timeless Sands of Odisha
             </h2>
@@ -374,7 +376,7 @@ const page = () => {
       </div>
 
       {/* greensection */}
-      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden mt-15">
+      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden my-15">
         {/* Background Image */}
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
@@ -409,9 +411,9 @@ const page = () => {
           </div>
 
           {/* Right Section - Image with 3D Shadow */}
-          <div className="w-full flex justify-center mt-4 md:w-1/2 md:mt-0">
+          <div className="w-full flex justify-center mt-4 md:w-1/2 md:mt-8">
             <Image
-              src="/programs/food.svg"
+              src="/programs/food.png"
               alt="Decorative Line"
               width={357}
               height={52}
@@ -421,7 +423,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="h-[20vh]"></div>
+    
 
       <Footer />
     </div>
