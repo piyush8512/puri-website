@@ -101,6 +101,43 @@
 // }
 
 
+// import type { Metadata } from "next";
+// import "./globals.css";
+// import Header from "@/components/Header";
+// import {
+//   pacifico,
+//   lobster,
+//   libreCaslon,
+//   libreBodoni,
+//   interSans,
+//   interTight,
+//   leckerliOne,
+//   ebGaramond, // Import EB Garamond
+// } from "./font";
+
+// export const metadata: Metadata = {
+//   title: "Puri Literary Festival",
+//   description: "puri literary festival",
+// };
+
+// export default function RootLayout({
+//   children,
+// }: Readonly<{ children: React.ReactNode }>) {
+//   return (
+//     <html lang="en">
+//       <meta name="viewport" content="width=device-width, initial-scale=1" />
+//       <body
+//         suppressHydrationWarning
+//         className={`${interSans.variable} ${interTight.variable} ${leckerliOne.variable} ${libreCaslon.variable} ${libreBodoni.variable} ${pacifico.variable} ${lobster.variable} ${ebGaramond.variable} antialiased`}
+//       >
+//         <Header />
+//         {children}
+//       </body>
+//     </html>
+//   );
+// }
+
+
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -114,10 +151,11 @@ import {
   leckerliOne,
   ebGaramond, // Import EB Garamond
 } from "./font";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Puri Literary Festival",
-  description: "puri literary festival",
+  description: "Puri Literary Festival",
 };
 
 export default function RootLayout({
@@ -125,13 +163,25 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <body
+     <body
         suppressHydrationWarning
-        className={`${interSans.variable} ${interTight.variable} ${leckerliOne.variable} ${libreCaslon.variable} ${libreBodoni.variable} ${pacifico.variable} ${lobster.variable} ${ebGaramond.variable} antialiased`}
+        className={`${interSans.variable} ${interTight.variable} ${leckerliOne.variable} ${libreCaslon.variable} ${libreBodoni.variable} ${pacifico.variable} ${lobster.variable} ${ebGaramond.variable} antialiased relative`} 
       >
+        {/* Header Component */}
         <Header />
+
+        {/* Page Content */}
         {children}
+
+        {/* Register Now button (Mobile only) */}
+        <div className="sm:block md:hidden fixed left-4 top-1/2 -translate-y-1/2 z-50 -rotate-90 origin-left">
+          <Link
+            href="/register"
+            className="bg-[#D72327] text-white font-leckerli py-2 px-6 rounded-lg shadow-lg hover:bg-[#D72327] transition duration-300"
+          >
+            Register Now
+          </Link>
+        </div>
       </body>
     </html>
   );

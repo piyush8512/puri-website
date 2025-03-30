@@ -157,7 +157,6 @@ const About = () => {
       <motion.div
         ref={sectionRef}
         className="bg-[#D72327] hidden md:flex min-h-[60vh] md:min-h-[80vh] relative flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 pb-24 md:pb-0"
-      
       >
         {/* Male image - left side */}
         <motion.div
@@ -237,12 +236,13 @@ const About = () => {
       {/* Mobile View */}
       <motion.div
         ref={mobileSectionRef}
-        className="relative block md:hidden"
+        className="relative block md:hidden "
         initial={{ opacity: 0 }}
         animate={
           isMobileVisible ? { opacity: 1, transition: { duration: 1.2 } } : {}
         }
       >
+        <div className="w-full bg-[#D72327] md:hidden  top-0 h-20"></div>
         {/* Text Content Positioned Over the Image */}
         <motion.div
           className="absolute -top-14 left-0 w-full h-full flex flex-col justify-center items-center text-center z-10 px-2"

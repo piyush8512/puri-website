@@ -422,7 +422,8 @@
 import React from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import { motion,Variants  } from "framer-motion";
+import { motion, Variants } from "framer-motion";
+import Link from "next/link";
 
 const page = () => {
   const fadeIn = {
@@ -466,62 +467,81 @@ const page = () => {
       name: "Pradhumna ",
       surname: "Malpani",
       image: "/pradhumnamalpani.svg",
-      rotation: "2deg", // Replace with actual image path
+      rotation: "2deg",
+      instagram:
+        "https://www.instagram.com/pradhyumnamalpani?igsh=dzIwa2lrN3JyaWJj", // Replace with actual image path
     },
     {
       name: "Mahendra Singh Sekhala",
       surname: "Sekhala",
       image: "/mahendrasingh.svg",
-      rotation: "-1.5deg", // Replace with actual image path
+      rotation: "-1.5deg",
+      instagram:
+        " https://www.instagram.com/jnu_mahendra?igsh=MWdzNGhxd3F0c293YQ==", // Replace with actual image path
     },
 
     {
       name: "Hema",
       surname: "Thakur",
       image: "/hemathakur.svg",
-      rotation: "-1.5deg", // Replace with actual image path
+      rotation: "-1.5deg",
+      // Replace with actual image path
     },
     {
       name: "Tejaswi",
       surname: "Singh",
       image: "/tejaswisingh.svg",
-      rotation: "1.5deg", // Replace with actual image path
+      rotation: "1.5deg",
+      instagram:
+        "https://www.instagram.com/tejaswisingh_?igsh=ZmNlMTNta2k4dXJr",
+      // Replace with actual image path
     },
     {
       name: "Mrunmayee Prasad",
       surname: "Chitale",
       image: "/mrunmayeeprasad.svg",
-      rotation: "-1.5deg", // Replace with actual image path
+      rotation: "-1.5deg",
+      instagram:
+        "https://www.instagram.com/mrunmayee_prasad_chitale?igsh=MWUya21ycjFwNmE2eg%3D%3D&utm_source=qr", // Replace with actual image path
     },
     {
       name: "Siri",
       surname: "Siriam",
       image: "/srisriram.svg",
-      rotation: "1.5deg", // Replace with actual image path
+      rotation: "1.5deg",
+      instagram: "https://www.instagram.com/chalk.cheer?igsh=b3dkZXI1a2R6a2ts", // Replace with actual image path
     },
     {
       name: "Sumanya",
       surname: "Kashyap",
       image: "/sumanyakashyap.svg",
-      rotation: "-1.5deg", // Replace with actual image path
+      rotation: "-1.5deg",
+      instagram:
+        "https://www.instagram.com/sukanya_sumanya?igsh=MTR6bTNpMW10b2YxdQ==", // Replace with actual image path
     },
     {
       name: "Aswathy",
       surname: "Hariharan",
       image: "/awasthyahariharan.svg",
       rotation: "-1.5deg", // Replace with actual image path
+      instagram:
+        "https://www.instagram.com/achu.hari_5?igsh=MXU3Mmc4eHV1M3cwaw==",
     },
     {
       name: "Pawan Singh",
       surname: "Butat",
       image: "/pawansinghbutat.svg",
       rotation: "1.5deg", // Replace with actual image path
+      instagram:
+        "https://www.instagram.com/pawan_singh_butati?igsh=eHE3OTk4NDN0djMy",
     },
     {
       name: "Pratyush ",
       surname: "Debasish",
       image: "/pratyushdebasish.svg",
       rotation: "1.5deg",
+      instagram:
+        "https://www.instagram.com/inkofpratyush?igsh=MXZ4aDlhbG1lZzljYw==",
     }, // Replace with actual image path
   ];
 
@@ -577,9 +597,12 @@ const page = () => {
         />
 
         {/* Content Wrapper */}
-        <motion.div  variants={fadeIn}
-    initial="hidden"
-    animate="visible" className="relative bg-[#D72327] md:bg-transparent  w-full max-w-7xl min-h-screen px-6 md:px-8 lg:px-4 flex flex-col md:flex-row items-center md:items-start md:gap-8 my-2 py-16 md:pt-26 ">
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          animate="visible"
+          className="relative bg-[#D72327] md:bg-transparent  w-full max-w-7xl min-h-screen px-6 md:px-8 lg:px-4 flex flex-col md:flex-row items-center md:items-start md:gap-8 my-2 py-16 md:pt-26 "
+        >
           {/* Left Section */}
           <div className="  w-full md:w-1/3 flex flex-col items-center md:items-start md:text-left mt-0 md:mt-70">
             <div className=" items-center gap-2 mb-4 ml-6 md:flex hidden ">
@@ -689,9 +712,12 @@ const page = () => {
       </div>
 
       {/* text */}
-      <motion.div  variants={fadeIn}
-    initial="hidden"
-    animate="visible" className="flex items-center justify-center min-h-[60vh] md:min-h-[80vh] text-center flex-col relative">
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        animate="visible"
+        className="flex items-center justify-center min-h-[60vh] md:min-h-[80vh] text-center flex-col relative"
+      >
         <Image
           src="/rider.svg"
           alt="Decorative element"
@@ -778,13 +804,13 @@ const page = () => {
           {/* Polaroid-style photo cards */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-16 w-full pt-12">
             {directors.map((director, index) => (
-            
-            <motion.div
-            variants={fadeIn2(director.rotation)} // Pass the rotation dynamically
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
+              <motion.div
+              key={index}
+                variants={fadeIn2(director.rotation)} // Pass the rotation dynamically
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+              >
                 {/* EDIT: Adjust polaroid card dimensions here if needed */}
                 <div className="bg-white p-2 shadow-lg w-44 md:w-72">
                   {/* Red background with photo - EDIT: Change background color if needed */}
@@ -808,13 +834,13 @@ const page = () => {
                     </p>
                   </div>
                 </div>
-              </ motion.div>
+              </motion.div>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="">
+      <div className=" mx-2 md:mx-0 mb-22  md:mt-0">
         {/* bg-[#ECCA19] */}
         {/* Team Heading */}
         <h1 className="text-[#2F3082] text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-30 font-leckerli">
@@ -822,33 +848,42 @@ const page = () => {
         </h1>
 
         {/* Directors Grid */}
-        <div className="pt-12 px-6 md:mx-42 ">
+        <div className=" md:mx-42 justify-center  mt-12 md:mt-0 ">
           {team.length > 0 && (
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-6 md:gap-8">
               {team.map((member, index) => (
                 <motion.div
-                variants={fadeIn2(member.rotation)} // Pass the rotation dynamically
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-              >
-                  <div className="bg-white p-4 shadow-lg w-48 md:w-64">
-                    <div className="relative bg-[#2F3087] w-full aspect-square mb-4">
-                      <Image
-                        src={member.image}
-                        alt={`${member.name} ${member.surname}`}
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </div>
-                    <div className="text-center pb-2">
-                      <p className="text-sm md:text-xl font-serif ">
-                        {member.name}
-                      </p>
-                      <p className="text-sm md:text-xl font-serif ">
-                        {member.surname}
-                      </p>
-                    </div>
+                key={index}
+                  variants={fadeIn2(member.rotation)} // Pass the rotation dynamically
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  className="flex justify-center"
+                >
+                  <div className="bg-white p-4 shadow-lg w-38 md:w-64">
+                    <a
+                      href={member.instagram} // Instagram link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full h-full"
+                    >
+                      <div className="relative bg-[#2F3087] w-full aspect-square mb-4">
+                        <Image
+                          src={member.image}
+                          alt={`${member.name} ${member.surname}`}
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
+                      <div className="text-center pb-2">
+                        <p className="text-sm md:text-xl font-serif ">
+                          {member.name}
+                        </p>
+                        <p className="text-sm md:text-xl font-serif ">
+                          {member.surname}
+                        </p>
+                      </div>
+                    </a>
                   </div>
                 </motion.div>
               ))}

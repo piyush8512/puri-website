@@ -109,103 +109,52 @@ function Header() {
 
       {/* Mobile Navigation Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-[#FFC40C] z-40 pt-16 flex flex-col items-center justify-start overflow-y-auto">
-          {/* Added dedicated close button at the top of mobile menu */}
-          <button
-            onClick={closeMenu}
-            className="absolute top-4 right-4 p-2 rounded-full hover:bg-yellow-500 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-black"
-            aria-label="Close navigation menu"
-          >
-            <X size={24} className="text-black" />
-          </button>
+  <div className="fixed inset-0 z-40 flex flex-col items-center justify-start overflow-y-auto bg-[#FFC40C] pt-16 md:hidden">
+    
+    {/* Close Button */}
+    <button
+      onClick={closeMenu}
+      className="absolute top-4 right-4 p-2 rounded-full transition duration-200 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-black"
+      aria-label="Close navigation menu"
+    >
+      <X size={24} className="text-black" />
+    </button>
 
-          <nav className="w-full px-6 py-8 z-[1000]">
-            <ul className="flex flex-col items-center space-y-6 text-lg">
-              <li className="w-full text-center pb-2">
-                <Link
-                  href="/"
-                  className="block hover:text-gray-700"
-                  onClick={closeMenu}
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="w-full text-center pb-2">
-                <Link
-                  href="/partners"
-                  className="block hover:text-gray-700"
-                  onClick={closeMenu}
-                >
-                  Partners
-                </Link>
-              </li>
-              <li className="w-full text-center pb-2">
-                <Link
-                  href="/programs"
-                  className="block hover:text-gray-700"
-                  onClick={closeMenu}
-                >
-                  Programs
-                </Link>
-              </li>
-              <li className="w-full text-center pb-2">
-                <Link
-                  href="/sessions"
-                  className="block hover:text-gray-700"
-                  onClick={closeMenu}
-                >
-                  Sessions
-                </Link>
-              </li>
-              <li className="w-full text-center pb-2">
-                <Link
-                  href="/speakers"
-                  className="block hover:text-gray-700"
-                  onClick={closeMenu}
-                >
-                  Speakers
-                </Link>
-              </li>
-              <li className="w-full text-center pb-2">
-                <Link
-                  href="#"
-                  className="block hover:text-gray-700"
-                  onClick={closeMenu}
-                >
-                  <Link href="/activities">Activities</Link>
-                </Link>
-              </li>
-              <li className="w-full text-center pb-2">
-                <Link
-                  href="/aboutus"
-                  className="block hover:text-gray-700"
-                  onClick={closeMenu}
-                >
-                  About Us
-                </Link>
-              </li>
-              <li className="w-full text-center pb-2">
-                <Link
-                  href="/contactus"
-                  className="block hover:text-gray-700"
-                  onClick={closeMenu}
-                >
-                  Contact Us
-                </Link>
-              </li>
-              <li className="w-full flex justify-center pt-4">
-                <Button
-                  variant={"destructive"}
-                  className="font-leckerli sm:w-auto"
-                  onClick={closeMenu}
-                >
-                  Register Now
-                </Button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      )}
+    {/* Navigation Menu */}
+    <nav className="z-[1000] w-full px-6 py-8">
+      <ul className="flex flex-col items-center space-y-6 text-lg">
+        {[
+          { href: "/", label: "Home" },
+          { href: "/partners", label: "Partners" },
+          { href: "/programs", label: "Programs" },
+          { href: "/sessions", label: "Sessions" },
+          { href: "/speakers", label: "Speakers" },
+          { href: "/activities", label: "Activities" },
+          { href: "/aboutus", label: "About Us" },
+          { href: "/contactus", label: "Contact Us" },
+        ].map(({ href, label }) => (
+          <li key={href} className="w-full text-center pb-2">
+            <Link href={href} className="block hover:text-gray-700" onClick={closeMenu}>
+              {label}
+            </Link>
+          </li>
+        ))}
+
+        {/* Register Now Button */}
+        <li className="w-full flex justify-center pt-4">
+          <Button
+            variant="destructive"
+            className="font-leckerli sm:w-auto"
+            onClick={closeMenu}
+          >
+            Register Now
+          </Button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+)}
+
     </header>
   );
 }

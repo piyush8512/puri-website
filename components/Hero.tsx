@@ -171,12 +171,12 @@ function Hero() {
           <span className="text-[#3E8D19]">Triumph!</span>
         </p>
       </div>
-      <Button
+      {/* <Button
         variant={"destructive"}
         className="z-[100] fixed -left-10 top-1/2 -rotate-90 md:hidden font-leckerli"
       >
         Register Now
-      </Button>
+      </Button> */}
       <div className="md:hidden hero-temple-mobile bg-center bg-cover bg-no-repeat h-70  z-2 "></div>
       <div className="bg-[#D72327] h-40 w-full absolute bottom-0 -z-20"></div>
     </div>
