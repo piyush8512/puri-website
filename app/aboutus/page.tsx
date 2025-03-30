@@ -423,7 +423,6 @@ import React from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import { motion, Variants } from "framer-motion";
-import Link from "next/link";
 
 const page = () => {
   const fadeIn = {
@@ -674,28 +673,30 @@ const page = () => {
               divine Ratha of Lord Jagannath. These wheels symbolize the
               perpetual motion of life, the ceaseless journey of humanity
               through epochs, and the profound interplay of tradition and
-              transformation. Key objectives of the session are to reaffirm
-              Puri&apos;s spiritual and cultural legacy and to foster global
-              dialogue with an indigenous lens. At its core, the festival
-              embraces the belief that India&apos;s timeless wisdom and artistic
-              heritage serve not as relics of the past but as guiding lights for
-              the future. It is through this lens that the festival seeks to
-              explore how the nation can ascend to new pinnacles in art,
-              architecture, literature, and economic development while remaining
-              deeply rooted in its cultural ethos. The festival&apos;s impact
-              will extend far beyond the venue, with an outreach program
-              spanning every district of Odisha. Events including heritage
-              walks, folk art performances, and discussions on Odia literature
-              will ensure grassroots participation, rekindling pride in
-              Odisha&apos;s traditions. In schools and colleges, workshops and
-              storytelling sessions will inspire the youth, while expert-led
-              dialogues on environmental sustainability, digital literacy, and
-              cultural preservation. The culmination of these efforts will be a
-              “Vision for Tomorrow” document, encapsulating insights to guide
-              future policy and cultural initiatives. The Puri Literary Festival
-              2025 promises to be an enriching experience that echoes throughout
-              the state, inspiring a deeper connection with India&apos;s
-              cultural roots while embracing a modern, forward-thinking world.
+              transformation.
+              <br /> Key objectives of the session are to reaffirm Puri&apos;s
+              spiritual and cultural legacy and to foster global dialogue with
+              an indigenous lens. At its core, the festival embraces the belief
+              that India&apos;s timeless wisdom and artistic heritage serve not
+              as relics of the past but as guiding lights for the future. It is
+              through this lens that the festival seeks to explore how the
+              nation can ascend to new pinnacles in art, architecture,
+              literature, and economic development while remaining deeply rooted
+              in its cultural ethos.
+              <br /> The festival&apos;s impact will extend far beyond the
+              venue, with an outreach program spanning every district of Odisha.
+              Events including heritage walks, folk art performances, and
+              discussions on Odia literature will ensure grassroots
+              participation, rekindling pride in Odisha&apos;s traditions. In
+              schools and colleges, workshops and storytelling sessions will
+              inspire the youth, while expert-led dialogues on environmental
+              sustainability, digital literacy, and cultural preservation.
+              <br /> The culmination of these efforts will be a “Vision for
+              Tomorrow” document, encapsulating insights to guide future policy
+              and cultural initiatives. The Puri Literary Festival 2025 promises
+              to be an enriching experience that echoes throughout the state,
+              inspiring a deeper connection with India&apos;s cultural roots
+              while embracing a modern, forward-thinking world.
             </p>
           </div>
         </motion.div>
@@ -805,7 +806,7 @@ const page = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-16 w-full pt-12">
             {directors.map((director, index) => (
               <motion.div
-              key={index}
+                key={index}
                 variants={fadeIn2(director.rotation)} // Pass the rotation dynamically
                 initial="hidden"
                 whileInView="visible"
@@ -853,7 +854,7 @@ const page = () => {
             <div className="grid grid-cols-2 md:grid-cols-2 gap-6 md:gap-8">
               {team.map((member, index) => (
                 <motion.div
-                key={index}
+                  key={index}
                   variants={fadeIn2(member.rotation)} // Pass the rotation dynamically
                   initial="hidden"
                   whileInView="visible"

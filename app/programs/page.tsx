@@ -150,15 +150,26 @@ const page = () => {
 
         {/* Your content goes here */}
         <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start w-[90%] md:w-[80%] lg:w-[70%] mx-auto">
+
+
+        <div className="w-full  justify-center  md:w-1/2  flex md:hidden">
+            <Image
+              src="/programs/culturalnight.svg"
+              alt="Decorative Line"
+              width={357}
+              height={52}
+              className="w-1/4 sm:w-1/2 md:w-[357px] shadow-[14px_14px_6px_rgba(0,0,0,0.5)] "
+            />
+          </div>
           {/* Left Section - Text */}
-          <div className="w-full md:w-2/3 text-center md:text-left space-y-4 mt-12">
-            <h1 className="text-3xl md:text-5xl font-bold text-white">
+          <div className="w-full md:w-2/3 text-center md:text-left md:space-y-4 mt-12">
+            <h1 className="text-xl md:text-5xl font-bold text-white">
               Cultural Night{" "}
             </h1>
-            <h2 className="text-xl md:text-4xl text-[#9F6EEA] italic">
+            <h2 className="text-lg md:text-4xl text-[#9F6EEA] italic">
               A tapestry of Traditions
             </h2> 
-            <p className="text-white text-sm md:text-base pt-8">
+            <p className="text-white text-xs md:text-base md:pt-8">
               While the days will lead to thought-provoking discussions, the
               evenings will soothe the audience with a Cultural Night
               celebrating India&apos;s diverse artistic heritage. From the
@@ -170,17 +181,17 @@ const page = () => {
           </div>
 
           {/* Right Section - Image with 3D Shadow */}
-          <div className="w-full flex justify-center mt-4 md:w-1/2 md:mt-0">
+          <div className="w-full  justify-center mt-0 md:w-1/2 md:mt-0 hidden md:flex">
             <Image
               src="/programs/culturalnight.svg"
               alt="Decorative Line"
               width={357}
               height={52}
-              className="w-3/4 sm:w-1/2 md:w-[357px] shadow-[14px_14px_6px_rgba(0,0,0,0.5)] "
+              className="w-1/4 sm:w-1/2 md:w-[357px] shadow-[14px_14px_6px_rgba(0,0,0,0.5)] "
             />
           </div>
         </div>
-        <div className="absolute -bottom-22 left-20  z-20">
+        <div className="absolute -bottom-22 left-20  z-20 hidden md:block">
           <Image
             src="/programs/musician.svg"
             alt="Decorative Line"
