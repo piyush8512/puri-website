@@ -26,7 +26,7 @@ const page = () => {
       </div>
 
       {/* Title Section */}
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center relative">
         {/* Heading */}
         <h1 className="font-leckerli text-xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl text-[#D72327] text-center mt-2 md:mt-3 lg:mt-3">
           A Celebration of 
@@ -43,6 +43,24 @@ const page = () => {
             width={127}
             height={52}
             className="object-contain w-[100%] max-w-lg md:max-w-sm lg:max-w-md"
+          />
+        </div>
+        <div className="w-full  justify-center mt-4  md:flex  hidden">
+          <Image
+            src="/programs/programsmobiletemple.png"
+            alt="Festival logo"
+            width={327}
+            height={100}
+            className="object-contain w-[100%] max-w-lg md:max-w-lg lg:max-w-2xl absolute -left-2 -bottom-85"
+          />
+        </div>
+        <div className="absolute -bottom-95 right-10  z-20 hidden md:block ">
+          <Image
+            src="/programs/musician.svg"
+            alt="Decorative Line"
+            width={357}
+            height={52}
+            className="w-3/4 sm:w-1/2 md:w-[350px]  rounded-lg "
           />
         </div>
       </div>
