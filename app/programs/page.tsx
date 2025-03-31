@@ -141,17 +141,16 @@ const page = () => {
             className="w-3/4 sm:w-1/2 md:w-[357px]  rounded-lg hidden md:block"
           />
         </div>
-        <div className="absolute -bottom-20 left-10 z-100 ">
-          <Image
-            src="/programs/fighting.svg"
-            alt="Decorative Line"
-            width={357}
-            height={52}
-            className="w-3/4 sm:w-1/2 md:w-[357px]  rounded-lg hidden md:block"
-          />
-        </div>
       </div>
-
+      <div className="relative">
+        <Image
+          src="/programs/fighting.svg"
+          alt="Decorative Line"
+          width={357}
+          height={52}
+          className="absolute -top-62 -left-8 z-20 w-40 md:w-xl rotate-10"
+        />
+      </div>
       {/* Voilet */}
       <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden ">
         <div className="absolute inset-0 z-0 h-[70vh] md:h-full w-full">
