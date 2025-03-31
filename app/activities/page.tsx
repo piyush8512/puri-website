@@ -396,7 +396,7 @@ const Page = () => {
 
       {/* Intro paragraph */}
       <motion.div
-        className="w-full px-4 md:px-0"
+        className="w-full px-4 md:px-15 flex items-center justify-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -527,7 +527,7 @@ const Page = () => {
           />
         </motion.div>
         <motion.div
-          className="absolute bottom-24 left-0 sm:left-8 z-20 w-24 sm:w-36 md:w-48 lg:w-56"
+          className="absolute bottom-10 left-0 sm:left-8 z-20 w-24 sm:w-36 md:w-48 lg:w-56"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -546,7 +546,7 @@ const Page = () => {
           />
         </motion.div>
         <motion.div
-          className="absolute bottom-34 right-0 sm:right-8 z-20 w-24 sm:w-36 md:w-48 lg:w-56"
+          className="absolute bottom-12 right-0 sm:right-8 z-20 w-24 sm:w-36 md:w-48 lg:w-56"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -680,7 +680,7 @@ const Page = () => {
 
         {/* Illustrations */}
         <motion.div
-          className="absolute -top-16 md:-top-25 left-1/2 transform -translate-x-1/2 -z-20 w-18 sm:w-36 md:w-48 lg:w-46"
+          className="absolute -top-16 md:-top-10 left-1/2 transform -translate-x-1/2 -z-20 w-18 sm:w-36 md:w-36 lg:w-36"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -716,7 +716,7 @@ const Page = () => {
           />
         </motion.div>
         <motion.div
-          className="absolute md:top-5 -top-[2%] right-0 sm:right-8 z-20 w-24 sm:w-36 md:w-48 lg:w-86"
+          className="absolute md:top-5 -top-[2%] right-0 sm:right-0  z-20 w-24 sm:w-36 md:w-48 lg:w-86"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -773,7 +773,7 @@ const Page = () => {
 
       {/* Download brochure */}
       <motion.div
-        className="relative w-full md:h-[50vh] h-[40vh] flex items-center justify-center"
+        className="relative w-full md:h-[25vh] h-[40vh] flex items-end justify-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

@@ -34,7 +34,13 @@
       "subtitle": "Writers On The Frontlines Of Change",
       "paragraph":
         "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
-    }
+    },
+    {
+      "id": 5,
+      "title": "Ink & Identity:",
+      "subtitle": "A Literary and Social Perspective on Odisha",
+      "paragraph": 
+
   ],
   "paralellDialogues": [
     {
@@ -55,13 +61,6 @@
       "id": 2,
       "title": "Odia Literature in the 21st Century",
       "subtitle": "",
-      "paragraph":
-        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
-    },
-    {
-      "id": 3,
-      "title": "Cultural Catalysts:",
-      "subtitle": "How Writers Shape Public Discourse",
       "paragraph":
         "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
     }

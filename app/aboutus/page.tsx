@@ -659,7 +659,7 @@ const page = () => {
 
           {/* Right Section */}
           <div className="w-full md:w-2/3 text-white md:pt-24 pt-8  md:pb-0 pb-8">
-            <p className="text-sm md:text-[17px] leading-relaxed text-justify ">
+            <p className="text-xs md:text-[17px]  text-justify ">
               Set against the serene backdrop of Puri, a city steeped in
               spirituality and heritage, the Puri Literary Festival 2025
               celebrates India&apos;s enduring cultural legacy and its
@@ -673,8 +673,8 @@ const page = () => {
               divine Ratha of Lord Jagannath. These wheels symbolize the
               perpetual motion of life, the ceaseless journey of humanity
               through epochs, and the profound interplay of tradition and
-              transformation.
-              <br /> Key objectives of the session are to reaffirm Puri&apos;s
+              transformation.</p><br />
+              <p className="text-xs md:text-[17px] d text-justify ">Key objectives of the session are to reaffirm Puri&apos;s
               spiritual and cultural legacy and to foster global dialogue with
               an indigenous lens. At its core, the festival embraces the belief
               that India&apos;s timeless wisdom and artistic heritage serve not
@@ -682,16 +682,17 @@ const page = () => {
               through this lens that the festival seeks to explore how the
               nation can ascend to new pinnacles in art, architecture,
               literature, and economic development while remaining deeply rooted
-              in its cultural ethos.
-              <br /> The festival&apos;s impact will extend far beyond the
+              in its cultural ethos.</p><br />
+
+              <p className="text-xs md:text-[17px]  text-justify ">The festival&apos;s impact will extend far beyond the
               venue, with an outreach program spanning every district of Odisha.
               Events including heritage walks, folk art performances, and
               discussions on Odia literature will ensure grassroots
               participation, rekindling pride in Odisha&apos;s traditions. In
               schools and colleges, workshops and storytelling sessions will
               inspire the youth, while expert-led dialogues on environmental
-              sustainability, digital literacy, and cultural preservation.
-              <br /> The culmination of these efforts will be a “Vision for
+              sustainability, digital literacy, and cultural preservation.</p><br />
+              <p className="text-xs md:text-[17px] text-justify ">The culmination of these efforts will be a “Vision for
               Tomorrow” document, encapsulating insights to guide future policy
               and cultural initiatives. The Puri Literary Festival 2025 promises
               to be an enriching experience that echoes throughout the state,
@@ -752,7 +753,7 @@ const page = () => {
         </h1>
       </motion.div>
 
-      <div className="relative w-full min-h-[145vh] flex items-center justify-center overflow-hidden">
+      <div className="relative w-full min-h-[155vh] flex items-center justify-center overflow-hidden">
         {/* Background Image - EDIT: Replace with your actual background image */}
         <Image
           src="/foundingbg2.png"
@@ -827,10 +828,10 @@ const page = () => {
 
                   {/* Name text - EDIT: Adjust text styling if needed */}
                   <div className="text-center pb-2">
-                    <p className="text-sm font-serif font-semibold">
+                    <p className="text-sm md:text-xl  font-serif ">
                       {director.name}
                     </p>
-                    <p className="text-sm font-serif font-semibold">
+                    <p className="text-sm md:text-xl font-serif ">
                       {director.surname}
                     </p>
                   </div>
@@ -841,15 +842,30 @@ const page = () => {
         </div>
       </div>
 
-      <div className=" mx-2 md:mx-0 mb-22  md:mt-0">
+      <div className=" mx-2 md:mx-0 b-22  md:mt-0 relative ">
         {/* bg-[#ECCA19] */}
         {/* Team Heading */}
         <h1 className="text-[#2F3082] text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-30 font-leckerli">
           Team
         </h1>
 
+        <Image
+          src="/bookflyingkid.svg"
+          alt="Decorative element"
+          width={384}
+          height={512}
+          className="absolute top-0 md:-top-20 right-0 z-20 size-25 md:size-60"
+        />
+         <Image
+          src="/bookstackabus.svg"
+          alt="Decorative element"
+          width={384}
+          height={512}
+          className="absolute -bottom-20 md:-bottom-40  -left-3 md:left-0 z-20 size-20 md:size-35"
+        />
+
         {/* Directors Grid */}
-        <div className=" md:mx-42 justify-center  mt-12 md:mt-0 ">
+        <div className=" md:mx-42 justify-center  mt-12 md:mt-14 ">
           {team.length > 0 && (
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
               {team.map((member, index) => (
@@ -866,7 +882,7 @@ const page = () => {
                       href={member.instagram} // Instagram link
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block w-full h-full"
+                      className="block w-full h-full "
                     >
                       <div className="relative bg-[#2F3087] w-full aspect-square mb-4">
                         <Image

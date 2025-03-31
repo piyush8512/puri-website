@@ -162,6 +162,45 @@ const Page: React.FC = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
+
+            {/* <CarouselContent>
+  {sessionsData.dialogues.map((dialogue, index) => (
+    <CarouselItem
+      key={index}
+      className={`md:basis-1/2 lg:basis-1/3 text-center relative transition-all ${
+        index !== dialogueActiveIndex ? "opacity-50 scale-80 " : "opacity-100 scale-100"
+      }`}
+    >
+      <div className="p-1">
+        <Card
+          className={index !== dialogueActiveIndex ? "transition-all  " : "transition-all"}
+        >
+          <CardContent className="flex items-center justify-center h-110 w-94 bluedialoguebox bg-center bg-no-repeat bg-contain relative">
+            <div className="absolute -top-4 rounded-full bg-[#D72327] z-50 h-12 w-12 font-leckerli text-[#2F3082] text-2xl text-center py-2">
+              {dialogue.id + 1}
+            </div>
+            <div
+              className={`flex flex-col items-center justify-center yellowdialoguebox bg-center bg-no-repeat bg-contain h-110 w-84 transition-all duration-500 ease-in-out group mb-1 ${
+                index === dialogueActiveIndex ? "hover:-rotate-10" : "scale-100"
+              }`}
+            >
+              <h2 className="text-[#D72327] font-leckerli font-bold text-3xl group-hover:text-xl">
+                {dialogue.title}
+              </h2>
+              <h3 className="text-blue-800 font-leckerli text-xl group-hover:text-md w-55">
+                {dialogue.subtitle}
+              </h3>
+              <p className="font-inter text-sm w-65 hidden group-hover:block transition-opacity ease-in-out duration-500">
+                {dialogue.paragraph}
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </CarouselItem>
+  ))}
+</CarouselContent> */}
+
             <CarouselPrevious className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[40%] top-[100%] md:top-[46%] md:-left-[4%]" />
             <CarouselNext className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[50%] top-[100%] md:top-[46%] md:left-[100%]" />
           </Carousel>
@@ -197,7 +236,7 @@ const Page: React.FC = () => {
                     <Card
                       className={
                         index !== parallelDialogueActiveIndex
-                          ? "transition-all blur-sm"
+                          ? "transition-all blur-xs"
                           : "transition-all"
                       }
                     >
