@@ -34,7 +34,8 @@
       "subtitle": "Reforming India’s Agricultural Landscape",
       "paragraph":
         "Exploring sustainable farming, indigenous practices, and policy reforms to ensure food security while preserving traditional agricultural wisdom"
-    },
+    }
+    ,
     {
       "id": 5,
       "title": "Odisha 2036: ",
@@ -44,59 +45,65 @@
     }
     ,
     {
-      "id": 5,
+      "id": 6,
       "title": "Voices of Her: ",
       "subtitle": "Women in Indian Literary Tradition",
       "paragraph":
-        "Tracing the evolution of female voices in Indian literature—from bhakti poets to modern writers—this session explores gender, identity, and empowerment, highlighting Shakta-inspired narratives and their impact on storytelling"
+        "Tracing the evolution of female voices in Indian literature—from bhakti poets to modern writers—this session explores gender, identity, and empowerment, highlighting Shakta-inspired narratives and their impact on storytelling."
     }
     ,
     {
-      "id": 5,
-      "title": "Odisha 2036: ",
-      "subtitle": " A vision for tomorrow",
+      "id": 7,
+      "title": "Muse or Machine? ",
+      "subtitle": " Exploring the Soul of Art in the Digital Age",
       "paragraph":
-        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
+        "As AI reshapes creativity, this session examines whether machines can replicate artistic depth or serve as muses for human expression. It explores AI’s role in storytelling, cultural preservation, and the evolving definition of artistic value."
+    } 
+    ,
+    {
+      "id": 8,
+      "title": "The Influence of Influencers: ",
+      "subtitle": " Social Media in the Modern Era",
+      "paragraph":
+        "A discussion on how social media influencers drive trends, preserve Indic traditions, and advocate for societal causes while balancing global appeal with Indian ethos."
+    }
+    , 
+    {
+      "id": 9,
+      "title": "Bharat: ",
+      "subtitle": "The Spiritual Capital of the World",
+      "paragraph":
+        "This session highlights India’s relevance in addressing modern challenges and fostering global harmony by exploring ancient wisdom on mindfulness, dharma, and inner peace."
     }
     ,
     {
-      "id": 5,
-      "title": "Odisha 2036: ",
-      "subtitle": " A vision for tomorrow",
+      "id": 10,
+      "title": "Sustainability: ",
+      "subtitle": "Building a Climate-Resilient Bharat",
       "paragraph":
-        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
-    }
-    ,
+        "A discussion on multi-stakeholder collaboration, policy innovation, and integrating traditional wisdom with modern solutions to combat climate change."
+    },
+    
     {
-      "id": 5,
-      "title": "Odisha 2036: ",
-      "subtitle": " A vision for tomorrow",
+      "id": 11,
+      "title": "From Passion to Purpose: ",
+      "subtitle": "Life Lessons for India’s Youth",
       "paragraph":
-        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
-    }
-    ,
+        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+    },
     {
-      "id": 5,
-      "title": "Odisha 2036: ",
-      "subtitle": " A vision for tomorrow",
+      "id": 12,
+      "title": "Publisher’s Meet: ",
+      "subtitle": "Navigating the Literary Landscape",
       "paragraph":
-        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
-    }
-    ,
+        "An interactive session on publishing trends, digital disruption, and strategies for aspiring authors to succeed in today’s literary world."
+    },
     {
-      "id": 5,
-      "title": "Odisha 2036: ",
-      "subtitle": " A vision for tomorrow",
+      "id": 13,
+      "title": "Decolonisation & the Global South: ",
+      "subtitle": "Reshaping Multilateralism",
       "paragraph":
-        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
-    }
-    ,
-    {
-      "id": 5,
-      "title": "Odisha 2036: ",
-      "subtitle": " A vision for tomorrow",
-      "paragraph":
-        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
+        "Exploring how post-colonial nations are redefining global governance, tackling power imbalances, and fostering south-south cooperation for an equitable world order."
     }
   ],
   "paralellDialogues": [
@@ -112,21 +119,14 @@
       "title": "Ink & Identity:",
       "subtitle": "A Literary and Social Perspective on Odisha",
       "paragraph":
-        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+        "On the evolution of Odisha’s literature, from the ancient epics of Kalinga to the vibrant voices of contemporary writers. This session will journey through how Odia literature mirrors the region's cultural, social, and political shifts, influenced by Buddhism, Jainism, Hinduism, colonialism, and the post-independence resurgence of Odia identity. With a focus on themes of caste, gender, and social change, we’ll uncover how literature has both shaped and reflected Odisha’s values, celebrating the resilience and creativity that continues to inspire its future."
     },
     {
       "id": 2,
       "title": "Odia Literature in the 21st Century",
       "subtitle": "",
       "paragraph":
-        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
-    },
-    {
-      "id": 3,
-      "title": "Cultural Catalysts:",
-      "subtitle": "How Writers Shape Public Discourse",
-      "paragraph":
-        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+        "Delve into how contemporary Odia literature responds to societal changes, global influences, and technological advancements. Concussions will feature prominent and emerging voices covering themes like urbanisation, migration, gender equality, and environmental sustainability. We’ll explore how digital platforms have expanded the reach of Odia literature while preserving its cultural roots. By celebrating Odia writers' creativity and resilience, this conversation aims to showcase the enduring power of regional literature in shaping India’s literary landscape."
     }
     
   ]
