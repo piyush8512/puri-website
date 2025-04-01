@@ -222,3 +222,16 @@
     background-image: url('/paralleltree.svg');
   }
 }
+
+
+
+/* puse for desktop on partners */
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.group:hover .animate-marquee {
+  animation-play-state: paused;
+}

@@ -42,7 +42,7 @@ function Header() {
         {/* Logo */}
         <div className="flex items-center  mt-0 sm:mt-12 lg:mt-18 ">
           <Image
-            src="/logo.svg"
+            src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
             alt="Festival logo"
             width={60}
             height={60}
@@ -61,28 +61,30 @@ function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:block flex-1">
           <ul className="flex justify-center items-center space-x-5 lg:space-x-5 xl:space-x-14 text-sm lg:text-base">
-            <li className="hover:text-gray-700 cursor-pointer">
+            <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
               <Link href={"/"}>Home</Link>
             </li>
-            <li className="hover:text-gray-700 cursor-pointer">
+            <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
               <Link href={"/partners"}>Partners</Link>
             </li>
-            <li className="hover:text-gray-700 cursor-pointer">
+            <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
               <Link href={"/programs"}>Programs</Link>
             </li>
-            <li className="hover:text-gray-700 cursor-pointer">
+            <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
               <Link href={"/sessions"}>Sessions</Link>
             </li>
-            <li className="hover:text-gray-700 cursor-pointer">
+            <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
               <Link href={"/speakers"}>Speakers</Link>
             </li>
-            <li className="hover:text-gray-700 cursor-pointer">
+            <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
               <Link href={"/activities"}>Activities</Link>
             </li>
-            <li className="hover:text-gray-700 cursor-pointer">
+            <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
               <Link href={"/aboutus"}>About Us</Link>
             </li>
-            <li className="hover:text-gray-700 cursor-pointer">Contact Us</li>
+            <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
+              Contact Us
+            </li>
           </ul>
         </nav>
 
@@ -90,7 +92,7 @@ function Header() {
         <div className="hidden md:block">
           <Button
             variant={"destructive"}
-            className="m-0 font-leckerli text-sm lg:text-base"
+            className="m-0 font-leckerli text-sm lg:text-base cursor-pointer hover:scale-115"
           >
             Register Now
           </Button>
@@ -109,52 +111,54 @@ function Header() {
 
       {/* Mobile Navigation Overlay */}
       {isMenuOpen && (
-  <div className="fixed inset-0 z-40 flex flex-col items-center justify-start overflow-y-auto bg-[#FFC40C] pt-16 md:hidden">
-    
-    {/* Close Button */}
-    <button
-      onClick={closeMenu}
-      className="absolute top-4 right-4 p-2 rounded-full transition duration-200 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-black"
-      aria-label="Close navigation menu"
-    >
-      <X size={24} className="text-black" />
-    </button>
-
-    {/* Navigation Menu */}
-    <nav className="z-[1000] w-full px-6 py-8">
-      <ul className="flex flex-col items-center space-y-6 text-lg">
-        {[
-          { href: "/", label: "Home" },
-          { href: "/partners", label: "Partners" },
-          { href: "/programs", label: "Programs" },
-          { href: "/sessions", label: "Sessions" },
-          { href: "/speakers", label: "Speakers" },
-          { href: "/activities", label: "Activities" },
-          { href: "/aboutus", label: "About Us" },
-          { href: "/contactus", label: "Contact Us" },
-        ].map(({ href, label }) => (
-          <li key={href} className="w-full text-center pb-2">
-            <Link href={href} className="block hover:text-gray-700" onClick={closeMenu}>
-              {label}
-            </Link>
-          </li>
-        ))}
-
-        {/* Register Now Button */}
-        <li className="w-full flex justify-center pt-4">
-          <Button
-            variant="destructive"
-            className="font-leckerli sm:w-auto"
+        <div className="fixed inset-0 z-40 flex flex-col items-center justify-start overflow-y-auto bg-[#FFC40C] pt-16 md:hidden">
+          {/* Close Button */}
+          <button
             onClick={closeMenu}
+            className="absolute top-4 right-4 p-2 rounded-full transition duration-200 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-black"
+            aria-label="Close navigation menu"
           >
-            Register Now
-          </Button>
-        </li>
-      </ul>
-    </nav>
-  </div>
-)}
+            <X size={24} className="text-black" />
+          </button>
 
+          {/* Navigation Menu */}
+          <nav className="z-[1000] w-full px-6 py-8">
+            <ul className="flex flex-col items-center space-y-6 text-lg">
+              {[
+                { href: "/", label: "Home" },
+                { href: "/partners", label: "Partners" },
+                { href: "/programs", label: "Programs" },
+                { href: "/sessions", label: "Sessions" },
+                { href: "/speakers", label: "Speakers" },
+                { href: "/activities", label: "Activities" },
+                { href: "/aboutus", label: "About Us" },
+                { href: "/contactus", label: "Contact Us" },
+              ].map(({ href, label }) => (
+                <li key={href} className="w-full text-center pb-2">
+                  <Link
+                    href={href}
+                    className="block hover:text-gray-700"
+                    onClick={closeMenu}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+
+              {/* Register Now Button */}
+              <li className="w-full flex justify-center pt-4">
+                <Button
+                  variant="destructive"
+                  className="font-leckerli sm:w-auto"
+                  onClick={closeMenu}
+                >
+                  Register Now
+                </Button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

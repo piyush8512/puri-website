@@ -14,23 +14,24 @@ function Footer() {
   const footerLinks = {
     "About us": [
       "About The Festival",
-      "Teamwork Arts",
+      // "Teamwork Arts",
       "Contact Us",
       "Terms & Condition",
-      "Privacy & Policies",
+      // "Privacy & Policies",
       "FAQs",
     ],
-    Events: ["Itinerary", "Programmes"],
+    Events: ["Broucher", "Programs"],
     "Important Links": ["Volunteer", "Partner With Us"],
   };
 
   return (
     <>
-      <footer className="md:block hidden md:h-140 xl:h-170 relative">
+      <footer className="md:block hidden md:h-140 xl:h-170 relative  font-ebGaramond">
         {/* Background wave image with lower z-index */}
         <div className="absolute inset-0 -z-10 w-full h-full mx-auto">
           <Image
-            src="/footer-wave.svg"
+            // src="https://ik.imagekit.io/zjaqik2mc/footer/footer-wave.svg?updatedAt=1743490389529"
+            src="/footer/footer-wave.svg"
             alt="Footer background wave"
             layout="fill"
             objectFit="cover"
@@ -44,7 +45,8 @@ function Footer() {
             <div className="flex flex-col sm:items-center md:items-center">
               <div className="sm:mt-12 md:mt-6 lg:mt-2">
                 <Image
-                  src="/logo.svg"
+                  // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
+                  src="/mainpage/logo.svg"
                   alt="logo"
                   width={100}
                   height={150}
@@ -99,7 +101,8 @@ function Footer() {
         {/* Bottom pattern with proper z-index */}
         <div className="w-full absolute left-0 bottom-0 z-10">
           <Image
-            src="/footer-pattern.svg"
+            // src="https://ik.imagekit.io/zjaqik2mc/footer/footer-pattern.svg?updatedAt=1743490196018"
+            src={"/footer/footer-pattern.svg"}
             alt="Footer pattern"
             width={500}
             height={300}
@@ -115,15 +118,16 @@ function Footer() {
 
         {/* Logo Positioned in the Wave Section */}
         <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex justify-center">
-          <Image
-            src="/logo.svg"
+          {/* <Image
+            src="/log o.svg"
             alt="logo"
             width={100}
             height={100}
             className=" hidden md:block w-24 sm:w-28 md:w-32"
-          />
+          /> */}
           <Image
-            src="/mobilelogo.png"
+            // src="https://ik.imagekit.io/zjaqik2mc/footer/mobilelogo.png?updatedAt=1743490327697"
+            src={"/footer/mobilelogo.png"}
             alt="logo"
             width={100}
             height={100}

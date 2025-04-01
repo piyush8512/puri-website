@@ -25,13 +25,21 @@ export default function Page() {
         animate={controls}
         className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start "
       >
-        <Image
+        {/* <Image
           src="/partnersDate.svg"
           alt="Festival logo"
           width={127}
           height={52}
           className="object-contain min-w-xl w-120 h-100"
-        />
+        /> */}
+        <Image
+                    className="size-30 xl:size-52"
+                    // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
+                    src="/mainpage/logo.svg"
+                    alt="Festival logo"
+                    width={127}
+                    height={52}
+                  />
       </motion.div>
 
       {/* Mobile view: hero section with logo and background image */}
@@ -53,7 +61,7 @@ export default function Page() {
       <motion.h1
         initial={{ opacity: 0 }}
         animate={controls}
-        className="font-leckerli font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-10"
+        className="font-leckerli font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-0 lg:mt-0"
       >
         Partners
       </motion.h1>

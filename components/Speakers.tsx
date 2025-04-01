@@ -95,10 +95,10 @@ function Speakers() {
                   />
                 </div>
                 <div className="text-center">
-                  <h1 className="text-white text-sm font-medium">
+                  <h1 className="text-white text-sm font-medium  font-ebGaramond">
                     {speaker.name}
                   </h1>
-                  <p className="text-white text-xs">{speaker.position}</p>
+                  <p className="text-white text-xs  font-ebGaramond">{speaker.position}</p>
                 </div>
               </div>
             ))}
@@ -122,10 +122,10 @@ function Speakers() {
                   className="w-full h-auto rounded-xl "
                 />
                 <div className="text-center">
-                  <h3 className="text-[#FFFCF5] font-semibold text-sm pt-2">
+                  <h3 className="text-[#FFFCF5] font-semibold text-sm pt-2  font-ebGaramond">
                     {speaker.name}
                   </h3>
-                  <p className="text-[#FFFCF5] text-xs">{speaker.position}</p>
+                  <p className="text-[#FFFCF5] text-xs  font-ebGaramond">{speaker.position}</p>
                 </div>
               </div>
             </div>

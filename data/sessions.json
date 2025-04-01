@@ -9,37 +9,94 @@
     },
     {
       "id": 1,
-      "title": "Voices Of Resistance:",
-      "subtitle": "Literature As A Tool For Social Justice",
+      "title": "Unveiling the Past:",
+      "subtitle": "The Craft and Challenges of Indian History Writing",
       "paragraph":
-        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+        "A discussion on historiography, contested narratives, and Indic traditions in shaping historical discourse. Panellists explore nationalistic history writing, indigenous contributions, and the balance between cultural heritage and modern research."
     },
     {
       "id": 2,
-      "title": "Beyond Words:",
-      "subtitle": "The Impact Of Artistic Expression On Society",
+      "title": "Innovation and Aspiration:",
+      "subtitle": " The Start-Up Revolution in India",
       "paragraph":
-        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+        "A deep dive into the success stories, challenges, and future of India’s start-up ecosystem—covering funding, scaling, and regulatory hurdles"
     },
     {
       "id": 3,
-      "title": "Cultural Catalysts:",
-      "subtitle": "How Writers Shape Public Discourse",
+      "title": "Changemakers Unplugged:",
+      "subtitle": "Social Entrepreneurship Stories",
       "paragraph":
-        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+        "A conversation with social entrepreneurs driving change through initiatives in poverty alleviation, education, and clean energy aligned with India’s developmental goals."
     },
     {
       "id": 4,
-      "title": "Pens & Protests:",
-      "subtitle": "Writers On The Frontlines Of Change",
+      "title": "Sowing Solutions:",
+      "subtitle": "Reforming India’s Agricultural Landscape",
       "paragraph":
-        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+        "Exploring sustainable farming, indigenous practices, and policy reforms to ensure food security while preserving traditional agricultural wisdom"
     },
     {
       "id": 5,
-      "title": "Ink & Identity:",
-      "subtitle": "A Literary and Social Perspective on Odisha",
-      "paragraph":""
+      "title": "Odisha 2036: ",
+      "subtitle": " A vision for tomorrow",
+      "paragraph":
+        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
+    }
+    ,
+    {
+      "id": 5,
+      "title": "Voices of Her: ",
+      "subtitle": "Women in Indian Literary Tradition",
+      "paragraph":
+        "Tracing the evolution of female voices in Indian literature—from bhakti poets to modern writers—this session explores gender, identity, and empowerment, highlighting Shakta-inspired narratives and their impact on storytelling"
+    }
+    ,
+    {
+      "id": 5,
+      "title": "Odisha 2036: ",
+      "subtitle": " A vision for tomorrow",
+      "paragraph":
+        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
+    }
+    ,
+    {
+      "id": 5,
+      "title": "Odisha 2036: ",
+      "subtitle": " A vision for tomorrow",
+      "paragraph":
+        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
+    }
+    ,
+    {
+      "id": 5,
+      "title": "Odisha 2036: ",
+      "subtitle": " A vision for tomorrow",
+      "paragraph":
+        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
+    }
+    ,
+    {
+      "id": 5,
+      "title": "Odisha 2036: ",
+      "subtitle": " A vision for tomorrow",
+      "paragraph":
+        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
+    }
+    ,
+    {
+      "id": 5,
+      "title": "Odisha 2036: ",
+      "subtitle": " A vision for tomorrow",
+      "paragraph":
+        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
+    }
+    ,
+    {
+      "id": 5,
+      "title": "Odisha 2036: ",
+      "subtitle": " A vision for tomorrow",
+      "paragraph":
+        "A discussion on Odisha’s growth trajectory, focusing on infrastructure, economy, social development, and governance as it nears its centenary."
     }
   ],
   "paralellDialogues": [
@@ -63,6 +120,14 @@
       "subtitle": "",
       "paragraph":
         "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
+    },
+    {
+      "id": 3,
+      "title": "Cultural Catalysts:",
+      "subtitle": "How Writers Shape Public Discourse",
+      "paragraph":
+        "A discussion on how Indian writers tackle caste, gender, and social justice through fiction, poetry, and essays. Authors will share their experiences of how they use literature to drive activism and advocate for civilisational and environmental causes."
     }
+    
   ]
 }
