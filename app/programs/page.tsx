@@ -7,12 +7,20 @@ const page = () => {
     <div className="relative pt-15 inset-0 overflow-x-hidden w-full">
       {/* Header Section */}
       <div className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start relative">
-        <Image
+        {/* <Image
           src="/partnersDate.svg"
           alt="Festival logo"
           width={127}
           height={52}
           className="object-contain min-w-xl w-120 h-100"
+        /> */}
+        <Image
+          className="size-30 xl:size-52"
+          // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
+          src="/mainpage/logo.svg"
+          alt="Festival logo"
+          width={127}
+          height={52}
         />
       </div>
       <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative">

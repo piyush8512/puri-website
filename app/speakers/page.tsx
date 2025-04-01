@@ -524,13 +524,21 @@ const Page = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
       >
-        <Image
+        {/* <Image
           src="/partnersDate.svg"
           alt="Festival logo"
           width={127}
           height={52}
           className="object-contain min-w-xl w-120 h-100"
-        />
+        /> */}
+        <Image
+                            className="size-30 xl:size-52"
+                            // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
+                            src="/mainpage/logo.svg"
+                            alt="Festival logo"
+                            width={127}
+                            height={52}
+                          />
       </motion.div>
 
       {/* Mobile Hero Section */}

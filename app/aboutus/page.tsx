@@ -552,13 +552,21 @@ const page = () => {
         animate="visible"
         className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start relative"
       >
-        <Image
+        {/* <Image
           src="/partnersDate.svg"
           alt="Festival logo"
           width={127}
           height={52}
           className="object-contain min-w-xl w-120 h-100"
-        />
+        /> */}
+         <Image
+                                    className="size-30 xl:size-52"
+                                    // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
+                                    src="/mainpage/logo.svg"
+                                    alt="Festival logo"
+                                    width={127}
+                                    height={52}
+                                  />
       </motion.div>
       <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative">
         {/* Logo image */}
@@ -570,7 +578,7 @@ const page = () => {
           className="object-cover w-20 "
         />
       </div>
-      <h1 className="font-leckerli font-bold text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-15 mb-25  md:mb-60">
+      <h1 className="font-leckerli font-bold text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-0 mb-25  md:mb-60">
         About us
       </h1>
 
@@ -663,7 +671,7 @@ const page = () => {
               Set against the serene backdrop of Puri, a city steeped in
               spirituality and heritage, the Puri Literary Festival 2025
               celebrates India&apos;s enduring cultural legacy and its
-              progressive aspirations. Rooted in the philosophy of Samavāya—the
+              progressive aspirations. Rooted in the philosophy of पुरुषोत्तम क्षेत्रं वैकुण्ठस्य सदृशं। —the
               harmonious coexistence of tradition and modernity—the festival
               seeks to inspire a holistic dialogue that bridges India&apos;s
               ancient wisdom with its contemporary ambitions. The Puri Literary

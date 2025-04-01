@@ -13,23 +13,23 @@ function Speakers() {
   const speakers = [
     {
       name: "Sh. Gajendra Singh Shekhawat",
-      position: "Ministry of Culture",
+      position: "Union Minister of Culture and Tourism, Government of India.",
       image: "/Sh. Gajendra Singh Shekhawat.svg",
     },
     {
       name: "Sh. Sarvanand Sonowal",
-      position: "Minister of Ports, Shipping and Waterways",
+      position: "Minister of Ports, Shipping & Waterways, Government of India.",
       image: "/Sarvanand Sonowal Ji’s.svg",
     },
     {
       name: "Sh. Dharmendra Pradhan",
-      position: "Union Minister for Education",
+      position: "Minister of Education, Government of India.",
       image: "/Sh. Dharmendra Pradhan.svg",
     },
 
     {
       name: "Sh. Hari Babu Kambhampati",
-      position: "Governor of Odisha",
+      position: "Governor of Odisha",
       image: "/Sh. Hari Babu Kambhampati.svg",
     },
   ];
@@ -37,17 +37,17 @@ function Speakers() {
   const mobilespeakers = [
     {
       name: "Sh. Gajendra Singh Shekhawat",
-      position: "Ministry of Culture",
+      position: "Union Minister of Culture and Tourism, Government of India.",
       image: "/Sh. Gajendra Singh Shekhawat.svg",
     },
     {
       name: "Sh. Sarvanand Sonowal",
-      position: "Minister of Ports, Shipping and Waterways",
+      position: "Minister of Ports, Shipping & Waterways, Government of India.",
       image: "/Sarvanand Sonowal Ji’s.svg",
     },
     {
       name: "Sh. Dharmendra Pradhan",
-      position: "Union Minister for Education",
+      position: "Minister of Education, Government of India.",
       image: "/Sh. Dharmendra Pradhan.svg",
     },
   ];
@@ -98,7 +98,9 @@ function Speakers() {
                   <h1 className="text-white text-sm font-medium  font-ebGaramond">
                     {speaker.name}
                   </h1>
-                  <p className="text-white text-xs  font-ebGaramond">{speaker.position}</p>
+                  <p className="text-white text-xs  font-ebGaramond">
+                    {speaker.position}
+                  </p>
                 </div>
               </div>
             ))}
@@ -125,7 +127,9 @@ function Speakers() {
                   <h3 className="text-[#FFFCF5] font-semibold text-sm pt-2  font-ebGaramond">
                     {speaker.name}
                   </h3>
-                  <p className="text-[#FFFCF5] text-xs  font-ebGaramond">{speaker.position}</p>
+                  <p className="text-[#FFFCF5] text-xs  font-ebGaramond">
+                    {speaker.position}
+                  </p>
                 </div>
               </div>
             </div>

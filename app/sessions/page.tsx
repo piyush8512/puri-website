@@ -73,13 +73,21 @@ const Page: React.FC = () => {
       {/* Responsive Header Section */}
       <header className="relative pt-15">
         <div className="hidden md:flex hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] flex-col items-center justify-start">
-          <Image
+          {/* <Image
             src="/partnersDate.svg"
             alt="Festival logo"
             width={127}
             height={52}
             className="object-contain min-w-xl w-120 h-100"
             priority
+          /> */}
+          <Image
+            className="size-30 xl:size-52"
+            // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
+            src="/mainpage/logo.svg"
+            alt="Festival logo"
+            width={127}
+            height={52}
           />
         </div>
 
@@ -96,7 +104,7 @@ const Page: React.FC = () => {
 
       {/* Sessions Section */}
       <section className="text-center">
-        <h1 className="font-leckerli font-bold text-4xl md:text-4xl lg:text-4xl text-[#D72327] pt-5 md:pt-10">
+        <h1 className="font-leckerli font-bold text-4xl md:text-4xl lg:text-4xl text-[#D72327] pt-5 md:pt-0">
           Dialogue Sessions
         </h1>
 

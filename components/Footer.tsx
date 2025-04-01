@@ -20,7 +20,7 @@ function Footer() {
       // "Privacy & Policies",
       "FAQs",
     ],
-    Events: ["Broucher", "Programs"],
+    Events: ["brochure", "Programs"],
     "Important Links": ["Volunteer", "Partner With Us"],
   };
 

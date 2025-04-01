@@ -40,6 +40,14 @@ export default function Page() {
                     width={127}
                     height={52}
                   />
+                  <motion.h1
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            className="text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#D72327] font-bold"
+                          >
+                            18th APRIL - 20th APRIL <br /> 2025
+                          </motion.h1>
       </motion.div>
 
       {/* Mobile view: hero section with logo and background image */}
@@ -61,7 +69,7 @@ export default function Page() {
       <motion.h1
         initial={{ opacity: 0 }}
         animate={controls}
-        className="font-leckerli font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-0 lg:mt-0"
+        className="font-leckerli font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-0 lg:mt-5"
       >
         Partners
       </motion.h1>
