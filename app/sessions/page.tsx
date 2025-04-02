@@ -271,7 +271,7 @@ const Page: React.FC = () => {
       <section className="relative">
         <div className="relative h-111 md:mb-45">
           <div className="w-full absolute top-0 left-0 paralleltree bg-contain md:bg-cover bg-center bg-no-repeat h-175">
-            <h1 className="font-leckerli font-bold text-4xl mt-20 md:m-0 md:text-4xl lg:text-5xl text-[#D72327] text-center">
+            <h1 className="font-leckerli font-bold text-4xl mt-20 md:m-0 md:text-5xl lg:text-5xl text-[#D72327] text-center">
               Parallel Sessions
             </h1>
           </div>
