@@ -189,7 +189,7 @@ function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative pt-15 inset-0  md:bg-transparent bg-[#FFFCF5]"
+      className="relative pt-22 inset-0  md:bg-transparent bg-[#FFFCF5]"
     >
       {/* Desktop View */}
       <div className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start">

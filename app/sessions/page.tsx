@@ -71,7 +71,7 @@ const Page: React.FC = () => {
   return (
     <div className="relative overflow-x-hidden">
       {/* Responsive Header Section */}
-      <header className="relative pt-15">
+      <header className="relative pt-23">
         <div className="hidden md:flex hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] flex-col items-center justify-start">
           {/* <Image
             src="/partnersDate.svg"
@@ -134,7 +134,7 @@ const Page: React.FC = () => {
               align: "center",
               loop: true,
             }}
-            className=" max-w-[300px] md:max-w-7xl"
+            className=" max-w-[380px] md:max-w-7xl"
             setApi={(api) => setEmblaRef(api || null)}
           >
             <CarouselContent>
@@ -151,15 +151,15 @@ const Page: React.FC = () => {
                           : "transition-all"
                       }
                     >
-                      <CardContent className="flex items-center justify-center md:h-110 md:w-94 w-50 h-40 bluedialoguebox bg-center bg-no-repeat bg-contain relative">
+                      <CardContent className="flex items-center justify-center md:h-110 md:w-94 w-50 h-80 bluedialoguebox bg-center bg-no-repeat bg-contain relative">
                         {/* <div className="absolute -top-4 rounded-full bg-[#D72327] z-50 h-15 w-15 font-leckerli text-[#2F3082] text-3xl text-center py-2">
                           {dialogue.id + 1}
                         </div> */}
                         <div
                           className={
                             index === dialogueActiveIndex
-                              ? "flex flex-col items-center justify-center yellowdialoguebox bg-center bg-no-repeat bg-contain md:h-110 md:w-84 w-30 h-40  hover:-rotate-10 transition-all duration-500 ease-in-out group mb-1"
-                              : "flex flex-col items-center justify-center yellowdialoguebox bg-center bg-no-repeat bg-contain md:h-110 md:w-84 w-40 h-40 mb-1"
+                              ? "flex flex-col items-center justify-center yellowdialoguebox bg-center bg-no-repeat bg-contain md:h-110 md:w-84 w-100 h-58  hover:-rotate-10 transition-all duration-500 ease-in-out group mb-1"
+                              : "flex flex-col items-center justify-center yellowdialoguebox bg-center bg-no-repeat bg-contain md:h-110 md:w-84 w-100 h-58 mb-1"
                           }
                         >
                           <h2 className="text-[#D72327] font-leckerli font-bold md:text-3xl group-hover:text-xl text-xs">
@@ -261,8 +261,8 @@ const Page: React.FC = () => {
   ))}
 </CarouselContent> */}
 
-            <CarouselPrevious className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute -left-[10%] top-[46%] md:top-[46%] md:-left-[4%]" />
-            <CarouselNext className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[100%] top-[46%] md:top-[46%] md:left-[100%]" />
+            <CarouselPrevious className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute -left-[0.1%] top-[46%] md:top-[46%] md:-left-[4%]" />
+            <CarouselNext className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[90%] top-[46%] md:top-[46%] md:left-[100%]" />
           </Carousel>
         </div>
       </section>
@@ -271,14 +271,14 @@ const Page: React.FC = () => {
       <section className="relative">
         <div className="relative h-111 md:mb-45">
           <div className="w-full absolute top-0 left-0 paralleltree bg-contain md:bg-cover bg-center bg-no-repeat h-175">
-            <h1 className="font-leckerli font-bold text-4xl mt-20 md:m-0 md:text-4xl lg:text-4xl text-[#D72327] text-center">
+            <h1 className="font-leckerli font-bold text-4xl mt-20 md:m-0 md:text-4xl lg:text-5xl text-[#D72327] text-center">
               Parallel Sessions
             </h1>
           </div>
         </div>
         {/* Parallel Sessions Carousel */}
         <div className="relative w-full flex justify-center items-center pb-45 mobilecurvedbluebg bg-center bg-no-repeat bg-cover md:curvedbluebg md:bg-bottom md:bg-cover md:bg-no-repeat h-150">
-          <Carousel
+          <Carousel 
             opts={{
               align: "center",
               loop: true,
@@ -300,14 +300,14 @@ const Page: React.FC = () => {
                           : "transition-all"
                       }
                     >
-                      <CardContent className="flex items-center justify-center h-35 w-64  md:h-75 md:w-84 redparallel bg-center bg-no-repeat bg-contain">
+                      <CardContent className="flex items-center justify-center h-37 w-50  md:h-75 md:w-84 redparallel bg-center bg-no-repeat bg-contain">
                         {/* <div className="absolute top-0 rounded-full bg-[#2F3082] z-50 h-15 w-15 font-leckerli text-[#D72327] text-3xl text-center py-2">
                           {dialogue.id + 1}
                         </div> */}
                         <div
                           className={
                             index === parallelDialogueActiveIndex
-                              ? "flex flex-col items-center justify-center yellowparallel bg-center bg-no-repeat bg-contain h-30 w-64 md:h-60 md:w-94 hover:-rotate-10 transition-all duration-500 ease-in-out group mb-1"
+                              ? "flex flex-col items-center justify-center yellowparallel bg-center bg-no-repeat bg-contain h-25 w-64 md:h-63 md:w-98 hover:-rotate-10 transition-all duration-500 ease-in-out group mb-1"
                               : "flex flex-col items-center justify-center yellowparallel bg-center bg-no-repeat bg-contain h-70 w-84 mb-1"
                           }
                         >

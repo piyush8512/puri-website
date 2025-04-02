@@ -18,7 +18,7 @@ export default function Page() {
   }, [controls]);
 
   return (
-    <div className="relative pt-15 inset-0 overflow-x-hidden">
+    <div className="relative pt-22 inset-0 overflow-x-hidden">
       {/* Desktop view: hero section with logo and background image */}
       <motion.div
         initial={{ opacity: 0 }}

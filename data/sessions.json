@@ -107,6 +107,15 @@
     }
   ],
   "paralellDialogues": [
+
+    
+    {
+      "id": 2,
+      "title": "Odia Literature in the 21st Century",
+      "subtitle": "",
+      "paragraph":
+        "Delve into how contemporary Odia literature responds to societal changes, global influences, and technological advancements. Concussions will feature prominent and emerging voices covering themes like urbanisation, migration, gender equality, and environmental sustainability. We’ll explore how digital platforms have expanded the reach of Odia literature while preserving its cultural roots. By celebrating Odia writers' creativity and resilience, this conversation aims to showcase the enduring power of regional literature in shaping India’s literary landscape."
+    },
     {
       "id": 0,
       "title": "Purvodaya:",

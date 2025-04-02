@@ -545,7 +545,7 @@ const page = () => {
   ];
 
   return (
-    <div className="relative pt-15 inset-0 overflow-x-hidden">
+    <div className="relative pt-20 inset-0 overflow-x-hidden">
       <motion.div
         variants={fadeIn}
         initial="hidden"

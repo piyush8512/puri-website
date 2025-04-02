@@ -26,7 +26,7 @@ function Footer() {
 
   return (
     <>
-      <footer className="md:block hidden md:h-140 xl:h-170 relative  font-ebGaramond">
+      <footer className="md:block hidden md:h-140 xl:h-180 relative  font-ebGaramond">
         {/* Background wave image with lower z-index */}
         <div className="absolute inset-0 -z-10 w-full h-full mx-auto">
           <Image

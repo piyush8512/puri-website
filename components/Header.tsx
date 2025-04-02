@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,12 +44,53 @@ function Header() {
 
   return (
     <header className="fixed z-[100] top-0 w-full">
+      <footer className="bg-red-600 py-2 flex justify-between items-center px-4 md:px-10 w-full">
+        <p className="text-white text-sm">purliteraryfestival@gmail.com</p>
+        <div className="flex space-x-3">
+          <Image
+            src="/icons/fb.svg"
+            alt="phone"
+            width={20}
+            height={20}
+            className="text-white text-lg cursor-pointer"
+          />
+          <Image
+            src="/icons/insta.svg"
+            alt="phone"
+            width={20}
+            height={20}
+            className="text-white text-lg cursor-pointer"
+          />
+          <Image
+            src="/icons/linkdin.svg"
+            alt="phone"
+            width={20}
+            height={20}
+            className="text-white text-lg cursor-pointer"
+          />
+          <Image
+            src="/icons/yt.svg"
+            alt="phone"
+            width={20}
+            height={20}
+            className="text-white text-lg cursor-pointer"
+          />
+          <Image
+            src="/icons/x.svg"
+            alt="phone"
+            width={20}
+            height={20}
+            className="text-white text-lg cursor-pointer"
+          />
+        </div>
+      </footer>
       {/* Main Navigation Bar */}
       <div className="h-16 sm:h-16 w-full bg-[#FFC40C] flex items-center justify-between px-4 sm:px-6 lg:px-10 ">
         {/* Logo */}
         <div className="flex items-center  mt-0 sm:mt-12 lg:mt-18 ">
           <Image
-            src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
+            // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
+            src={"/mainpage/logo.svg"}
             alt="Festival logo"
             width={60}
             height={60}
