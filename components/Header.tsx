@@ -4,13 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaYoutube,
-  FaXTwitter,
-} from "react-icons/fa6";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
