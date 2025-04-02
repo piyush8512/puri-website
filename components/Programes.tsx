@@ -9,7 +9,7 @@ const Programes = () => {
       
       <div className="w-1/2 md:w-2/5 md:mx-25 flex flex-col items-end md:items-center gap-5 px-4 md:px-5 mt-12 mb-44 md:mt-0">
         <h1 className="text-[#D72327] mt-12 pb-8 text-4xl md:text-5xl font-leckerli text-center">Programmes</h1>
-        <p className="text-right md:text-center text-xl pb-8   ">
+        <p className="text-right md:text-center text-xl pb-8   font-ebGaramond  ">
           The Puri Literary Festival 2025 celebrates India&apos;s rich heritage
           through literature, art, and tradition. Set in the spiritual heart of
           Puri, it blends ancient wisdom with modern dialogue, reviving

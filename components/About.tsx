@@ -167,7 +167,8 @@ const About = () => {
           }
         >
           <Image
-            src="/greetingman2.svg"
+            // src="https://ik.imagekit.io/zjaqik2mc/homehero/greetingman2.svg?updatedAt=1743487319927"
+            src="mainpage/greetingman2.svg"
             width={100}
             height={100}
             alt="male illustration"
@@ -183,10 +184,10 @@ const About = () => {
             isVisible ? { opacity: 1, y: 0, transition: { duration: 1.2 } } : {}
           }
         >
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-leckerli font-bold mb-6 md:mb-18 text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-leckerli font-bold mb-6 md:mb-16 text-white">
             About The Festival
           </h1>
-          <p className="text-white text-base sm:text-lg md:text-xl lg:text-xl">
+          <p className="text-white text-base sm:text-lg md:text-lg lg:text-lg font-ebGaramond">
             The Puri Literary Festival 2025 celebrates the harmony of tradition
             and modernity, inspired by the sacred symbolism of the Konark Sun
             Temple and Lord Jagannath&apos;s Ratha. Rooted in Puri&apos;s rich
@@ -207,7 +208,8 @@ const About = () => {
           }
         >
           <Image
-            src="/greetingwoman.svg"
+            // src="https://ik.imagekit.io/zjaqik2mc/homehero/greetingwoman.svg?updatedAt=1743486937258"
+            src="mainpage/greetingwoman.svg"
             width={100}
             height={100}
             alt="female illustration"
@@ -224,10 +226,11 @@ const About = () => {
           }
         >
           <Image
-            src="/about-border.svg"
+            // src="https://ik.imagekit.io/zjaqik2mc/homehero/about-border.svg?updatedAt=1743487323580"
+            src="mainpage/about-border.svg"
             width={400}
             height={300}
-            className="w-full"
+            className="w-full "
             alt="border decoration"
           />
         </motion.div>
@@ -277,7 +280,8 @@ const About = () => {
           }
         >
           <Image
-            src="/phoneaboutbg.png"
+            // src="https://ik.imagekit.io/zjaqik2mc/homehero/phoneaboutbg.png?updatedAt=1743487319775"
+            src="mainpage/phoneaboutbg.png"
             width={400}
             height={300}
             className="w-full h-auto object-cover"

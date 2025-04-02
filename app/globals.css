@@ -210,7 +210,7 @@
     background-image: url('/curvedbluebg.svg');
   }
   .mobilecurvedbluebg{
-    background-image: url('/mobilecurvedbluebg.svg');
+    background-image: url('/session/mobilecurvedbluebg2.svg');
   }
   .redparallel{
     background-image: url('/redparallel.svg');
@@ -219,6 +219,19 @@
     background-image: url('/yellowparallel.svg');
   }
   .paralleltree{
-    background-image: url('/paralleltree.svg');
+    background-image: url('/session/parallelbgsession3.svg');
   }
+}
+
+
+
+/* puse for desktop on partners */
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.group:hover .animate-marquee {
+  animation-play-state: paused;
 }

@@ -354,13 +354,29 @@ const Page = () => {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <Image
+        {/* <Image
           src="/partnersDate.svg"
           alt="Festival logo"
           width={127}
           height={52}
           className="object-contain min-w-xl w-120 h-100"
+        /> */}
+        <Image
+          className="size-30 xl:size-52"
+          // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
+          src="/mainpage/logo.svg"
+          alt="Festival logo"
+          width={127}
+          height={52}
         />
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#D72327] font-bold"
+        >
+          18th APRIL - 20th APRIL <br /> 2025
+        </motion.h1>
       </motion.div>
       <motion.div
         className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative"
@@ -386,10 +402,10 @@ const Page = () => {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <h1 className="font-leckerli text-xl md:text-6xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-3 lg:mt-18 lg:mb-0">
+        <h1 className="font-leckerli text-xl md:text-6xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-3 lg:mt-10 lg:mb-0">
           Special
         </h1>
-        <h1 className="font-leckerli text-3xl md:text-6xl lg:text-8xl xl:text-8xl text-[#ECCA19] text-center">
+        <h1 className="font-leckerli text-3xl md:text-6xl lg:text-8xl xl:text-7xl text-[#ECCA19] text-center">
           Features
         </h1>
       </motion.div>
@@ -402,7 +418,7 @@ const Page = () => {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <p className="text-[10px] md:text-xl lg:text-xl xl:text-xl text-center mt-10 md:mt-15 lg:mt-12 mb-10 lg:mb-20 md:mx-60 w-7/9 mx-auto">
+        <p className="text-[10px] md:text-xl lg:text-xl xl:text-xl text-center mt-10 md:mt-8 lg:mt-8 mb-10 lg:mb-20 md:mx-60 w-7/9 mx-auto font-ebGaramond">
           The Puri Literary Festival 2025 is dedicated to creating an inclusive
           and accessible environment where people from all backgrounds,
           abilities, and socio-economic standings can come together to celebrate
@@ -467,7 +483,7 @@ const Page = () => {
             </div>
 
             {/* Paragraph */}
-            <div className="w-2/3 lg:w-2/3 text-[10px] md:text-xl lg:text-xl text-gray-700 md:leading-relaxed text-justify">
+            <div className="w-2/3 lg:w-2/3 text-[10px] md:text-xl lg:text-xl text-gray-700  font-ebGaramond text-relaxed text-justify">
               <p>
                 Nestled amidst the pages of literature, a vibrant tapestry of
                 Odisha&apos;s ancestral artistry awaits you. The Puri Literary
@@ -597,7 +613,7 @@ const Page = () => {
               />
             </div>
 
-            <p className="text-xs md:text-base lg:text-lg text-gray-700 leading-relaxed px-4 md:px-0">
+            <p className="text-xs md:text-base lg:text-lg text-gray-700 leading-relaxed px-4 md:px-0 font-ebGaramond">
               As the sun sets on the golden shores of Puri, a new dawn for
               literature emerges—one of celebration, recognition, and
               brilliance. The PLF Book of the Year Awards 2024 will shine a
@@ -665,7 +681,7 @@ const Page = () => {
             </div>
 
             {/* Paragraph */}
-            <div className="w-full lg:w-1/2 text-xs md:text-xl lg:text-xl text-gray-700 text-justify md:leading-relaxed md:px-0 px-4">
+            <div className="w-full lg:w-1/2 text-xs md:text-xl lg:text-xl text-gray-700 text-justify md:leading-relaxed md:px-0 px-4 font-ebGaramond">
               <p>
                 Amidst the rhythm of literary discussions and the rustle of
                 pages turning, the special stalls showcasing the crème de la

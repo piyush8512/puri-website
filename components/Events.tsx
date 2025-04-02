@@ -15,16 +15,16 @@ function Events() {
       </div>
 
       {/* Event Cards */}
-      <div className="flex w-full md:w-auto justify-between mb-50  md:flex-row gap-2">
-        <div className="bg-cover bg-center bg-no-repeat event-red w-[168.3px] md:w-[18.6vw] h-[201px] md:h-[44vh] flex flex-col justify-center items-center px-5">
-          <h1 className="text-lg md:text-xl font-bold text-[#FFFCF5] text-center">
+      <div className="flex w-full md:w-auto justify-between mb-50  md:flex-row gap-2  font-ebGaramond">
+        <div className="bg-cover bg-center bg-no-repeat event-red w-[168.3px] md:w-[18.6vw] h-[201px] md:h-[48vh] flex flex-col justify-center items-center px-5">
+          <h1 className="text-lg md:text-xl font-bold text-[#FFFCF5] text-center ">
             Agents of Change:
           </h1>
           <p className="py-2 text-sm md:text-base font-medium text-[#FFFCF5] text-center">
             Role of Writers as Social Commentators and Activists
           </p>
         </div>
-        <div className="bg-cover bg-center bg-no-repeat event-blue w-[168.3px] md:w-[18.6vw] h-[201px] md:h-[44vh] flex flex-col justify-center items-center px-5">
+        <div className="bg-cover bg-center bg-no-repeat event-blue w-[168.3px] md:w-[18.6vw] h-[201px] md:h-[48vh] flex flex-col justify-center items-center px-5">
           <h1 className="text-lg md:text-xl font-bold text-[#FFFCF5] text-center">
             Unveiling the Past:
           </h1>
