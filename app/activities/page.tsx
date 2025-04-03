@@ -345,7 +345,7 @@ const Page = () => {
   };
 
   return (
-    <div className="relative pt-16 inset-0 overflow-x-hidden items-center justify-center w-full">
+    <div className="relative pt-25 inset-0 overflow-x-hidden items-center justify-center w-full">
       {/* header */}
       <motion.div
         className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[30vh] md:flex md:flex-col items-center justify-start relative w-full"

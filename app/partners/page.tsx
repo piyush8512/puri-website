@@ -290,7 +290,7 @@ export default function Page() {
               >
                 <Link href="https://www.argusmedia.com/en" target="_blank">
                   <Image
-                    src="/argus.jpg"
+                    src="/argus.jpeg"
                     alt="Argus Media logo"
                     width={100}
                     height={150}

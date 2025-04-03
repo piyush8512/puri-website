@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function Header() {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Close menu when escape key is pressed
@@ -123,17 +125,18 @@ function Header() {
             <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
               <Link href={"/aboutus"}>About Us</Link>
             </li>
-            <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
+            {/* <li className="hover:text-[#D72327] cursor-pointer hover:scale-115">
               Contact Us
-            </li>
+            </li> */}
           </ul>
         </nav>
 
         {/* Register Button - Always visible */}
         <div className="hidden md:block">
           <Button
-            variant={"destructive"}
-            className="m-0 font-leckerli text-sm lg:text-base cursor-pointer hover:scale-115"
+            onClick={() => router.push("/registernow")}
+            variant="destructive"
+            className="m-0 font-leckerli text-sm lg:text-base cursor-pointer hover:scale-110 transition-transform"
           >
             Register Now
           </Button>
@@ -173,7 +176,7 @@ function Header() {
                 { href: "/speakers", label: "Speakers" },
                 { href: "/activities", label: "Activities" },
                 { href: "/aboutus", label: "About Us" },
-                { href: "/contactus", label: "Contact Us" },
+                // { href: "/contactus", label: "Contact Us" },
               ].map(({ href, label }) => (
                 <li key={href} className="w-full text-center pb-2">
                   <Link
@@ -189,11 +192,12 @@ function Header() {
               {/* Register Now Button */}
               <li className="w-full flex justify-center pt-4">
                 <Button
+                  asChild
                   variant="destructive"
-                  className="font-leckerli sm:w-auto"
                   onClick={closeMenu}
+                  className="font-leckerli sm:w-auto cursor-pointer hover:scale-110 transition-transform"
                 >
-                  Register Now
+                  <Link href="/registernow">Register Now</Link>
                 </Button>
               </li>
             </ul>

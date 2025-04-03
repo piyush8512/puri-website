@@ -286,47 +286,48 @@ const Page: React.FC = () => {
             className="max-w-[380px] md:max-w-7xl relative"
             setApi={(api) => setParallelEmblaRef(api || null)}
           >
-            <CarouselContent>
-              {sessionsData.paralellDialogues.map((dialogue, index) => (
-                <CarouselItem
-                  key={index}
-                  className=" basis-1/2 md:basis-1/2 lg:basis-1/3 text-center"
-                >
-                  <div className="p-1">
-                    <Card
-                      className={
-                        index !== parallelDialogueActiveIndex
-                          ? "transition-all opacity-35 scale-80 "
-                          : "transition-all"
-                      }
-                    >
-                      <CardContent className="flex items-center justify-center h-37 w-50  md:h-75 md:w-84 redparallel bg-center bg-no-repeat bg-contain">
-                        {/* <div className="absolute top-0 rounded-full bg-[#2F3082] z-50 h-15 w-15 font-leckerli text-[#D72327] text-3xl text-center py-2">
-                          {dialogue.id + 1}
-                        </div> */}
-                        <div
-                          className={
-                            index === parallelDialogueActiveIndex
-                              ? "flex flex-col items-center justify-center yellowparallel bg-center bg-no-repeat bg-contain h-25 w-64 md:h-63 md:w-98 hover:-rotate-10 transition-all duration-500 ease-in-out group mb-1"
-                              : "flex flex-col items-center justify-center yellowparallel bg-center bg-no-repeat bg-contain h-70 w-84 mb-1"
-                          }
-                        >
-                          <h2 className="text-[#D72327] font-leckerli font-bold text-lg md:text-3xl group-hover:text-xl">
-                            {dialogue.title}
-                          </h2>
-                          <h3 className="text-blue-800 font-leckerli text-sm md:text-xl group-hover:text-lg w-55">
-                            {dialogue.subtitle}
-                          </h3>
-                          {/* <p className="font-inter text-sm w-65 hidden group-hover:block transition-opacity ease-in-out duration-500">
-                            {dialogue.paragraph}
-                          </p> */}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
+          <CarouselContent>
+  {sessionsData.paralellDialogues.map((dialogue, index) => (
+    <CarouselItem
+      key={index}
+      className="basis-1/2 md:basis-1/2 lg:basis-1/3 text-center"
+    >
+      <div className="p-1">
+        <Card
+          className={
+            index !== parallelDialogueActiveIndex
+              ? "transition-all opacity-35 scale-80  "
+              : "transition-all"
+          }
+        >
+          <CardContent className="flex items-center justify-center h-37 w-50 md:h-90 md:w-120 redparallel bg-center bg-no-repeat bg-contain pr-2">
+            <div
+              className={`flex flex-col items-center justify-center bg-center bg-no-repeat bg-contain transition-all duration-500 ease-in-out group mb-1 ${
+                index === parallelDialogueActiveIndex
+                  ? "yellowparallel h-25 w-64 md:h-73 md:w-138 hover:bg-none "
+                  : "h-70 w-84 md:h-60 md:w-64 md:mr-12  "
+              }`}
+            >
+              {/* Title and subtitle - hidden on hover */}
+              <h2 className="text-[#D72327] font-leckerli font-bold text-lg md:text-3xl group-hover:hidden">
+                {dialogue.title}
+              </h2>
+              <h3 className="text-blue-800 font-leckerli text-sm md:text-xl group-hover:hidden w-55">
+                {dialogue.subtitle}
+              </h3>
+
+              {/* Paragraph - shown only on hover */}
+              <h3 className="text-blue-800 font-leckerli text-sm md:text-sm w-80 hidden group-hover:block">
+                {dialogue.paragraph}
+              </h3>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </CarouselItem>
+  ))}
+</CarouselContent>
+
             <CarouselPrevious className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[3%] top-[50%] md:-left-[4%] md:top-[50%]" />
             <CarouselNext className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[90%] top-[50%] md:left-[100%]  md:top-[50%]" />
           </Carousel>

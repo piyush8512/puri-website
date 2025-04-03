@@ -108,7 +108,7 @@ const partnerLogos = [
   { src: "/isdm.jpg", width: 120, height: 85, link: "https://www.isdm.org.in" },
   { src: "/jindalUni.jpg", width: 180, height: 80, link: "https://jgu.edu.in" },
   {
-    src: "/argus.jpg",
+    src: "/argus.jpeg",
     width: 90,
     height: 75,
     link: "https://www.argusmedia.com/en",
