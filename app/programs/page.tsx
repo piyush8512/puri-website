@@ -7,20 +7,12 @@ const page = () => {
     <div className="relative pt-15 inset-0 overflow-x-hidden w-full">
       {/* Header Section */}
       <div className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start relative">
-        {/* <Image
+        <Image
           src="/partnersDate.svg"
           alt="Festival logo"
           width={127}
           height={52}
           className="object-contain min-w-xl w-120 h-100"
-        /> */}
-        <Image
-          className="size-30 xl:size-52"
-          // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
-          src="/mainpage/logo.svg"
-          alt="Festival logo"
-          width={127}
-          height={52}
         />
       </div>
       <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative">
@@ -62,13 +54,22 @@ const page = () => {
             className="object-contain w-[100%] max-w-lg md:max-w-lg lg:max-w-2xl absolute -left-2 -bottom-85"
           />
         </div>
-        <div className="absolute -bottom-95 right-10  z-20 hidden md:block ">
+        <div className="absolute -bottom-95 right-12 -z-20 hidden md:block ">
           <Image
             src="/programs/musician.svg"
             alt="Decorative Line"
             width={357}
             height={52}
             className="w-3/4 sm:w-1/2 md:w-[350px]  rounded-lg "
+          />
+        </div>
+        <div className="absolute -bottom-95 right-0 -z-10 hidden md:block ">
+          <Image
+            src="/programs/female-dancer.svg"
+            alt="Decorative Line"
+            width={357}
+            height={52}
+            className="w-3/4 sm:w-1/2 md:w-50 rounded-lg "
           />
         </div>
       </div>
@@ -225,9 +226,26 @@ const page = () => {
           />
         </div>
       </div>
-
+      <div className="relative">
+        <Image
+          src="/programs/male-dancer.svg"
+          alt="Decorative Line"
+          width={357}
+          height={52}
+          className="absolute -top-62 right-1/3 z-10 w-40 md:w-75"
+        />
+      </div>
+      <div className="relative">
+        <Image
+          src="/programs/female-dancer.svg"
+          alt="Decorative Line"
+          width={357}
+          height={52}
+          className="absolute -top-70 right-1/6 z-10 w-40 md:w-60"
+        />
+      </div>
       {/* pinkdiv */}
-      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden mt-20">
+      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden mt-20 z-20">
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
             src="/programs/pinkbg.svg"
@@ -282,9 +300,17 @@ const page = () => {
           />
         </div>
       </div>
-
+      <div className="relative">
+        <Image
+          src="/programs/painter.svg"
+          alt="Decorative Line"
+          width={357}
+          height={52}
+          className="absolute left-60 -top-45 z-20 w-40 md:w-120"
+        />
+      </div>
       {/* blue div */}
-      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden mt-18  ">
+      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden mt-18  z-30">
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
             src="/programs/blue.svg"
@@ -337,9 +363,17 @@ const page = () => {
           />
         </div>
       </div>
-
+      <div className="relative">
+        <Image
+          src="/programs/dolphin.svg"
+          alt="Decorative Line"
+          width={357}
+          height={52}
+          className="absolute right-0 -top-50 z-30 w-40 md:w-240"
+        />
+      </div>
       {/* orange */}
-      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden mt-20">
+      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden mt-20 z-30">
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
             src="/programs/orange.svg"
@@ -396,9 +430,17 @@ const page = () => {
           />
         </div>
       </div>
-
+      <div className="relative">
+        <Image
+          src="/programs/sand.svg"
+          alt="Decorative Line"
+          width={357}
+          height={52}
+          className="absolute left-0 -top-45 z-30 w-40 md:w-240"
+        />
+      </div>
       {/* greensection */}
-      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden my-15">
+      <div className="relative w-full min-h-[100vh] md:min-h-[120vh] lg:min-h-[150vh] flex items-center justify-center overflow-hidden my-15 z-40">
         {/* Background Image */}
         <div className="absolute inset-0 z-0 h-full w-full">
           <Image
