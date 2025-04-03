@@ -461,7 +461,7 @@ export const publishers: Minister[] = [
   {
 
   image: "/speaker2/simon.png",
-  width: 220,
+  width: 200,
   height: 280,
 
 },
@@ -482,7 +482,7 @@ export const publishers: Minister[] = [
 {
 
   image: "/speaker2/harpercollins.png",
-  width: 220,
+  width: 200,
   height: 280,
 
 },
@@ -499,12 +499,19 @@ export const publishers: Minister[] = [
   width: 220,
   height: 280,
 
-},
+}
+,{
 
+  image: "/speaker2/jaico.png",
+  width: 230,
+  height: 280,
+
+}
+,
 {
 
   image: "/speaker2/blueone.png",
-  width: 220,
+  width: 240,
   height: 280,
 
 },
@@ -519,13 +526,7 @@ export const publishers: Minister[] = [
 {
 
   image: "/speaker2/hachette.png",
-  width: 250,
-  height: 280,
-
-},{
-
-  image: "/speaker2/jaico.png",
-  width: 220,
+  width: 260,
   height: 280,
 
 }

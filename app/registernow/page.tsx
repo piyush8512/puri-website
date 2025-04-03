@@ -22,12 +22,12 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-red-700 p-4">
+    <div className="flex items-center justify-center min-h-screen bg-[#D72327] p-4">
       <form
         onSubmit={handleSubmit}
-        className="bg-red-900 p-6 rounded-lg shadow-lg w-full max-w-2xl"
+        className="bg-[#D72327] p-6 rounded-lg shadow-lg w-full max-w-2xl"
       >
-        <h2 className="text-yellow-400 text-2xl font-bold text-center mb-4">
+        <h2 className="text-yellow-400 text-2xl font-bold text-center mb-4 font-leckerli">
           Register Now
         </h2>
         <div className="space-y-4">
@@ -77,7 +77,7 @@ const RegistrationForm = () => {
           />
           <button
             type="submit"
-            className="w-full bg-yellow-500 text-red-900 font-bold py-2 rounded hover:bg-yellow-600 transition"
+            className="w-full bg-yellow-500 text-red-900 font-bold py-2 rounded hover:bg-yellow-600 transition font-leckerli"
           >
             Submit
           </button>

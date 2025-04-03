@@ -8,7 +8,7 @@ function Speakers() {
     { position: "absolute bottom-70 left-0", size: "w-25 md:w-20 " },
     { position: "absolute top-2 right-0", size: "w-25 md:w-20" },
     { position: "absolute bottom-2 left-0", size: "w-25 md:w-20 " },
-    { position: "absolute top-70 right-0", size: "w-25 md:w-20 " },
+    { position: "absolute top-80 right-0", size: "w-25 md:w-24 " },
   ];
   const speakers = [
     {
@@ -17,20 +17,20 @@ function Speakers() {
       image: "/Sh. Gajendra Singh Shekhawat.svg",
     },
     {
-      name: "Sh. Sarvanand Sonowal",
-      position: "Minister of Ports, Shipping & Waterways, Government of India.",
+      name: "Sh. Sarbananda Sonowal",
+      position: "Union Minister of Ports, Shipping & Waterways, Government of India.",
       image: "/Sarvanand Sonowal Ji’s.svg",
     },
     {
       name: "Sh. Dharmendra Pradhan",
-      position: "Minister of Education, Government of India.",
+      position: "Union Minister of Education, Government of India.",
       image: "/Sh. Dharmendra Pradhan.svg",
     },
 
     {
       name: "Sh. Hari Babu Kambhampati",
       position: "Governor of Odisha",
-      image: "/Sh. Hari Babu Kambhampati.svg",
+      image: "/shashitharoor.svg",
     },
   ];
 
@@ -98,6 +98,7 @@ function Speakers() {
                   <h1 className="text-white text-sm font-medium  font-ebGaramond">
                     {speaker.name}
                   </h1>
+                  <p> </p>
                   <p className="text-white text-xs  font-ebGaramond">
                     {speaker.position}
                   </p>

@@ -545,28 +545,20 @@ const page = () => {
   ];
 
   return (
-    <div className="relative pt-20 inset-0 overflow-x-hidden">
+    <div className="relative pt-22 inset-0 overflow-x-hidden">
       <motion.div
         variants={fadeIn}
         initial="hidden"
         animate="visible"
         className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start relative"
       >
-        {/* <Image
-          src="/partnersDate.svg"
-          alt="Festival logo"
-          width={127}
-          height={52}
-          className="object-contain min-w-xl w-120 h-100"
-        /> */}
          <Image
-                                    className="size-30 xl:size-52"
-                                    // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
-                                    src="/mainpage/logo.svg"
-                                    alt="Festival logo"
-                                    width={127}
-                                    height={52}
-                                  />
+    className="size-30 xl:size-52"
+      src="/mainpage/logo.svg"
+      alt="Festival logo"
+       width={127}
+      height={52}
+      />
       </motion.div>
       <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative">
         {/* Logo image */}
@@ -577,22 +569,25 @@ const page = () => {
           height={67}
           className="object-cover w-20 "
         />
+         <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  className="text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#D72327] font-bold"
+                >
+                  18th APRIL - 20th APRIL <br /> 2025
+                </motion.h1>
+        
       </div>
       <h1 className="font-leckerli font-bold text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-0 mb-25  md:mb-60">
         About us
       </h1>
 
+     
+
       {/* our philosophy */}
 
       <div className="relative w-full flex flex-col items-center justify-center">
-        {/* <div className="relative h-25 w-full">      <Image
-  src="/aboutHero.svg"
-  alt="about Hero"
-  width={127}
-  height={152}
-  className="w-full h-35 md:h-31 object-cover z-50 absolute top-[2%] md:-top-[18%] lg:-top-[25%] xl:-top-[35%]"
-/>
-</div> */}
         <div className="absolute w-full h-30 md:h-40 lg:h-80 xl:h-110 aboutHero bg-center bg-cover bg-no-repeat -top-[5%] md:-top-[18%] xl:-top-[30%] z-[50]"></div>
         {/* Background Image */}
         <Image

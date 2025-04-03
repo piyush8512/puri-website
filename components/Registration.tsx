@@ -38,7 +38,7 @@ const Registration = () => {
         </div>
 
         {/* Registration text */}
-        <p className="text-center text-[10px] md:text-lg lg:text-xl px-2 md:px-4 lg:px-8   font-ebGaramond">
+        <p className="text-center text-[10px] md:text-lg lg:text-xl px-2 md:px-4 lg:px-24  font-ebGaramond">
           The 2025 edition of the Puri Literary Festival will bring together
           literary icons, cultural historians, and thought leaders for an
           inspiring celebration of India&apos;s heritage and future. Register

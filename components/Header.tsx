@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Mail } from 'lucide-react';
 
 function Header() {
   const router = useRouter();
@@ -39,9 +40,17 @@ function Header() {
 
   return (
     <header className="fixed z-[100] top-0 w-full">
-      <footer className="bg-red-600 py-2 flex justify-between items-center px-4 md:px-10 w-full">
-        <p className="text-white text-sm">purliteraryfestival@gmail.com</p>
+      <footer className="bg-[#D72327] py-2 flex justify-between items-center px-4 md:px-10 w-full">
+        {/* <Image
+          src="/icons/mail.png"
+          alt="phone"
+          width={20}
+          height={20}/> */}
+          <div className="flex space-x-3">
+            <Mail  className="text-white text-lg flex-cols justify-left"/>
+        <p className="text-white text-sm flex-cols justify-left">purliteraryfestival@gmail.com</p> </div>
         <div className="flex space-x-3">
+
           <Image
             src="/icons/fb.svg"
             alt="phone"
@@ -52,7 +61,7 @@ function Header() {
           <Image
             src="/icons/insta.svg"
             alt="phone"
-            width={20}
+            width={22}
             height={20}
             className="text-white text-lg cursor-pointer"
           />

@@ -73,14 +73,6 @@ const Page: React.FC = () => {
       {/* Responsive Header Section */}
       <header className="relative pt-23">
         <div className="hidden md:flex hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] flex-col items-center justify-start">
-          {/* <Image
-            src="/partnersDate.svg"
-            alt="Festival logo"
-            width={127}
-            height={52}
-            className="object-contain min-w-xl w-120 h-100"
-            priority
-          /> */}
           <Image
             className="size-30 xl:size-52"
             // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
@@ -112,7 +104,7 @@ const Page: React.FC = () => {
 
       {/* Sessions Section */}
       <section className="text-center">
-        <h1 className="font-leckerli font-bold text-4xl md:text-4xl lg:text-4xl text-[#D72327] pt-5 md:pt-4">
+        <h1 className="font-leckerli font-bold text-4xl md:text-4xl lg:text-5xl text-[#D72327] pt-5 md:pt-5">
           Dialogue Sessions
         </h1>
 
@@ -128,7 +120,7 @@ const Page: React.FC = () => {
         </div>
 
         {/* Sessions Carousel */}
-        <div className="session-slider-bg bg-center bg-cover bg-no-repeat h-120 md:h-270 w-full flex items-center justify-center relative -top-40 overflow-hidden mt-25 md:m-0">
+        <div className="session-slider-bg bg-center bg-cover bg-no-repeat h-120 md:h-270 w-full flex items-center justify-center relative -top-40 overflow-hidden mt-23 md:m-0">
           <Carousel
             opts={{
               align: "center",
@@ -165,10 +157,10 @@ const Page: React.FC = () => {
                           <h2 className="text-[#D72327] font-leckerli font-bold md:text-3xl group-hover:text-xl text-xs">
                             {dialogue.title}
                           </h2>
-                          <h3 className="text-blue-800 font-leckerli md:text-xl group-hover:text-md md:w-55 w-23 text-xs">
+                          <h3 className="text-blue-800 font-leckerli md:text-xl group-hover:text-md md:w-55 w-23 text-xs ">
                             {dialogue.subtitle}
                           </h3>
-                          <p className="font-inter text-sm w-65 hidden group-hover:block transition-opacity ease-in-out duration-500">
+                          <p className="font-inter text-sm w-65 hidden group-hover:block transition-opacity ease-in-out font-ebGaramond duration-500 ">
                             {dialogue.paragraph}
                           </p>
                         </div>
@@ -271,7 +263,7 @@ const Page: React.FC = () => {
       <section className="relative">
         <div className="relative h-111 md:mb-45">
           <div className="w-full absolute top-0 left-0 paralleltree bg-contain md:bg-cover bg-center bg-no-repeat h-175">
-            <h1 className="font-leckerli font-bold text-4xl mt-20 md:m-0 md:text-5xl lg:text-5xl text-[#D72327] text-center">
+            <h1 className="font-leckerli font-bold text-4xl mt-22 md:m-0 md:text-5xl lg:text-6xl text-[#D72327] text-center">
               Parallel Sessions
             </h1>
           </div>
@@ -283,7 +275,7 @@ const Page: React.FC = () => {
               align: "center",
               loop: true,
             }}
-            className="max-w-[380px] md:max-w-7xl relative"
+            className="max-w-[380px] md:max-w-[1500px] relative md:mr-30"
             setApi={(api) => setParallelEmblaRef(api || null)}
           >
           <CarouselContent>
@@ -300,24 +292,22 @@ const Page: React.FC = () => {
               : "transition-all"
           }
         >
-          <CardContent className="flex items-center justify-center h-37 w-50 md:h-90 md:w-120 redparallel bg-center bg-no-repeat bg-contain pr-2">
+          <CardContent className="flex items-center justify-center h-37 w-50 md:h-90 md:w-150 redparallel bg-center bg-no-repeat bg-contain ">
             <div
               className={`flex flex-col items-center justify-center bg-center bg-no-repeat bg-contain transition-all duration-500 ease-in-out group mb-1 ${
                 index === parallelDialogueActiveIndex
                   ? "yellowparallel h-25 w-64 md:h-73 md:w-138 hover:bg-none "
-                  : "h-70 w-84 md:h-60 md:w-64 md:mr-12  "
+                  : "h-70 w-84 md:h-60 md:w-64   "
               }`}
-            >
-              {/* Title and subtitle - hidden on hover */}
+            >   
               <h2 className="text-[#D72327] font-leckerli font-bold text-lg md:text-3xl group-hover:hidden">
                 {dialogue.title}
               </h2>
               <h3 className="text-blue-800 font-leckerli text-sm md:text-xl group-hover:hidden w-55">
                 {dialogue.subtitle}
               </h3>
-
-              {/* Paragraph - shown only on hover */}
-              <h3 className="text-blue-800 font-leckerli text-sm md:text-sm w-80 hidden group-hover:block">
+              
+              <h3 className="text-white font-leckerli text-sm md:text-[14px] w-80 hidden group-hover:block font-ebGaramond">
                 {dialogue.paragraph}
               </h3>
             </div>
@@ -328,7 +318,7 @@ const Page: React.FC = () => {
   ))}
 </CarouselContent>
 
-            <CarouselPrevious className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[3%] top-[50%] md:-left-[4%] md:top-[50%]" />
+            <CarouselPrevious className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[3%] top-[50%] md:left-[5%] md:top-[50%]" />
             <CarouselNext className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[90%] top-[50%] md:left-[100%]  md:top-[50%]" />
           </Carousel>
         </div>

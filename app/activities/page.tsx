@@ -418,14 +418,25 @@ const Page = () => {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <p className="text-[10px] md:text-xl lg:text-xl xl:text-xl text-center mt-10 md:mt-8 lg:mt-8 mb-10 lg:mb-20 md:mx-60 w-7/9 mx-auto font-ebGaramond">
-          The Puri Literary Festival 2025 is dedicated to creating an inclusive
-          and accessible environment where people from all backgrounds,
-          abilities, and socio-economic standings can come together to celebrate
-          literature, culture, and heritage. We believe that these elements
-          should be shared by everyone, regardless of their circumstances. The
-          festival is particularly focused on providing financial and cultural
-          support to Odisha&apos;s Particularly Vulnerable Tribal Groups (PVTGs)
+        <p className="text-[10px] md:text-xl lg:text-xl xl:text-xl  mt-10 md:mt-8 lg:mt-8 mb-10 lg:mb-20 md:mx-60 w-7/9 mx-auto font-ebGaramond text-justify">
+          <span className="font-bold">The Puri Literary Festival 2025</span> is
+          dedicated to creating an inclusive and accessible environment where
+          people from all{" "}
+          <span className="font-bold">
+            {" "}
+            backgrounds, abilities, and socio-economic{" "}
+          </span>{" "}
+          standings can come together to{" "}
+          <span className="font-bold">
+            {" "}
+            celebrate literature, culture, and heritage.{" "}
+          </span>{" "}
+          We believe that these elements should be shared by everyone,
+          regardless of their circumstances. The festival is particularly
+          focused on providing financial and cultural support to{" "}
+          <span className="font-bold">
+            Odisha&apos;s Particularly Vulnerable Tribal Groups (PVTGs){" "}
+          </span>
           and indigenous artists.
         </p>
       </motion.div>
@@ -487,17 +498,26 @@ const Page = () => {
               <p>
                 Nestled amidst the pages of literature, a vibrant tapestry of
                 Odisha&apos;s ancestral artistry awaits you. The Puri Literary
-                Festival proudly unveils dedicated spaces where the PVTG
-                artisans and tribal entrepreneurs of our land can unfurl the
-                rich, untold stories woven into their crafts, textiles, and
-                handlooms. These masterpieces—handcrafted with love and rooted
-                in centuries of tradition—offer more than just art; they offer a
-                lifeline to a community, preserving an ancestral heritage while
-                nurturing economic independence. From intricate beadwork to
-                vibrant tapestries, each creation is a testament to the spirit
-                and resilience of Odisha&apos;s indigenous people. Here,
+                Festival proudly unveils dedicated spaces{" "}
+                <span className="font-bold">
+                  where the PVTG artisans and tribal entrepreneurs of our land
+                  can unfurl the rich, untold stories woven into their crafts,
+                  textiles, and handlooms.
+                </span>{" "}
+                These masterpieces—handcrafted with love and rooted in centuries
+                of tradition—offer more than just art; they offer a lifeline to
+                a community,{" "}
+                <span className="font-bold">
+                  preserving an ancestral heritage
+                </span>{" "}
+                while nurturing economic independence. From intricate beadwork
+                to vibrant tapestries, each creation is a testament to the
+                spirit and resilience of Odisha&apos;s indigenous people. Here,
                 visitors will not only feast their eyes on beauty but also take
-                home a piece of history, woven with tradition and authenticity.
+                home a{" "}
+                <span className="font-bold">
+                  piece of history, woven with tradition and authenticity.
+                </span>
                 In celebrating these artisans, we cherish both their culture and
                 their stories, ensuring that their legacy continues to thrive.
               </p>
@@ -613,20 +633,28 @@ const Page = () => {
               />
             </div>
 
-            <p className="text-xs md:text-base lg:text-lg text-gray-700 leading-relaxed px-4 md:px-0 font-ebGaramond">
+            <p className="text-xs md:text-base lg:text-lg text-gray-700 leading-relaxed px-4 md:px-0 font-ebGaramond text-justify">
               As the sun sets on the golden shores of Puri, a new dawn for
               literature emerges—one of celebration, recognition, and
-              brilliance. The PLF Book of the Year Awards 2024 will shine a
-              spotlight on the finest literary creations of our time. Across a
-              spectrum of genres, including Fantasy, Thriller, Historical
-              Fiction, Romance, Women&apos;s Fiction, Children&apos;s & YA,
-              Biography, Self-Help, Travel, Religion & Spirituality, and Society
-              & Politics, we will honor the pioneers of the written word. But
-              the night will also hold a special honor: the Emerging Author of
-              the Year Award, a tribute to the new voices making waves in the
-              literary world. These awards will not only applaud those who have
-              shaped the literary landscape but will also ignite the passions of
-              future storytellers who are yet to be discovered.
+              brilliance.{" "}
+              <span className="font-bold">
+                {" "}
+                The PLF Book of the Year Awards 2024{" "}
+              </span>{" "}
+              will shine a spotlight on the finest literary creations of our
+              time. Across a spectrum of genres, including{" "}
+              <span className="font-bold">
+                {" "}
+                Fantasy, Thriller, Historical Fiction, Romance, Women&apos;s
+                Fiction, Children&apos;s & YA, Biography, Self-Help, Travel,
+                Religion & Spirituality, and Society & Politics,{" "}
+              </span>{" "}
+              we will honor the pioneers of the written word. But the night will
+              also hold a special honor: the Emerging Author of the Year Award,
+              a tribute to the new voices making waves in the literary world.
+              These awards will not only applaud those who have shaped the
+              literary landscape but will also ignite the passions of future
+              storytellers who are yet to be discovered.
             </p>
           </div>
         </div>
@@ -684,11 +712,15 @@ const Page = () => {
             <div className="w-full lg:w-1/2 text-xs md:text-xl lg:text-xl text-gray-700 text-justify md:leading-relaxed md:px-0 px-4 font-ebGaramond">
               <p>
                 Amidst the rhythm of literary discussions and the rustle of
-                pages turning, the special stalls showcasing the crème de la
-                crème of Indian publishing will offer an oasis for every book
-                lover. Here, the leading publishing houses of India will unfold
-                their treasure troves of stories, spanning the breadth of genres
-                and realms, from timeless classics to cutting-edge new releases.
+                pages turning, the special stalls showcasing{" "}
+                <span className="font-bold">
+                  {" "}
+                  the crème de la crème of Indian{" "}
+                </span>{" "}
+                publishing will offer an oasis for every book lover. Here, the
+                leading publishing houses of India will unfold their treasure
+                troves of stories, spanning the breadth of genres and realms,
+                from timeless classics to cutting-edge new releases.
               </p>
             </div>
           </div>

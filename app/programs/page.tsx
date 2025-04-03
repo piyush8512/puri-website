@@ -1,19 +1,30 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
     <div className="relative pt-24 inset-0 overflow-x-hidden w-full">
       {/* Header Section */}
       <div className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start relative">
-        <Image
-          src="/partnersDate.svg"
-          alt="Festival logo"
-          width={127}
-          height={52}
-          className="object-contain min-w-xl w-120 h-100"
-        />
+      <Image
+                                        className="size-30 xl:size-52"
+                                        // src="https://ik.imagekit.io/zjaqik2mc/homehero/logo.svg?updatedAt=1743486047833"
+                                        src="/mainpage/logo.svg"
+                                        alt="Festival logo"
+                                        width={127}
+                                        height={52}
+                                      />
+                                       <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#D72327] font-bold md:mt-3"
+        >
+          18th APRIL - 20th APRIL <br /> 2025
+        </motion.h1>
       </div>
       <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative">
         <Image
@@ -28,10 +39,10 @@ const page = () => {
       {/* Title Section */}
       <div className="w-full flex flex-col items-center relative">
         {/* Heading */}
-        <h1 className="font-leckerli text-xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl text-[#D72327] text-center mt-2 md:mt-3 lg:mt-3">
+        <h1 className="font-leckerli text-xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl text-[#D72327] text-center mt-2 md:mt-3 lg:mt-10">
           A Celebration of
         </h1>
-        <h1 className="font-leckerli text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl text-[#ECCA19] text-center">
+        <h1 className="font-leckerli text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl text-[#ECCA19] text-center md:mt-1">
           Heritage & Culture
         </h1>
 
@@ -123,7 +134,7 @@ const page = () => {
               Vision of the Past to Shape our Present
             </h2>
 
-            <p className="text-[#000000] text-xs md:text-lg pt-8 md:pt-0 px-12  md:px-0 text-justify ">
+            <p className="text-[#000000] text-xs md:text-lg pt-8 md:pt-0 px-12  md:px-0 text-justify font-ebGaramond ">
               An immersive Heritage Walk, allowing participants to explore
               Puri’s iconic landmarks such as the Jagannath Temple, Gundicha
               Temple, and the vibrant bylanes echoing with tales of devotion and
@@ -186,7 +197,7 @@ const page = () => {
             <h2 className="text-lg md:text-4xl text-[#9F6EEA] italic  font-ebGaramond">
               A tapestry of Traditions
             </h2>
-            <p className="text-white text-xs md:text-base md:pt-10">
+            <p className="text-white text-xs md:text-base md:pt-10 font-ebGaramond">
               While the days will lead to thought-provoking discussions, the
               evenings will soothe the audience with a Cultural Night
               celebrating India&apos;s diverse artistic heritage. From the
@@ -278,13 +289,13 @@ const page = () => {
 
           {/* Right Section - Image with 3D Shadow */}
           <div className="w-full md:w-1/2 text-center md:text-left mt-10 md:my-auto">
-            <h2 className="text-xl md:text-4xl text-white  font-ebGaramond">
+            <h2 className="text-xl md:text-5xl font-bold text-white  font-ebGaramond">
               Gallery of Pattachitra Art
             </h2>
             <h1 className="text-2xl md:text-3xl font-semibold text-[#992586] italic  font-ebGaramond">
               Stories in Strokes
             </h1>
-            <p className="text-white text-sm md:text-base pt-8">
+            <p className="text-white text-sm md:text-base pt-8 font-ebGaramond">
               An immersive Heritage Walk, allowing participants to explore
               Puri&apos;s iconic landmarks such as the Jagannath
               Temple, Gundicha Temple, and the vibrant bylanes echoing with
@@ -343,10 +354,10 @@ const page = () => {
             <h1 className="text-3xl md:text-5xl font-bold text-white  font-ebGaramond">
               Tales by the Tide{" "}
             </h1>
-            <h2 className="text-xl md:text-4xl text-[#2F3082] italic font-ebGaramond">
+            <h2 className="text-xl  font-semibold md:text-3xl text-[#2F3082] italic font-ebGaramond">
               Seaside Storytelling Sessions
             </h2>
-            <p className="text-[#000000] text-sm md:text-base pt-12">
+            <p className="text-[#000000] text-sm md:text-base pt-12 font-ebGaramond">
               Puri’s serene beaches will serve as the backdrop for enchanting
               storytelling sessions that celebrate the oral and intangible
               traditions of Odisha and beyond. Storytellers and performers will
@@ -358,7 +369,7 @@ const page = () => {
           {/* Right Section - Image with 3D Shadow */}
           <div className="w-full flex justify-center mt-4 md:w-1/3 md:my-auto">
             <Image
-              src="/programs/storyteelling.png"
+              src="/programs/tidesimg.png"
               alt="Decorative Line"
               width={357}
               height={52}
@@ -427,14 +438,14 @@ const page = () => {
 
           {/* Right Section - Image with 3D Shadow */}
           <div className="w-full md:w-1/2 text-center md:text-left md:my-auto font-ebGaramond ">
-            <h2 className="text-xl md:text-4xl text-white">
+            <h2 className="text-xl md:text-5xl font-bold text-white">
               Timeless Sands of Odisha
             </h2>
-            <h1 className="text-2xl md:text-2xl font-semibold text-[#7F1822] italic  font-ebGaramond">
+            <h1 className="text-2xl md:text-3xl font-semibold text-[#7F1822] italic  font-ebGaramond md:mt-2">
               Baluka Kala
             </h1>
 
-            <p className="text-[#000000] text-sm md:text-lg md:pt-12">
+            <p className="text-[#000000] text-sm md:text-lg md:pt-10 font-ebGaramond">
               Renowned sand artists like Sudarshan Patnaik and others will grace
               the festival with their extraordinary talent,
               creating breathtaking sand sculptures that align with the themes
@@ -498,10 +509,10 @@ const page = () => {
             <h1 className="text-3xl md:text-5xl font-bold text-white  font-ebGaramond">
               Food Festival
             </h1>
-            <h2 className="text-xl md:text-4xl text-[#495B0D] italic  font-ebGaramond">
+            <h2 className="text-xl md:text-4xl font-semibold   text-[#495B0D] italic  font-ebGaramond">
               Taste of the Odia Cuisine
             </h2>
-            <p className="text-[#000000] text-sm md:text-base md:pt-12">
+            <p className="text-[#000000] text-sm md:text-base md:pt-12 font-ebGaramond">
               From the savory flavors of and Pakhala Bhata to the sweet delights
               of Chhena Poda and Rasagola, the festival will be a gastronomic
               journey for food enthusiasts. Live cooking demonstrations will
