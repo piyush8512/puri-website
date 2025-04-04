@@ -49,7 +49,7 @@ const page = () => {
         {/* Responsive Image */}
         <div className="w-full flex justify-center mt-0 md:hidden">
           <Image
-            src="/programs/programsmobiletemple.png"
+            src="/programs/programstemple2.png"
             alt="Festival logo"
             width={127}
             height={52}
@@ -58,11 +58,11 @@ const page = () => {
         </div>
         <div className="w-full  justify-center mt-4 md:flex hidden">
           <Image
-            src="/programs/programstemple.svg"
+            src="/programs/programstemple2.png"
             alt="Festival logo"
-            width={327}
+            width={227}
             height={100}
-            className="object-contain w-[100%] max-w-lg md:max-w-2xl lg:max-w-4xl absolute -left-25 -bottom-150"
+            className="object-contain w-[90%] max-w-lg md:max-w-xl lg:max-w-2xl absolute -left-20 -bottom-126"
           />
         </div>
         <div className="absolute -bottom-95 right-12 -z-20 hidden md:block ">

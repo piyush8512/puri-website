@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Mail } from 'lucide-react';
+import { Mail } from "lucide-react";
 
 function Header() {
   const router = useRouter();
@@ -46,11 +46,13 @@ function Header() {
           alt="phone"
           width={20}
           height={20}/> */}
-          <div className="flex space-x-3">
-            <Mail  className="text-white text-lg flex-cols justify-left"/>
-        <p className="text-white text-sm flex-cols justify-left">purliteraryfestival@gmail.com</p> </div>
         <div className="flex space-x-3">
-
+          <Mail className="text-white text-lg flex-cols justify-left" />
+          <p className="text-white text-sm flex-cols justify-left">
+            purliteraryfestival@gmail.com
+          </p>{" "}
+        </div>
+        <div className="flex space-x-3">
           <Image
             src="/icons/fb.svg"
             alt="phone"
@@ -79,13 +81,15 @@ function Header() {
             height={20}
             className="text-white text-lg cursor-pointer"
           />
-          <Image
-            src="/icons/x.svg"
-            alt="phone"
-            width={20}
-            height={20}
-            className="text-white text-lg cursor-pointer"
-          />
+          <Link href="https://x.com/PuriLitFest">
+            <Image
+              src="/icons/x.svg"
+              alt="phone"
+              width={20}
+              height={20}
+              className="text-white text-lg cursor-pointer"
+            />
+          </Link>
         </div>
       </footer>
       {/* Main Navigation Bar */}

@@ -125,6 +125,18 @@ const partnerLogos = [
     height: 85,
     link: "https://www.celsius.com/",
   },
+  {
+    src: "/partners/dottly.png",
+    width: 140,
+    height: 85,
+    link: "https://www.celsius.com/",
+  },
+  {
+    src: "/partners/OS.png",
+    width: 140,
+    height: 85,
+    link: "https://www.celsius.com/",
+  },
 ];
 
 const Partners: React.FC = () => {

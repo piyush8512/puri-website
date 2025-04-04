@@ -219,8 +219,17 @@ function Hero() {
           height={52}
           className="object-contain ml-5 size-25 xl:size-42"
         />
+         <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#B9975A] font-bold"
+        >
+          Puri Resort & Spa, Odisha
+        </motion.h1>
+        
       </div>
-      <div className=" hero-temple-img bg-center bg-cover bg-no-repeat h-[95vh] hidden md:block "></div>
+      <div className=" hero-temple-img bg-center bg-cover bg-no-repeat h-[95vh] hidden md:block mt-12 "></div>
       {/* Mobile View */}
       <div className="  md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex justify-center items-center">
         <Image

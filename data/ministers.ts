@@ -103,7 +103,7 @@ export const ministers: Minister[] = [
     },
     {
       image: "/speaker2/utpal.png",
-      width: 210,
+      width: 200,
       height: 280,
     },
     {
