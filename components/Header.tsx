@@ -71,7 +71,7 @@ function Header() {
               className="text-white text-lg cursor-pointer"
             />
           </Link>
-          <Link href="https://twitter.com/PuriLitFest">
+          {/* <Link href="https://twitter.com/PuriLitFest">
             <Image
               src="/icons/linkdin.svg"
               alt="phone"
@@ -79,7 +79,7 @@ function Header() {
               height={20}
               className="text-white text-lg cursor-pointer"
             />
-          </Link>
+          </Link> */}
           <Link href="https://youtube.com/@purilitfest">
             <Image
               src="/icons/yt.svg"
