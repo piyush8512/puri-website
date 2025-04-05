@@ -223,9 +223,9 @@ function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-center font-libreBodoni md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#B9975A] font-bold"
+          className="text-center font-ebGaramond md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#B9975A]  "
         >
-          Puri Resort & Spa, Odisha
+          PURI  RESORT & SPA, ODISHA
         </motion.h1>
         
       </div>

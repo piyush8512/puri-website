@@ -1,15 +1,45 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import Link from "next/link"
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+// import Footer from "@/components/Footer";
+import { motion, Variants } from "framer-motion";
+import { Facebook, Instagram, Link, Twitter, Youtube } from "lucide-react";
 
-const Page = () => {
+
+const page = () => {
+  const socialIcons = [
+    { Icon: Facebook, link: "https://www.facebook.com/purilitfest" },
+    { Icon: Twitter, link: "https://x.com/PuriLitFest" },
+    { Icon: Instagram, link: "https://www.instagram.com/purilitfest" },
+    { Icon: Youtube, link: "https://youtube.com/@purilitfest" },
+  ];
+
+  const footerLinks = {
+    "About us": [
+      "About The Festival",
+      // "Teamwork Arts",
+      "Contact Us",
+      "Terms & Condition",
+      // "Privacy & Policies",
+      "FAQs",
+    ],
+    Events: ["Brochure", "Programs"],
+    "Important Links": ["Volunteer", "Partner With Us"],
+  };
   const fadeIn = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 1.5 } },
   };
+
+  // const fadeIn2 = (rotation: string): Variants => ({
+  //   hidden: { opacity: 0, y: 50, rotate: rotation },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     rotate: rotation,
+  //     transition: { duration: 0.8 },
+  //   },
+  // });
 
   const directors = [
     {
@@ -167,99 +197,77 @@ const Page = () => {
         " https://www.instagram.com/jnu_mahendra?igsh=MWdzNGhxd3F0c293YQ==", // Replace with actual image path
     },
   ];
-  const socialIcons = [
-    { Icon: Facebook, link: "https://www.facebook.com/purilitfest" },
-    { Icon: Twitter, link: "https://x.com/PuriLitFest" },
-    { Icon: Instagram, link: "https://www.instagram.com/purilitfest" },
-    { Icon: Youtube, link: "https://youtube.com/@purilitfest" },
-  ];
-  const footerLinks = {
-    "About us": [
-      "About The Festival",
-      // "Teamwork Arts",
-      "Contact Us",
-      "Terms & Condition",
-      // "Privacy & Policies",
-      "FAQs",
-    ],
-    Events: ["Brochure", "Programs"],
-    "Important Links": ["Volunteer", "Partner With Us"],
-  };
+
   return (
-    <div className="relative overflow-x-hidden pt-22 ">
-      {/* Header - Desktop */}
+    <div className="relative pt-22 inset-0 overflow-x-hidden">
       <motion.div
         variants={fadeIn}
         initial="hidden"
         animate="visible"
-        className="hidden md:flex hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] flex-col items-center justify-start"
+        className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start relative"
       >
         <Image
+          className="size-30 xl:size-52"
           src="/mainpage/logo.svg"
           alt="Festival logo"
-          width={208}
-          height={208}
-          className="w-20 h-20 xl:w-52 xl:h-52"
+          width={127}
+          height={52}
         />
       </motion.div>
-
-      {/* Header - Mobile */}
-      <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex items-center justify-center">
+      <div className="md:hidden hero-bg-mobile bg-center bg-cover bg-no-repeat h-[21vh] w-full flex flex-col justify-center items-center relative">
+        {/* Logo image */}
+        
         <Image
           src="/centermobilelogo.png"
           alt="Festival logo"
-          width={80}
-          height={80}
-          className="w-20 h-20 object-cover"
+          width={67}
+          height={67}
+          className="object-cover w-20 "
         />
+       
       </div>
 
-      {/* Festival Dates */}
       <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="text-center font-libreBodoni text-[#D72327] font-bold mb-4 text-base md:text-lg lg:text-xl xl:text-2xl"
-      >
-        18th APRIL - 20th APRIL <br /> 2025
-      </motion.h1>
-
-      {/* About Us Title */}
-      <h1 className="font-leckerli font-bold text-3xl md:text-4xl lg:text-5xl text-[#D72327] text-center mt-4 md:mt-8 mb-10 md:mb-20">
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-center font-libreBodoni md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl text-[#D72327] font-bold mb-5"
+        >
+          18th APRIL - 20th APRIL <br /> 2025
+        </motion.h1>
+      <h1 className="font-leckerli font-bold text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-[#D72327] text-center md:mt-10 lg:mt-0 mb-25  md:mb-60">
         About us
       </h1>
 
-      {/* Decorative Section at Bottom */}
-      <div className="relative w-full md:h-[320px] h-[120px] bg-white overflow">
-        {/* Left Decorative Image */}
-        <Image
+      {/* our philosophy */}
+
+      <div className="relative w-full flex flex-col items-center justify-center">
+      <Image
           src="/aboutus/wierdanimal.png"
-          alt="Left decoration"
+          alt="Decorative element"
           width={390}
           height={520}
-          className="absolute left-[-0rem] bottom-[-2rem] md:bottom-[-10rem] w-32 md:w-86 z-30"
+          className="absolute  md:-top-50 -left-10 z-20 size-40 md:size-100 inset-0"
         />
-
-        {/* Center Decorative Image */}
         <Image
           src="/aboutus/aboutcenter.png"
-          alt="Center decoration"
+          alt="Decorative element"
           width={290}
           height={220}
-          className="absolute left-1/2 transform -translate-x-1/2 bottom-12 md:bottom-24 w-40 md:w-72 z-10"
+          className="absolute  md:-top-56  z-20  "
         />
-
-        {/* Right Decorative Image (Flipped) */}
+        
         <Image
           src="/aboutus/wierdanimal.png"
-          alt="Right decoration"
+          alt="Decorative element"
           width={390}
           height={520}
-          className="absolute right-[-0rem] bottom-[-2rem] md:bottom-[-10rem] w-32 md:w-86 scale-x-[-1] z-20"
+          className="absolute bottom-0 md:-top-55 -right-12 z-20 size-40 md:size-100  scale-x-[-1]"
         />
-      </div>
-      <div className="relative w-full flex flex-col items-center justify-center">
-        <div className="absolute w-full h-30 md:h-40 lg:h-80 xl:h-110  bg-center bg-cover bg-no-repeat -top-[5%] md:-top-[18%] xl:-top-[30%] z-[-10]"></div>
+        <div className="absolute w-full h-30 md:h-40 lg:h-80 xl:h-110  bg-center bg-cover bg-no-repeat -top-[5%] md:-top-[18%] xl:-top-[30%] z-[50]">
+        
+
+        </div>
         {/* Background Image */}
         <Image
           src="/redbgabout.png"
@@ -277,25 +285,25 @@ const Page = () => {
           className="relative bg-[#D72327] md:bg-transparent  w-full max-w-7xl min-h-screen px-6 md:px-8 lg:px-4 flex flex-col md:flex-row items-center md:items-start md:gap-8 my-2 py-16 md:pt-26 "
         >
           {/* Left Section */}
-          <div className="  w-full md:w-1/3 flex flex-col items-center md:items-center md:text-left mt-0 md:mt-[300px] justify-center ">
-            <div className=" items-center gap-2 mb-4  md:flex hidden ">
+          <div className="  w-full md:w-1/3 flex flex-col items-center md:items-center md:text-left mt-0 md:mt-50 ">
+            <div className=" items-center gap-2 mb-4 ml-6 md:flex hidden ">
               {/* <Image
-                      src="/shank.svg"
-                      alt="Decorative element"
-                      width={60}
-                      height={150}
-                      className="w-12 md:w-16 lg:w-10"
-                    /> */}
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center items-center flex">
+                src="/shank.svg"
+                alt="Decorative element"
+                width={60}
+                height={150}
+                className="w-12 md:w-16 lg:w-10"
+              /> */}
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center">
                 Our
               </h1>
               {/* <Image
-                      src="/shank.svg"
-                      alt="Decorative element"
-                      width={60}
-                      height={150}
-                      className="w-12 md:w-10 lg:w-10 scale-x-[-1]"
-                    /> */}
+                src="/shank.svg"
+                alt="Decorative element"
+                width={60}
+                height={150}
+                className="w-12 md:w-10 lg:w-10 scale-x-[-1]"
+              /> */}
             </div>
             <h1 className="text-xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center md:block hidden">
               Philosophy
@@ -333,84 +341,54 @@ const Page = () => {
 
           {/* Right Section */}
           <div className="w-full md:w-2/3 text-white md:pt-30 pt-8  md:pb-0 pb-8 ">
-            <p className="text-xs md:text-[19px]  text-justify font-ebGaramond text-semibold ">
+            <p className="text-xs md:text-[18px]  text-justify font-ebGaramond text-semibold ">
               Set against the serene backdrop of Puri, a city steeped in
-              <span className="font-semibold">
-                spirituality and heritage,
-              </span>{" "}
-              the Puri Literary Festival 2025 celebrates India&apos;s enduring
-              cultural legacy and its progressive aspirations. Rooted in the
-              philosophy of{" "}
-              <span className="font-semibold">
-                Samavāya —the harmonious coexistence of tradition and modernity
-              </span>{" "}
-              —the festival seeks to inspire a holistic dialogue that bridges
-              India&apos;s ancient wisdom with its contemporary ambitions. The{" "}
-              <span className="font-semibold">Puri Literary Festival 2025</span>{" "}
-              is an ode to the eternal cyclicity of time and knowledge, a
-              harmonious dialogue between the past and the future, inspired by
-              the sacred wheels of the{" "}
-              <span className="font-semibold">
-                Konark Sun Temple and the divine Ratha of Lord Jagannath.
-              </span>{" "}
-              These wheels symbolize the perpetual motion of life, the ceaseless
-              journey of humanity through epochs, and the profound interplay of
-              tradition and transformation.
+              spirituality and heritage, the Puri Literary Festival 2025
+              celebrates India&apos;s enduring cultural legacy and its
+              progressive aspirations. Rooted in the philosophy of पुरुषोत्तम
+              क्षेत्रं वैकुण्ठस्य सदृशं। —the harmonious coexistence of
+              tradition and modernity—the festival seeks to inspire a holistic
+              dialogue that bridges India&apos;s ancient wisdom with its
+              contemporary ambitions. The Puri Literary Festival 2025 is an ode
+              to the eternal cyclicity of time and knowledge, a harmonious
+              dialogue between the past and the future, inspired by the sacred
+              wheels of the Konark Sun Temple and the divine Ratha of Lord
+              Jagannath. These wheels symbolize the perpetual motion of life,
+              the ceaseless journey of humanity through epochs, and the profound
+              interplay of tradition and transformation.
             </p>
             <br />
-            <p className="text-xs md:text-[19px]  text-justify font-ebGaramond ">
+            <p className="text-xs md:text-[18px] d text-justify font-ebGaramond  text-semibold ">
               Key objectives of the session are to reaffirm Puri&apos;s
               spiritual and cultural legacy and to foster global dialogue with
               an indigenous lens. At its core, the festival embraces the belief
               that India&apos;s timeless wisdom and artistic heritage serve not
               as relics of the past but as guiding lights for the future. It is
               through this lens that the festival seeks to explore how the
-              nation can ascend to new{" "}
-              <span className="font-semibold">
-                {" "}
-                pinnacles in art, architecture, literature, and economic
-                development
-              </span>{" "}
-              while remaining deeply rooted in its cultural ethos.
+              nation can ascend to new pinnacles in art, architecture,
+              literature, and economic development while remaining deeply rooted
+              in its cultural ethos.
             </p>
             <br />
 
-            <p className="text-xs md:text-[19px]  text-justify font-ebGaramond">
+            <p className="text-xs md:text-[18px]  text-justify font-ebGaramond text-semibold ">
               The festival&apos;s impact will extend far beyond the venue, with
-              an outreach program{" "}
-              <span className="font-semibold">
-                spanning every district of Odisha.
-              </span>{" "}
-              Events including{" "}
-              <span className="font-semibold">
-                heritage walks, folk art performances, and discussions on Odia
-                literature
-              </span>{" "}
-              will ensure grassroots participation, rekindling pride in
-              Odisha&apos;s traditions. In schools and colleges, workshops and
-              storytelling sessions will inspire the youth, while expert-led
-              dialogues on{" "}
-              <span className="font-semibold">
-                {" "}
-                environmental sustainability, digital literacy, and cultural
-                preservation.
-              </span>
+              an outreach program spanning every district of Odisha. Events
+              including heritage walks, folk art performances, and discussions
+              on Odia literature will ensure grassroots participation,
+              rekindling pride in Odisha&apos;s traditions. In schools and
+              colleges, workshops and storytelling sessions will inspire the
+              youth, while expert-led dialogues on environmental sustainability,
+              digital literacy, and cultural preservation.
             </p>
             <br />
-            <p className="text-xs md:text-[19px] text-justify font-ebGaramond ">
-              The culmination of these efforts will be a{" "}
-              <span className="font-semibold">“Vision for Tomorrow”</span>
-              document, encapsulating insights to guide{" "}
-              <span className="font-semibold">
-                future policy and cultural initiatives.{" "}
-              </span>{" "}
-              The Puri Literary Festival 2025 promises to be an enriching
-              experience that echoes throughout the state, inspiring a deeper
-              connection with India&apos;s cultural roots
-              <span className="font-semibold">
-                {" "}
-                while embracing a modern, forward-thinking world.
-              </span>
+            <p className="text-xs md:text-[18px] text-justify font-ebGaramond text-semibold ">
+              The culmination of these efforts will be a “Vision for Tomorrow”
+              document, encapsulating insights to guide future policy and
+              cultural initiatives. The Puri Literary Festival 2025 promises to
+              be an enriching experience that echoes throughout the state,
+              inspiring a deeper connection with India&apos;s cultural roots
+              while embracing a modern, forward-thinking world.
             </p>
           </div>
         </motion.div>
@@ -426,55 +404,81 @@ const Page = () => {
         </div>
       </div>
 
+      {/* white section  part */}
+
       {/* text */}
       <motion.div
         variants={fadeIn}
         initial="hidden"
         animate="visible"
-        className="relative flex items-center justify-center min-h-[60vh] md:min-h-[80vh] text-center flex-col overflow-hidden"
+        className="flex items-center justify-center min-h-[60vh] md:min-h-[80vh] text-center flex-col relative"
       >
-        {/* Left Elephant Image */}
-        <Image
-          src="/aboutus/leftelephant.svg"
+        {/* <Image
+          src="/rider.svg"
           alt="Decorative element"
           width={390}
           height={520}
-          className="
-     absolute 
-  bottom-10 sm:bottom-20 md:-bottom-15 
-  left-0 
-  z-20 
-  w-24 sm:w-32 md:w-40 lg:w-88 
-  h-auto 
-  max-w-none
-    "
-        />
+          className="absolute top-0 md:-top-60 left-0 z-20 size-40 md:size-130 inset-0"
+        /> */}
 
-        {/* Right Elephant Image (mirrored) */}
+     {/* Left Elephant Image */}
+<Image
+  src="/aboutus/leftelephant.svg"
+  alt="Decorative element"
+  width={390}
+  height={520}
+  className="
+    absolute 
+    -left-4 sm:-left-6 md:-left-10 
+    top-10 sm:top-20 md:top-28 
+    z-20 
+    w-24 sm:w-32 md:w-40 lg:w-48 
+    h-auto
+  "
+/>
+
+{/* Right Elephant Image (mirrored) */}
+<Image
+  src="/aboutus/leftelephant.svg"
+  alt="Decorative element"
+  width={390}
+  height={520}
+  className="
+    absolute 
+    bottom-2 sm:bottom-4 md:-bottom-10 
+    -right-4 sm:-right-6 md:-right-12 
+    z-20 
+    w-24 sm:w-32 md:w-40 lg:w-48 
+    h-auto 
+    scale-x-[-1]
+  "
+/>
+
+
+        {/*
         <Image
-          src="/aboutus/leftelephant.svg"
+          src="/booksway.svg"
           alt="Decorative element"
-          width={390}
-          height={520}
-          className="
-      absolute 
-      right-0 
-      bottom-2 sm:bottom-4 md:-bottom-10 
-      z-20 
-      w-24 sm:w-32 md:w-40 lg:w-88 
-      h-auto 
-      scale-x-[-1]
-      max-w-none
-    "
-        />
-
-        <h1 className="text-[#2F3082] text-xl md:text-4xl font-semibold font-ebGaramond">
+          width={384}
+          height={512}
+          className="absolute bottom-0 md:-bottom-50 right-0 z-20 size-40 md:size-120"
+        /> */}
+        <h1 className="text-[#2F3082] text-xl md:text-4xl font-semibold font-ebGaramond  ">
           पुरुषोत्तम क्षेत्रं वैकुण्ठस्य सदृशं
         </h1>
-        <h1 className="text-xl md:text-4xl font-semibold font-ebGaramond md:pt-8">
-          <span className="text-[#D72327] block md:inline font-semibold font-ebGaramond">
+        <h1 className="text-xl md:text-4xl font-semibold font-ebGaramond md:pt-8 ">
+          <span className="text-[#D72327] block md:inline font-semibold font-ebGaramond ">
             Purushottama kṣhetraṁ Vaikuṇṭhasya sadṛśaṁ
           </span>
+          {/* <span className="text-[#F5C721] font-semibold font-ebGaramond">
+            Transformation,{" "}
+          </span>
+          <span className="text-[#2F3082] font-semibold font-ebGaramond ">
+            &{" "}
+          </span>
+          <span className="text-[#3E8D19] block md:inline font-semibold font-eb-garamond ">
+            Triumph!{" "}
+          </span> */}
         </h1>
       </motion.div>
 
@@ -498,7 +502,7 @@ const Page = () => {
         />
 
         {/*  founding director */}
-        <div className="relative w-full max-w-7xl px-4 sm:px-6 lg:px-0 py-1 flex flex-col items-center">
+        <div className="relative w-full max-w-6xl px-4 sm:px-6 lg:px-0 py-1 flex flex-col items-center">
           {/* Founding Title with Decorative Elements */}
           <div className="flex justify-center items-center gap-2 mb-4">
             {/* EDIT: Replace with your actual decorative image */}
@@ -533,12 +537,12 @@ const Page = () => {
             {directors.map((director, index) => (
               <motion.div
                 key={index}
-                className={`flex flex-col md:flex-row items-center  gap-8 md:gap-10 lg:gap-10 space-y-12 ${
+                className={`flex flex-col md:flex-row items-center  gap-8 md:gap-10 lg:gap-20 space-y-12 ${
                   index % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
               >
                 {/* Polaroid card with photo */}
-                <div className="  md:w-[500px]   ">
+                <div className="  md:w-[500px]  ">
                   <motion.div
                     key={index}
                     initial="hidden"
@@ -559,14 +563,14 @@ const Page = () => {
                 </div>
 
                 {/* About paragraph */}
-                <div className="max-w-3xl text-center md:text-left ">
-                  <p className="text-2xl  font-light text-white font-ebGaramond text-justify">
+                <div className="max-w-2xl text-center md:text-left ">
+                  <p className="text-xl  font-light text-white font-ebGaramond text-justify">
                     {director.about1}
                   </p>
-                  <p className="text-2xl  font-light text-white pt-3 font-ebGaramond text-justify">
+                  <p className="text-xl  font-light text-white pt-3 font-ebGaramond text-justify">
                     {director.about2}
                   </p>
-                  <p className="text-2xl  font-light text-white pt-3 font-ebGaramond text-justify">
+                  <p className="text-xl  font-light text-white pt-3 font-ebGaramond text-justify">
                     {director.about3}
                   </p>
                 </div>
@@ -575,17 +579,18 @@ const Page = () => {
           </div>
 
           <Image
-            src="/bookflyingkid.svg"
-            alt="Decorative element"
-            width={384}
-            height={512}
-            className="absolute  md:-bottom-80 -right-[25%] z-40 insent-0 w-24 md:w-70"
-          />
+          src="/bookflyingkid.svg"
+          alt="Decorative element"
+          width={384}
+          height={512}
+          className="absolute  md:-bottom-80 -right-10  z-20 insent-0 w-24 md:w-60"
+        />
         </div>
         <div className="bg-[#D72327] absolute bottom-0 w-full h-12 -z-30"></div>
       </div>
 
-      <div className="mx-2 md:mx-0 md:mt-0 relative bg-[#D72327]  h-[1000px] overflow-hidden">
+      {/* coradinators Heading */}
+      <div className="mx-2 md:mx-0 md:mt-0 relative bg-[#D72327] z-12 h-[100vh] overflow-hidden">
         <div className="flex justify-center items-center gap-2 mb-8 pt-12">
           <Image
             src="/shank.svg"
@@ -613,7 +618,7 @@ const Page = () => {
         </div>
 
         {/* Floating Images */}
-
+       
         <Image
           src="/bookstackabus.svg"
           alt="Decorative element"
@@ -623,7 +628,7 @@ const Page = () => {
         />
 
         {/* Grid */}
-        <div className="px-4 md:px-[90px] pt-12">
+        <div className="px-4 md:px-20 pt-12">
           {team.length > 0 && (
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-4 justify-center ">
               {team.map((member, index) => (
@@ -652,9 +657,9 @@ const Page = () => {
 
                     {/* Optional Name Text */}
                     {/* <div className="text-center mt-2 text-white">
-                          <p className="text-sm md:text-xl font-serif">{member.name}</p>
-                          <p className="text-sm md:text-xl font-serif">{member.surname}</p>
-                        </div> */}
+                    <p className="text-sm md:text-xl font-serif">{member.name}</p>
+                    <p className="text-sm md:text-xl font-serif">{member.surname}</p>
+                  </div> */}
                   </a>
                 </motion.div>
               ))}
@@ -662,6 +667,7 @@ const Page = () => {
           )}
         </div>
       </div>
+
       {/* teams */}
 
       <div className="relative w-full min-h-[280vh] flex items-center justify-center overflow-hidden">
@@ -720,11 +726,7 @@ const Page = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                <a
-                  href={person.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={person.instagram} target="_blank" rel="noopener noreferrer">
                   <Image
                     src={person.image}
                     alt={`${person.name} ${person.surname}`}
@@ -740,10 +742,11 @@ const Page = () => {
 
         <div className="bg-[#D72327] absolute top-0 w-full h-20 -z-30"></div>
       </div>
-      <div className="hidden md:block  z-6 w-full">
-        <footer className="md:block hidden md:h-150 xl:h-210 relative  font-ebGaramond  ">
+
+      <div className="hidden md:block absolute z-6 w-full">
+        <footer className="md:block hidden md:h-150 xl:h-190 relative  font-ebGaramond  ">
           {/* Background wave image with lower z-index */}
-          <div className="absolute inset-0 z-10 w-full h-full mx-auto">
+          <div className="absolute inset-0 -z-10 w-full h-full mx-auto">
             <Image
               // src="https://ik.imagekit.io/zjaqik2mc/footer/footer-wave.svg?updatedAt=1743490389529"
               src="/footer/footer-wave.svg"
@@ -753,7 +756,7 @@ const Page = () => {
               priority
             />
           </div>
-          <div className="absolute w-full -top-[64%] flex items-center justify-center h-[900px]  z-0 ">
+          <div className="absolute w-full -top-100 flex items-center justify-center h-180  -z-20 ">
             <Image
               src="/aboutus/sunset.png"
               alt="Background"
@@ -841,4 +844,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
