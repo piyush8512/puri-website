@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
-
-function Footer() {
+import { cn } from "@/lib/utils";
+function Footer({ className }: React.ComponentProps<"div">) {
   const socialIcons = [
     { Icon: Facebook, link: "https://www.facebook.com/purilitfest" },
     { Icon: Twitter, link: "https://x.com/PuriLitFest" },
@@ -26,9 +26,9 @@ function Footer() {
 
   return (
     <>
-      <footer className="md:block hidden md:h-140 xl:h-180 relative  font-ebGaramond">
+      <footer className={cn("md:block hidden md:h-140 xl:h-180 relative font-ebGaramond -z-50", className)}>
         {/* Background wave image with lower z-index */}
-        <div className="absolute inset-0 -z-10 w-full h-full mx-auto">
+        <div className="absolute inset-0 z-10 w-full h-full mx-auto">
           <Image
             // src="https://ik.imagekit.io/zjaqik2mc/footer/footer-wave.svg?updatedAt=1743490389529"
             src="/footer/footer-wave.svg"
