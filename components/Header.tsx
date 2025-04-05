@@ -47,40 +47,48 @@ function Header() {
           width={20}
           height={20}/> */}
         <div className="flex space-x-3">
-          <Mail className="text-white text-lg flex-cols justify-left" />
-          <p className="text-white text-sm flex-cols justify-left">
+          <Mail className="text-white text-lg flex-cols justify-left size-[15px] md:size-[20px]" />
+          <p className="text-white text-[10px]  md:text-sm flex-cols justify-left">
             purliteraryfestival@gmail.com
           </p>{" "}
         </div>
         <div className="flex space-x-3">
-          <Image
-            src="/icons/fb.svg"
-            alt="phone"
-            width={20}
-            height={20}
-            className="text-white text-lg cursor-pointer"
-          />
-          <Image
-            src="/icons/insta.svg"
-            alt="phone"
-            width={22}
-            height={20}
-            className="text-white text-lg cursor-pointer"
-          />
-          <Image
-            src="/icons/linkdin.svg"
-            alt="phone"
-            width={20}
-            height={20}
-            className="text-white text-lg cursor-pointer"
-          />
-          <Image
-            src="/icons/yt.svg"
-            alt="phone"
-            width={20}
-            height={20}
-            className="text-white text-lg cursor-pointer"
-          />
+          <Link href="https://www.facebook.com/purilitfest">
+            <Image
+              src="/icons/fb.svg"
+              alt="phone"
+              width={20}
+              height={20}
+              className="text-white text-lg cursor-pointer"
+            />
+          </Link>
+          <Link href="https://www.instagram.com/purilitfest">
+            <Image
+              src="/icons/insta.svg"
+              alt="phone"
+              width={22}
+              height={20}
+              className="text-white text-lg cursor-pointer"
+            />
+          </Link>
+          <Link href="https://twitter.com/PuriLitFest">
+            <Image
+              src="/icons/linkdin.svg"
+              alt="phone"
+              width={20}
+              height={20}
+              className="text-white text-lg cursor-pointer"
+            />
+          </Link>
+          <Link href="https://youtube.com/@purilitfest">
+            <Image
+              src="/icons/yt.svg"
+              alt="phone"
+              width={20}
+              height={20}
+              className="text-white text-lg cursor-pointer"
+            />{" "}
+          </Link>
           <Link href="https://x.com/PuriLitFest">
             <Image
               src="/icons/x.svg"

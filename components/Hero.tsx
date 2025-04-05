@@ -189,7 +189,7 @@ function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative pt-22 inset-0  md:bg-transparent bg-[#FFFCF5]"
+      className="relative pt-23 inset-0  md:bg-transparent bg-[#FFFCF5]"
     >
       {/* Desktop View */}
       <div className="hidden hero-bg bg-center bg-cover bg-no-repeat min-h-[30vh] h-[34vh] md:flex md:flex-col items-center justify-start">
@@ -211,14 +211,23 @@ function Hero() {
         >
           18th APRIL - 20th APRIL <br /> 2025
         </motion.h1>
-        <Image
+        {/* <Image
           // src="https://ik.imagekit.io/zjaqik2mc/homehero/tajLogo.svg?updatedAt=1743486468570"
           src="/mainpage/tajLogo.svg"
           alt="taj logo"
           width={127}
           height={52}
           className="object-contain ml-5 size-25 xl:size-42"
-        />
+        /> */}
+         <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-center font-ebGaramond md:text-sm lg:text-2lg xl:text-4xl 2xl:text-6xl text-[#B9975A]  mb-2 "
+        >
+          TAJ
+        </motion.h1>
+        
          <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -243,15 +252,26 @@ function Hero() {
       <div className="md:hidden block">
         <h1 className="text-center font-libreBodoni text-[#D72327] md:text-sm lg:text-lg">
           18th APRIL - 20th APRIL 2025
+          
         </h1>
-        <Image
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-center font-ebGaramond md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-[#B9975A]  "
+        >
+          PURI  RESORT & SPA, ODISHA
+        </motion.h1>
+        
+        {/* <Image
           // src="https://ik.imagekit.io/zjaqik2mc/homehero/tajLogo.svg?updatedAt=1743486468570"
           src="/mainpage/tajLogo.svg"
           alt="taj logo"
           width={127}
           height={52}
           className="object-contain mx-auto -my-5 size-25 xl:size-42"
-        />
+        /> */}
+        
         <p className="text-center font-libreBodoni text-xl py-8 text-[#D72327] w-3/4 mx-auto">
           <span className="text-[#2F3082]">Weaving Stories of</span>
           <span className="text-[#D72327]">

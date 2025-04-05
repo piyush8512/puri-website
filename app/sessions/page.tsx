@@ -4,6 +4,7 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 import {
   Carousel,
   CarouselContent,
@@ -186,7 +187,7 @@ const Page: React.FC = () => {
         </div>
         {/* Parallel Sessions Carousel */}
         <div className="relative w-full flex justify-center items-center pb-45 mobilecurvedbluebg bg-center bg-no-repeat bg-cover md:curvedbluebg md:bg-bottom md:bg-cover md:bg-no-repeat h-150">
-        <Carousel
+          <Carousel
             opts={{
               align: "center",
               loop: true,
@@ -250,10 +251,15 @@ const Page: React.FC = () => {
               className="object-contain absolute top-10 md:top-16 -left-15 md:-left-18 size-30"
               priority
             />
-            <Button className="bg-[#ECCA19] text-[#2F3082] font-bold text-xl font-leckerli px-8 py-6 rounded-full hover:bg-[#C1A513] -z-10 mt-35 [text-shadow:_0_2px_2px_rgb(99_102_241_/_0.8)] md:w-fit w-40">
-              Download <br className="block md:hidden" />
-              Brochure
-            </Button>
+            <Link
+              href="https://drive.google.com/file/d/1T4oILt3W6CiLjzlJ10SsHmqc29pybkNf/view"
+              target="_blank"
+            >
+              <Button className="bg-[#ECCA19] text-[#2F3082] font-bold text-xl font-leckerli px-8 py-6 rounded-full hover:bg-[#C1A513] -z-10 mt-35 [text-shadow:_0_2px_2px_rgb(99_102_241_/_0.8)] md:w-fit w-40">
+                Download <br className="block md:hidden" />
+                Brochure
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

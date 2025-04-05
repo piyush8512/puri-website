@@ -6,26 +6,18 @@
 // import Hero from '@/components/aboutus/hero'
 // import Our from '@/components/aboutus/our'
 
-
 // const page = () => {
 //   return (
 //     <div className='realtive w-full '>
-     
+
 //       <Hero />
 //       <Our/>
-   
-   
-   
 
-      
 //     </div>
 //   )
 // }
 
 // export default page
-
-
-
 
 "use client";
 import React from "react";
@@ -45,40 +37,92 @@ const Page = () => {
       name: "Omm Priyadarshi",
       surname: "Chotaray",
       image: "/aboutus/ompriyadarshi.png",
-      // Replace with actual image path
-      about1:
-        " Traversing across all states and more than 6,000 villages in India, Omm Priyadarshi has gained deep insights from the country’s diverse socio-economic fabric, establishing himself as a distinguished voice in development and policy advocacy.",
-      about2:
-        "He is the author of Paika: Jana, Akhyana O Andolana, and a recipient of the Prime Minister’s Young Author Award. ",
-      about3:
-        "He has helped shape policy at both national and global levels, having served as the Treasurer of the G20 Youth and represented India at prestigious international platforms, including BRICS and the Commonwealth. ",
-      link: "/#",
+      about1: (
+        <>
+          Traversing across all states and more than{" "}
+          <span className="font-semibold">6,000 villages</span> in India, Omm
+          Priyadarshi has gained deep insights from the country’s{" "}
+          <span className="font-semibold">
+            diverse socio-economic fabric, establishing himself as a
+            distinguished voice in development and policy advocacy.
+          </span>
+        </>
+      ),
+      about2: (
+        <>
+          He is the{" "}
+          <span className="font-semibold">
+            author of Paika: Jana, Akhyana O Andolana,
+          </span>{" "}
+          and a recipient of the Prime Minister’s Young Author Award.
+        </>
+      ),
+      about3: (
+        <>
+          He has helped shape policy at both national and global levels, having
+          served as the{" "}
+          <span className="font-semibold">Treasurer of the G20 Youth</span> and
+          represented India at prestigious international platforms, including{" "}
+          <span className="font-semibold">BRICS and the Commonwealth</span>.
+        </>
+      ),
+      link: "https://www.instagram.com/iommpriyadarshi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
     {
       name: "Shivam",
       surname: "Raghuwanshi",
       image: "/aboutus/sheshankshekhar.png",
-      // Replace with actual image path
-      about1:
-        "Shashank Shekhar Singh is at the forefront of transformative thinking with his brainchild, the Adhyayan Foundation for Policy & Research (AFPR), which operates at the trisection of law, governance, and policymaking.",
-      about2:
-        "A lawyer by profession, his expertise in data-driven policymaking, ethical governance, and sustainability has made him a sought-after consultant and advisor in India and abroad.",
+      about1: (
+        <>
+          Shashank Shekhar Singh is at the forefront of transformative thinking
+          with his brainchild, the{" "}
+          <span className="font-semibold">
+            Adhyayan Foundation for Policy & Research (AFPR), which operates at
+            the trisection of law, governance, and policymaking.
+          </span>
+        </>
+      ),
+      about2: (
+        <>
+          A lawyer by profession, his expertise in{" "}
+          <span className="font-semibold">
+            data-driven policymaking, ethical governance, and sustainability
+          </span>{" "}
+          has made him a sought-after consultant and advisor in India and
+          abroad.
+        </>
+      ),
       about3:
         "He is deeply committed to and actively engages in initiatives that safeguard linguistic heritage and promote cultural continuity",
-      link: "/#",
+      link: "https://www.instagram.com/shashank_shekhar_sinh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
     {
-      name: "Shashank Shekhar",
-      surname: "Singh",
+      name: "shivamraghuwanshi ",
+      surname: "shivamraghuwanshi",
       image: "/aboutus/shivamraghuwanshi.png",
-      // Replace with actual image path
       about1:
         "A lawyer advocating for the right causes at the Supreme Court of India, Shivam Raghuwanshi has risen to prominence through his exceptional academic and professional achievements despite his humble background.",
-      about2:
-        "He is the author of two best-selling books, with his latest work, Ballot, Bullet and Blood, receiving significant acclaim.",
-      about3:
-        "In addition to his legal career, he has made notable contributions to student leadership, serving as the National Co-convenor of Think India, a national organization focused on empowering youth across premier academic institutions.",
-      link: "/#",
+      about2: (
+        <>
+          He is the author of{" "}
+          <span className="font-semibold">two best-selling books,</span> with
+          his latest work,{" "}
+          <span className="font-semibold">Ballot, Bullet and Blood,</span>{" "}
+          receiving significant acclaim.
+        </>
+      ),
+      about3: (
+        <>
+          In addition to his legal career, he has made notable contributions to
+          student leadership, serving as the{" "}
+          <span className="font-semibold">
+            National Co-convenor of Think India,
+          </span>{" "}
+          a national organization focused on empowering youth across premier
+          academic institutions.
+        </>
+      ),
+      link: "https://www.instagram.com/shivamraghu_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
   ];
 
@@ -315,22 +359,22 @@ const Page = () => {
           <div className="  w-full md:w-1/3 flex flex-col items-center md:items-center md:text-left mt-0 md:mt-[300px] justify-center ">
             <div className=" items-center gap-2 mb-4  md:flex hidden ">
               <Image
-                      src="/shank.svg"
-                      alt="Decorative element"
-                      width={60}
-                      height={150}
-                      className="w-12 md:w-16 lg:w-10"
-                    />
+                src="/shank.svg"
+                alt="Decorative element"
+                width={60}
+                height={150}
+                className="w-12 md:w-16 lg:w-10"
+              />
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center items-center flex">
                 Our
               </h1>
               <Image
-                      src="/shank.svg"
-                      alt="Decorative element"
-                      width={60}
-                      height={150}
-                      className="w-12 md:w-10 lg:w-10 scale-x-[-1]"
-                    />
+                src="/shank.svg"
+                alt="Decorative element"
+                width={60}
+                height={150}
+                className="w-12 md:w-10 lg:w-10 scale-x-[-1]"
+              />
             </div>
             <h1 className="text-xl md:text-4xl lg:text-5xl font-bold text-[#FFC40C] font-leckerli justify-center md:block hidden">
               Philosophy
@@ -514,7 +558,6 @@ const Page = () => {
       </motion.div>
 
       <div className="relative w-full min-h-screen sm:min-h-[150vh] md:min-h-[200vh] lg:min-h-[278vh] flex items-center justify-center overflow-hidden z-60">
-
         {/* Background Image - EDIT: Replace with your actual background image */}
         <Image
           src="/aboutus/bluebg.png"
@@ -672,7 +715,7 @@ const Page = () => {
                   viewport={{ once: true }}
                   className="flex justify-center "
                 >
-                  <a
+                  <Link
                     href={member.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -693,7 +736,7 @@ const Page = () => {
                           <p className="text-sm md:text-xl font-serif">{member.name}</p>
                           <p className="text-sm md:text-xl font-serif">{member.surname}</p>
                         </div> */}
-                  </a>
+                  </Link>
                 </motion.div>
               ))}
             </div>
@@ -724,9 +767,9 @@ const Page = () => {
         />
 
         {/*  founding director */}
-        <div className="relative w-full max-w-6xl px-4 sm:px-6 lg:px-0 py-1 flex flex-col items-center justify-center -z-5 pt-20">
+        <div className="relative w-full max-w-6xl px-4 sm:px-6 lg:px-0 py-1 flex flex-col items-center justify-center z-5 pt-20">
           {/* Founding Title with Decorative Elements */}
-          <div className="flex justify-center items-center gap-2 mb-4">
+          <div className="flex justify-center items-center gap-2 mb-4 mt-20">
             <Image
               src="/shank.svg"
               alt="Decorative element"
@@ -751,7 +794,7 @@ const Page = () => {
             {team2.map((person, index) => (
               <motion.div
                 key={index}
-                className={`relative w-[420px] h-[420px] ${
+                className={`relative w-[300px] h-[420px] ${
                   team2.length % 3 === 2 && index >= team2.length - 2
                     ? "col-rows-2 justify-self-center"
                     : ""
@@ -760,8 +803,8 @@ const Page = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                <a
-                  href={person.instagram} 
+                <Link
+                  href={person.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -772,7 +815,7 @@ const Page = () => {
                     objectFit="contain"
                     className=" hover:scale-105 transition-transform duration-300"
                   />
-                </a>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -780,7 +823,7 @@ const Page = () => {
 
         <div className="bg-[#D72327] absolute top-0 w-full h-20 -z-30"></div>
       </div>
-      <div className="hidden md:block  z-6 w-full">
+      <div className=" z-6 w-full">
         <footer className="md:block hidden md:h-150 xl:h-210 relative  font-ebGaramond  mt-20">
           {/* Background wave image with lower z-index */}
           <div className="absolute inset-0 z-10 w-full h-full mx-auto">

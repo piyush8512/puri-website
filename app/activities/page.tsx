@@ -331,6 +331,7 @@ import React from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Page = () => {
   const fadeIn = {
@@ -837,9 +838,11 @@ const Page = () => {
           />
 
           <div className="bg-[#303182] rounded-full flex items-center justify-center px-8 py-3">
+            <Link href="https://drive.google.com/file/d/1T4oILt3W6CiLjzlJ10SsHmqc29pybkNf/view" target="_blank">
             <p className="text-[#FFFCF5] text-xs md:text-xl lg:text-2xl font-bold font-leckerli">
               Download Brochure
             </p>
+            </Link>
           </div>
         </div>
       </motion.div>
