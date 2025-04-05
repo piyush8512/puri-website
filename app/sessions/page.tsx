@@ -67,7 +67,6 @@ const Page: React.FC = () => {
 
   // Type assertion for dialogues data
   const sessionsData = dialogues as DialoguesData;
-
   return (
     <div className="relative overflow-x-hidden">
       {/* Responsive Header Section */}
@@ -170,89 +169,6 @@ const Page: React.FC = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-
-            {/* old one  */}
-            {/* <CarouselContent>
-              {sessionsData.dialogues.map((dialogue, index) => (
-                <CarouselItem
-                  key={index}
-                  className="md:basis-1/2 lg:basis-1/3 text-center relative"
-                >
-                  <div className="p-1">
-                    <Card
-                      className={
-                        index !== dialogueActiveIndex
-                          ? "transition-all blur-sm"
-                          : "transition-all"
-                      }
-                    >
-                      <CardContent className="flex items-center justify-center h-110 w-94 bluedialoguebox bg-center bg-no-repeat bg-contain relative">
-                        <div className="absolute -top-4 rounded-full bg-[#D72327] z-50 h-15 w-15 font-leckerli text-[#2F3082] text-3xl text-center py-2">
-                          {dialogue.id + 1}
-                        </div>
-                        <div
-                          className={
-                            index === dialogueActiveIndex
-                              ? "flex flex-col items-center justify-center yellowdialoguebox bg-center bg-no-repeat bg-contain h-110 w-84 hover:-rotate-10 transition-all duration-500 ease-in-out group mb-1"
-                              : "flex flex-col items-center justify-center yellowdialoguebox bg-center bg-no-repeat bg-contain h-110 w-84 mb-1"
-                          }
-                        >
-                          <h2 className="text-[#D72327] font-leckerli font-bold text-3xl group-hover:text-xl">
-                            {dialogue.title}
-                          </h2>
-                          <h3 className="text-blue-800 font-leckerli text-xl group-hover:text-md w-55">
-                            {dialogue.subtitle}
-                          </h3>
-                          <p className="font-inter text-sm w-65 hidden group-hover:block transition-opacity ease-in-out duration-500">
-                            {dialogue.paragraph}
-                          </p>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent> */}
-
-            {/* new one  by me*/}
-            {/* <CarouselContent>
-  {sessionsData.dialogues.map((dialogue, index) => (
-    <CarouselItem
-      key={index}
-      className={`md:basis-1/2 lg:basis-1/3 text-center relative transition-all ${
-        index !== dialogueActiveIndex ? "opacity-50 scale-80 " : "opacity-100 scale-100"
-      }`}
-    >
-      <div className="p-1">
-        <Card
-          className={index !== dialogueActiveIndex ? "transition-all  " : "transition-all"}
-        >
-          <CardContent className="flex items-center justify-center h-110 w-94 bluedialoguebox bg-center bg-no-repeat bg-contain relative">
-            <div className="absolute -top-4 rounded-full bg-[#D72327] z-50 h-12 w-12 font-leckerli text-[#2F3082] text-2xl text-center py-2">
-              {dialogue.id + 1}
-            </div>
-            <div
-              className={`flex flex-col items-center justify-center yellowdialoguebox bg-center bg-no-repeat bg-contain h-110 w-84 transition-all duration-500 ease-in-out group mb-1 ${
-                index === dialogueActiveIndex ? "hover:-rotate-10" : "scale-100"
-              }`}
-            >
-              <h2 className="text-[#D72327] font-leckerli font-bold text-3xl group-hover:text-xl">
-                {dialogue.title}
-              </h2>
-              <h3 className="text-blue-800 font-leckerli text-xl group-hover:text-md w-55">
-                {dialogue.subtitle}
-              </h3>
-              <p className="font-inter text-sm w-65 hidden group-hover:block transition-opacity ease-in-out duration-500">
-                {dialogue.paragraph}
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-    </CarouselItem>
-  ))}
-</CarouselContent> */}
-
             <CarouselPrevious className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute -left-[0.1%] top-[46%] md:top-[46%] md:-left-[4%]" />
             <CarouselNext className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[90%] top-[46%] md:top-[46%] md:left-[100%]" />
           </Carousel>
@@ -270,56 +186,57 @@ const Page: React.FC = () => {
         </div>
         {/* Parallel Sessions Carousel */}
         <div className="relative w-full flex justify-center items-center pb-45 mobilecurvedbluebg bg-center bg-no-repeat bg-cover md:curvedbluebg md:bg-bottom md:bg-cover md:bg-no-repeat h-150">
-          <Carousel 
+        <Carousel
             opts={{
               align: "center",
               loop: true,
             }}
-            className="max-w-[380px] md:max-w-[1500px] relative md:mr-30"
+            className=" max-w-[380px] md:max-w-7xl"
             setApi={(api) => setParallelEmblaRef(api || null)}
           >
-          <CarouselContent>
-  {sessionsData.paralellDialogues.map((dialogue, index) => (
-    <CarouselItem
-      key={index}
-      className="basis-1/2 md:basis-1/2 lg:basis-1/3 text-center"
-    >
-      <div className="p-1">
-        <Card
-          className={
-            index !== parallelDialogueActiveIndex
-              ? "transition-all opacity-35 scale-80  "
-              : "transition-all"
-          }
-        >
-          <CardContent className="flex items-center justify-center h-37 w-50 md:h-90 md:w-150 redparallel bg-center bg-no-repeat bg-contain ">
-            <div
-              className={`flex flex-col items-center justify-center bg-center bg-no-repeat bg-contain transition-all duration-500 ease-in-out group mb-1 ${
-                index === parallelDialogueActiveIndex
-                  ? "yellowparallel h-25 w-64 md:h-73 md:w-138 hover:bg-none "
-                  : "h-70 w-84 md:h-60 md:w-64   "
-              }`}
-            >   
-              <h2 className="text-[#D72327] font-leckerli font-bold text-lg md:text-3xl group-hover:hidden">
-                {dialogue.title}
-              </h2>
-              <h3 className="text-blue-800 font-leckerli text-sm md:text-xl group-hover:hidden w-55">
-                {dialogue.subtitle}
-              </h3>
-              
-              <h3 className="text-white font-leckerli text-sm md:text-[14px] w-80 hidden group-hover:block font-ebGaramond">
-                {dialogue.paragraph}
-              </h3>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-    </CarouselItem>
-  ))}
-</CarouselContent>
-
-            <CarouselPrevious className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[3%] top-[50%] md:left-[5%] md:top-[50%]" />
-            <CarouselNext className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[90%] top-[50%] md:left-[100%]  md:top-[50%]" />
+            <CarouselContent>
+              {sessionsData.paralellDialogues.map((dialogue, index) => (
+                <CarouselItem
+                  key={index}
+                  className="basis-1/2 md:basis-1/2 lg:basis-1/3 text-center relative"
+                >
+                  <div className="p-1">
+                    <Card
+                      className={
+                        index !== parallelDialogueActiveIndex
+                          ? "transition-all opacity-35 scale-80 "
+                          : "transition-all"
+                      }
+                    >
+                      <CardContent className="flex items-center justify-center md:h-110 md:w-94 w-50 h-80 redparallel bg-center bg-no-repeat bg-contain relative">
+                        {/* <div className="absolute -top-4 rounded-full bg-[#D72327] z-50 h-15 w-15 font-leckerli text-[#2F3082] text-3xl text-center py-2">
+                          {dialogue.id + 1}
+                        </div> */}
+                        <div
+                          className={
+                            index === dialogueActiveIndex
+                              ? "flex flex-col items-center justify-center yellowparallel bg-center bg-no-repeat bg-contain md:h-110 md:w-84 w-100 h-58  hover:-rotate-10 transition-all duration-500 ease-in-out group mb-1"
+                              : "flex flex-col items-center justify-center yellowparallel bg-center bg-no-repeat bg-contain md:h-110 md:w-84 w-100 h-58 mb-1"
+                          }
+                        >
+                          <h2 className="text-[#D72327] font-leckerli font-bold md:text-3xl group-hover:text-xl text-xs">
+                            {dialogue.title}
+                          </h2>
+                          <h3 className="text-blue-800 font-leckerli md:text-xl group-hover:text-md md:w-55 w-23 text-xs ">
+                            {dialogue.subtitle}
+                          </h3>
+                          <p className="font-inter text-sm w-65 hidden group-hover:block transition-opacity ease-in-out font-ebGaramond duration-500 ">
+                            {dialogue.paragraph}
+                          </p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute -left-[0.1%] top-[46%] md:top-[46%] md:-left-[4%]" />
+            <CarouselNext className="bg-[#ECCA19] text-[#2F3082] border-none hover:bg-amber-500 transition-colors absolute left-[90%] top-[46%] md:top-[46%] md:left-[100%]" />
           </Carousel>
         </div>
 
