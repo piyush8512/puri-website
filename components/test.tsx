@@ -1,32 +1,3 @@
-// "use client"
-
-// import Image from 'next/image'
-// import React from 'react'
-
-// import Hero from '@/components/aboutus/hero'
-// import Our from '@/components/aboutus/our'
-
-
-// const page = () => {
-//   return (
-//     <div className='realtive w-full '>
-     
-//       <Hero />
-//       <Our/>
-   
-   
-   
-
-      
-//     </div>
-//   )
-// }
-
-// export default page
-
-
-
-
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -574,7 +545,7 @@ const Page = () => {
                 }`}
               >
                 {/* Polaroid card with photo */}
-                <div className="  md:w-[500px] mt-20   ">
+                <div className="  md:w-[500px]   ">
                   <motion.div
                     key={index}
                     initial="hidden"
@@ -597,14 +568,14 @@ const Page = () => {
                 </div>
 
                 {/* About paragraph */}
-                <div className="max-w-4xl text-center md:text-left ">
-                  <p className="text-xl  font-light text-white font-ebGaramond text-justify">
+                <div className="max-w-3xl text-center md:text-left ">
+                  <p className="text-2xl  font-light text-white font-ebGaramond text-justify">
                     {director.about1}
                   </p>
-                  <p className="text-xl  font-light text-white pt-3 font-ebGaramond text-justify">
+                  <p className="text-2xl  font-light text-white pt-3 font-ebGaramond text-justify">
                     {director.about2}
                   </p>
-                  <p className="text-xl  font-light text-white pt-3 font-ebGaramond text-justify">
+                  <p className="text-2xl  font-light text-white pt-3 font-ebGaramond text-justify">
                     {director.about3}
                   </p>
                 </div>
@@ -634,7 +605,7 @@ const Page = () => {
           />
 
           <div className="text-center">
-            <h1 className="text-xl sm:text-4xl md:text-5xl font-bold text-[#FFC40C] font-leckerli leading-tight mt-20">
+            <h1 className="text-xl sm:text-4xl md:text-5xl font-bold text-[#FFC40C] font-leckerli leading-tight">
               Festival
               <br />
               <span>Co-ordinators</span>
@@ -661,7 +632,7 @@ const Page = () => {
         />
 
         {/* Grid */}
-        <div className="px-4 md:px-[200px] pt-12">
+        <div className="px-4 md:px-[90px] pt-12">
           {team.length > 0 && (
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-4 justify-center ">
               {team.map((member, index) => (
@@ -747,7 +718,7 @@ const Page = () => {
           </div>
 
           {/* Polaroid-style photo cards */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 w-full max-w-[1100px] justify-items-center mt-10 mb-45">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 w-full max-w-[1200px] justify-items-center mt-10 mb-45">
             {team2.map((person, index) => (
               <motion.div
                 key={index}
@@ -804,7 +775,7 @@ const Page = () => {
             />
           </div>
 
-          <div className="relative z-10 sm:px-6 md:px-8 sm:pt-18 md:pt-44 lg:pt-44  ">
+          <div className="relative z-10 sm:px-6 md:px-8 sm:pt-18 md:pt-24 lg:pt-34  ">
             <div className="grid sm:grid-cols-3 md:grid-cols-3">
               {/* Left part logo and icon */}
               <div className="flex flex-col sm:items-center md:items-center">
