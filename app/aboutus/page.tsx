@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link"
+import Link from "next/link";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 
 const Page = () => {
@@ -23,6 +23,7 @@ const Page = () => {
         "He is the author of Paika: Jana, Akhyana O Andolana, and a recipient of the Prime Minister’s Young Author Award. ",
       about3:
         "He has helped shape policy at both national and global levels, having served as the Treasurer of the G20 Youth and represented India at prestigious international platforms, including BRICS and the Commonwealth. ",
+      link: "/#",
     },
     {
       name: "Shivam",
@@ -35,6 +36,7 @@ const Page = () => {
         "A lawyer by profession, his expertise in data-driven policymaking, ethical governance, and sustainability has made him a sought-after consultant and advisor in India and abroad.",
       about3:
         "He is deeply committed to and actively engages in initiatives that safeguard linguistic heritage and promote cultural continuity",
+      link: "/#",
     },
     {
       name: "Shashank Shekhar",
@@ -47,25 +49,25 @@ const Page = () => {
         "He is the author of two best-selling books, with his latest work, Ballot, Bullet and Blood, receiving significant acclaim.",
       about3:
         "In addition to his legal career, he has made notable contributions to student leadership, serving as the National Co-convenor of Think India, a national organization focused on empowering youth across premier academic institutions.",
+      link: "/#",
     },
   ];
 
   const team = [
     {
-      name: "Pradhumna ",
-      surname: "Malpani",
+      name: "mahendr ",
+      surname: "singh",
       image: "/aboutus/mahendrasing.png",
       rotation: "2deg",
       instagram:
-        "https://www.instagram.com/pradhyumnamalpani?igsh=dzIwa2lrN3JyaWJj", // Replace with actual image path
+        " https://www.instagram.com/jnu_mahendra?igsh=MWdzNGhxd3F0c293YQ==",
     },
     {
       name: "Mahendra Singh Sekhala",
       surname: "Sekhala",
       image: "/aboutus/hemathakur.png",
       rotation: "-1.5deg",
-      instagram:
-        " https://www.instagram.com/jnu_mahendra?igsh=MWdzNGhxd3F0c293YQ==", // Replace with actual image path
+      instagram: "", // Replace with actual image path
     },
 
     {
@@ -73,6 +75,8 @@ const Page = () => {
       surname: "Thakur",
       image: "/aboutus/pradhymnamalpani.png",
       rotation: "-1.5deg",
+      instagram:
+        "https://www.instagram.com/pradhyumnamalpani?igsh=dzIwa2lrN3JyaWJ",
       // Replace with actual image path
     },
   ];
@@ -84,7 +88,7 @@ const Page = () => {
       image: "/aboutus/tejaswisingh.png",
       rotation: "2deg",
       instagram:
-        "https://www.instagram.com/pradhyumnamalpani?igsh=dzIwa2lrN3JyaWJj", // Replace with actual image path
+        "https://www.instagram.com/tejaswisingh_?igsh=ZmNlMTNta2k4dXJr", // Replace with actual image path
     },
     {
       name: "Mahendra Singh Sekhala",
@@ -92,7 +96,7 @@ const Page = () => {
       image: "/aboutus/mrunmayeeprasadpng.png",
       rotation: "-1.5deg",
       instagram:
-        " https://www.instagram.com/jnu_mahendra?igsh=MWdzNGhxd3F0c293YQ==", // Replace with actual image path
+        "https://www.instagram.com/mrunmayee_prasad_chitale?igsh=MWUya21ycjFwNmE2eg%3D%3D&utm_source=qr", // Replace with actual image path
     },
 
     {
@@ -100,6 +104,8 @@ const Page = () => {
       surname: "Thakur",
       image: "/aboutus/pratuyshdebashish.png",
       rotation: "-1.5deg",
+      instagram:
+        "https://www.instagram.com/inkofpratyush?igsh=MXZ4aDlhbG1lZzljYw==",
       // Replace with actual image path
     },
     {
@@ -108,22 +114,23 @@ const Page = () => {
       image: "/aboutus/awasthihariharan.png",
       rotation: "2deg",
       instagram:
-        "https://www.instagram.com/pradhyumnamalpani?igsh=dzIwa2lrN3JyaWJj", // Replace with actual image path
+        "https://www.instagram.com/achu.hari_5?igsh=MXU3Mmc4eHV1M3cwaw==", // Replace with actual image path
     },
     {
       name: "Mahendra Singh Sekhala",
       surname: "Sekhala",
       image: "/aboutus/sirisriram.png",
       rotation: "-1.5deg",
-      instagram:
-        " https://www.instagram.com/jnu_mahendra?igsh=MWdzNGhxd3F0c293YQ==", // Replace with actual image path
+      instagram: "https://www.instagram.com/chalk.cheer?igsh=b3dkZXI1a2R6a2ts", // Replace with actual image path
     },
 
     {
-      name: "Hema",
-      surname: "Thakur",
+      name: "poojamundadamehta",
+      surname: "poojamundadamehta",
       image: "/aboutus/poojamundadamehta.png",
       rotation: "-1.5deg",
+      instagram:
+        "https://www.instagram.com/__poojamundadamehta?igsh=bWFyczA3a2hkYmhk",
       // Replace with actual image path
     },
     {
@@ -131,40 +138,39 @@ const Page = () => {
       surname: "Malpani",
       image: "/aboutus/rakeshbarik.png",
       rotation: "2deg",
-      instagram:
-        "https://www.instagram.com/pradhyumnamalpani?igsh=dzIwa2lrN3JyaWJj", // Replace with actual image path
+      instagram: "https://www.instagram.com/rakeshutkal?igsh=M3czcjB1eHUydXRr", // Replace with actual image path
     },
     {
-      name: "Mahendra Singh Sekhala",
-      surname: "Sekhala",
+      name: "sumanyakashyap ",
+      surname: "sumanyakashyap",
       image: "/aboutus/sumanyakashyap.png",
       rotation: "-1.5deg",
       instagram:
-        " https://www.instagram.com/jnu_mahendra?igsh=MWdzNGhxd3F0c293YQ==", // Replace with actual image path
+        " https://www.instagram.com/sukanya_sumanya?igsh=MTR6bTNpMW10b2YxdQ==", // Replace with actual image path
     },
 
     {
-      name: "Hema",
-      surname: "Thakur",
+      name: "pawansinghbutati",
+      surname: "pawansinghbutati",
       image: "/aboutus/pawansinghbutati.png",
       rotation: "-1.5deg",
+      instagram:
+        "https://www.instagram.com/pawan_singh_butati?igsh=eHE3OTk4NDN0djMy",
       // Replace with actual image path
     },
     {
-      name: "Pradhumna ",
-      surname: "Malpani",
+      name: "ashutosh ",
+      surname: "ashutosh",
       image: "/aboutus/ashutosh.png",
       rotation: "2deg",
-      instagram:
-        "https://www.instagram.com/pradhyumnamalpani?igsh=dzIwa2lrN3JyaWJj", // Replace with actual image path
+      instagram: "", // Replace with actual image path
     },
     {
-      name: "Mahendra Singh Sekhala",
-      surname: "Sekhala",
+      name: "ridhiverma",
+      surname: "ridhiverma",
       image: "/aboutus/ridhiverma.png",
       rotation: "-1.5deg",
-      instagram:
-        " https://www.instagram.com/jnu_mahendra?igsh=MWdzNGhxd3F0c293YQ==", // Replace with actual image path
+      instagram: "", // Replace with actual image path
     },
   ];
   const socialIcons = [
@@ -225,7 +231,7 @@ const Page = () => {
       </motion.h1>
 
       {/* About Us Title */}
-      <h1 className="font-leckerli font-bold text-3xl md:text-4xl lg:text-5xl text-[#D72327] text-center mt-4 md:mt-8 mb-10 md:mb-20">
+      <h1 className="font-leckerli font-bold text-3xl md:text-4xl lg:text-5xl text-[#D72327] text-center mt-4 md:mt-8 mb-10 md:mb-0">
         About us
       </h1>
 
@@ -237,7 +243,7 @@ const Page = () => {
           alt="Left decoration"
           width={390}
           height={520}
-          className="absolute left-[-0rem] bottom-[-2rem] md:bottom-[-10rem] w-32 md:w-86 z-30"
+          className="absolute left-[-0rem] bottom-[-2rem] md:bottom-[-10rem] w-32 md:w-96 z-30"
         />
 
         {/* Center Decorative Image */}
@@ -246,7 +252,7 @@ const Page = () => {
           alt="Center decoration"
           width={290}
           height={220}
-          className="absolute left-1/2 transform -translate-x-1/2 bottom-12 md:bottom-24 w-40 md:w-72 z-10"
+          className="absolute left-1/2 transform -translate-x-1/2 bottom-12 md:bottom-30 w-40 md:w-72 z-10"
         />
 
         {/* Right Decorative Image (Flipped) */}
@@ -255,7 +261,7 @@ const Page = () => {
           alt="Right decoration"
           width={390}
           height={520}
-          className="absolute right-[-0rem] bottom-[-2rem] md:bottom-[-10rem] w-32 md:w-86 scale-x-[-1] z-20"
+          className="absolute right-[-0rem] bottom-[-2rem] md:bottom-[-10rem] w-32 md:w-96 scale-x-[-1] z-20"
         />
       </div>
       <div className="relative w-full flex flex-col items-center justify-center">
@@ -548,13 +554,15 @@ const Page = () => {
                       index % 2 === 1 ? "md:flex-row-reverse" : ""
                     }`}
                   >
-                    <Image
-                      src={director.image}
-                      alt={`${director.name} ${director.surname}`}
-                      layout="fill"
-                      objectFit="contain"
-                      className=""
-                    />
+                    <Link href={director.link}>
+                      <Image
+                        src={director.image}
+                        alt={`${director.name} ${director.surname}`}
+                        layout="fill"
+                        objectFit="contain"
+                        className=""
+                      />
+                    </Link>
                   </motion.div>
                 </div>
 
@@ -666,7 +674,7 @@ const Page = () => {
       {/* teams */}
 
       <div className="relative w-full min-h-[280vh] flex items-center justify-center overflow-hidden">
-      <div className="bg-[#D72327] absolute top-0 w-full h-42 -z-30"></div>
+        <div className="bg-[#D72327] absolute top-0 w-full h-42 -z-30"></div>
         {/* Background Image - EDIT: Replace with your actual background image */}
         <Image
           src="/aboutus/yellowbgabout3.png"

@@ -28,8 +28,8 @@ function Speakers() {
     },
 
     {
-      name: "Sh. Hari Babu Kambhampati",
-      position: "Governor of Odisha",
+      name: "Sh. Shashi Tharoor",
+      position: "MP for Thiruvananthapuram, ExMinister of State , Government of India",
       image: "/shashitharoor.svg",
     },
   ];
