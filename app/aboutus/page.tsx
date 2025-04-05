@@ -552,7 +552,7 @@ const Page = () => {
                       src={director.image}
                       alt={`${director.name} ${director.surname}`}
                       layout="fill"
-                      objectFit=""
+                      objectFit="contain"
                       className=""
                     />
                   </motion.div>
@@ -579,10 +579,10 @@ const Page = () => {
             alt="Decorative element"
             width={384}
             height={512}
-            className="absolute  md:-bottom-80 -right-[25%] z-40 insent-0 w-24 md:w-70"
+            className="absolute  md:-bottom-80 -right-[5%] z-40 w-24 md:w-70 h-130"
           />
         </div>
-        <div className="bg-[#D72327] absolute bottom-0 w-full h-12 -z-30"></div>
+        <div className="bg-[#D72327] absolute bottom-0 w-full h-42 -z-30"></div>
       </div>
 
       <div className="mx-2 md:mx-0 md:mt-0 relative bg-[#D72327]  h-[1000px] overflow-hidden">
@@ -662,9 +662,11 @@ const Page = () => {
           )}
         </div>
       </div>
+
       {/* teams */}
 
       <div className="relative w-full min-h-[280vh] flex items-center justify-center overflow-hidden">
+      <div className="bg-[#D72327] absolute top-0 w-full h-42 -z-30"></div>
         {/* Background Image - EDIT: Replace with your actual background image */}
         <Image
           src="/aboutus/yellowbgabout3.png"
@@ -741,7 +743,7 @@ const Page = () => {
         <div className="bg-[#D72327] absolute top-0 w-full h-20 -z-30"></div>
       </div>
       <div className="hidden md:block  z-6 w-full">
-        <footer className="md:block hidden md:h-150 xl:h-210 relative  font-ebGaramond  ">
+        <footer className="md:block hidden md:h-150 xl:h-210 relative  font-ebGaramond  mt-20">
           {/* Background wave image with lower z-index */}
           <div className="absolute inset-0 z-10 w-full h-full mx-auto">
             <Image
@@ -753,13 +755,13 @@ const Page = () => {
               priority
             />
           </div>
-          <div className="absolute w-full -top-[64%] flex items-center justify-center h-[900px]  z-0 ">
+          <div className="absolute w-full -top-[65%] flex items-center justify-center h-240  -z-10 ">
             <Image
-              src="/aboutus/sunset.png"
+              src="/aboutus/sunset.svg"
               alt="Background"
               layout="fill"
               objectFit="contain"
-              className="md:block hidden absolute inset-0 "
+              className="md:block hidden absolute inset-0 w-full"
               priority
             />
           </div>
